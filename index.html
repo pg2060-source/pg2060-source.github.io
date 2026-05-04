@@ -49,9 +49,9 @@
 }
 
 .store-section {
-  height: auto;
-  padding: 100px 20px;
-  background-size: contain;
+  padding: 0;
+  min-height: 100vh;
+  background-size: contain !important;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -72,7 +72,9 @@
       height:100%;
       background: rgba(0,0,0,0.5);
     }
-
+.store-section::after {
+  display: none;
+}
     .section-content {
       position: relative;
       z-index: 1;
