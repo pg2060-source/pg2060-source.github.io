@@ -14,16 +14,18 @@
       text-align: center;
     }
 
-   header {
-  position: relative;
-  height: 80vh;
-  background: url('Main Image.png') center/cover no-repeat;
-  display: flex;
-  align-items: flex-start; /* move content to top */
-  justify-content: center;
-  padding-top: 40px; /* space from top */
-  color: white;
-}
+    /* HERO */
+    header {
+      position: relative;
+      height: 80vh;
+      background: url('Main Image.png') center/cover no-repeat;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 40px;
+      color: white;
+    }
+
     header::after {
       content: "";
       position: absolute;
@@ -44,44 +46,16 @@
       margin: 0;
     }
 
-   .section {
-  padding: 60px 20px;
-}
-
-.store-section {
-  padding: 0;
-  min-height: 100vh;
-  background-size: contain !important;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-    .section-bg {
-      color: white;
-      background-size: cover;
-      background-position: center;
-      position: relative;
-    }
-
-    .section-bg::after {
-      content: "";
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      background: rgba(0,0,0,0.5);
-    }
-
-    .section-content {
-      position: relative;
-      z-index: 1;
+    /* SECTIONS */
+    .section {
+      padding: 60px 20px;
     }
 
     h2 {
       margin-bottom: 20px;
     }
 
+    /* BUTTONS */
     .btn {
       display: inline-block;
       margin: 10px;
@@ -97,6 +71,7 @@
       background: #333;
     }
 
+    /* YOUTUBE */
     iframe {
       margin-top: 20px;
       width: 90%;
@@ -104,6 +79,41 @@
       height: 315px;
       border: none;
       border-radius: 10px;
+    }
+
+    /* PREMIUM STORE SECTION */
+    .store-premium {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .store-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .store-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      background: rgba(0,0,0,0.4);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .store-overlay h2 {
+      margin: 0 0 10px 0;
+      font-size: 2em;
+    }
+
+    .store-overlay p {
+      margin-bottom: 15px;
+      font-size: 1.1em;
     }
 
     footer {
@@ -116,7 +126,7 @@
 
 <body>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <header>
   <div class="hero-content">
     <h1>Pablo & Luisa Garcia</h1>
@@ -124,36 +134,38 @@
   </div>
 </header>
 
-<!-- YOUTUBE SECTION -->
-<div class="section section-bg" style="background-image: url('youtube-bg.jpg');">
-  <div class="section-content">
-    <h2>🎥 Our YouTube Channels</h2>
+<!-- YOUTUBE -->
+<div class="section">
+  <h2>🎥 Our YouTube Channels</h2>
 
-    <a href="https://www.youtube.com/@RockIsland-LPG-Studios/videos" target="_blank" class="btn">
-      Rock Island Channel
-    </a>
+  <a href="https://www.youtube.com/@RockIsland-LPG-Studios/videos" target="_blank" class="btn">
+    Rock Island Channel
+  </a>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/eokOdDlruzI?si=rl5Irh84903eXHbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/eokOdDlruzI"></iframe>
 
-    <a href="https://www.youtube.com/@turismoenelmundo3058" target="_blank" class="btn">
-      Turismo por el Mundo
-    </a>
+  <a href="https://www.youtube.com/@turismoenelmundo3058" target="_blank" class="btn">
+    Turismo por el Mundo
+  </a>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/CSgI5UoQPXI?si=CKnP0hJG-gffwhvV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
+  <iframe src="https://www.youtube.com/embed/CSgI5UoQPXI"></iframe>
 </div>
 
-<!-- STORE SECTION -->
-<div class="section section-bg store-section" style="background-image: url('Identity.webp');">
-  <div class="section-content">
-    <h2>👕 Our Store</h2>
+<!-- STORE PREMIUM -->
+<div class="store-premium">
+  <img src="Identity.webp" alt="Rock Island Brand" class="store-img">
+
+  <div class="store-overlay">
+    <h2>Rock Island Apparel</h2>
+    <p>Wear the attitude. Live the rock.</p>
 
     <a href="https://rockisland.pabloyluisagarcia.com/" target="_blank" class="btn">
-      Shop Rock Island
+      Shop Now
     </a>
   </div>
 </div>
-<!-- SOCIAL SECTION -->
+
+<!-- SOCIAL -->
 <div class="section">
   <h2>🌎 Follow Us</h2>
 
