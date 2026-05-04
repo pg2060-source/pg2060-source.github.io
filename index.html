@@ -14,16 +14,16 @@
       text-align: center;
     }
 
-    header {
-      position: relative;
-      height: 80vh;
-      background: url('Main Image.png') center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-    }
-
+   header {
+  position: relative;
+  height: 80vh;
+  background: url('main image.png') center/cover no-repeat;
+  display: flex;
+  align-items: flex-start; /* move content to top */
+  justify-content: center;
+  padding-top: 40px; /* space from top */
+  color: white;
+}
     header::after {
       content: "";
       position: absolute;
