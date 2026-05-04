@@ -1,75 +1,167 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Pablo y Luisa Garcia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #111;
-      color: #fff;
+      background: #ffffff;
+      color: #111;
       text-align: center;
     }
+
     header {
-      padding: 60px 20px;
+      position: relative;
+      height: 80vh;
+      background: url('Main Image.png') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
     }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.4);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
     h1 {
       font-size: 3em;
+      margin: 0;
     }
+
     .section {
-      padding: 40px 20px;
+      padding: 60px 20px;
     }
-    a {
-      color: #00ffd5;
+
+    .section-bg {
+      color: white;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .section-bg::after {
+      content: "";
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .section-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background: #111;
+      color: white;
+      border-radius: 6px;
       text-decoration: none;
-      display: block;
-      margin: 10px 0;
-      font-size: 1.2em;
+      transition: 0.3s;
     }
-    a:hover {
-      text-decoration: underline;
+
+    .btn:hover {
+      background: #333;
+    }
+
+    iframe {
+      margin-top: 20px;
+      width: 90%;
+      max-width: 600px;
+      height: 315px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    footer {
+      padding: 30px;
+      font-size: 0.9em;
+      background: #f5f5f5;
     }
   </style>
 </head>
 
-
 <body>
 
-
+<!-- HERO SECTION -->
 <header>
-  <h1>Pablo & Luisa Garcia</h1>
-  <p>Creators • Entrepreneurs • Travelers</p>
+  <div class="hero-content">
+    <h1>Pablo & Luisa Garcia</h1>
+    <p>Creators • Entrepreneurs • Travelers</p>
+  </div>
 </header>
 
+<!-- YOUTUBE SECTION -->
+<div class="section section-bg" style="background-image: url('youtube-bg.jpg');">
+  <div class="section-content">
+    <h2>🎥 Our YouTube Channels</h2>
 
-<div class="section">
-  <h2>🎥 YouTube Channels</h2>
-  <a href="https://www.youtube.com/@RockIsland-LPG-Studios/videos" target="_blank">Rock Island YouTube</a>
-  <a href="https://www.youtube.com/@turismoenelmundo3058" target="_blank">Turismo por el Mundo YouTube</a>
+    <a href="https://www.youtube.com/@RockIsland-LPG-Studios/videos" target="_blank" class="btn">
+      Rock Island Channel
+    </a>
+
+    <iframe src="https://www.youtube.com/embed/v=eokOdDlruzI"></iframe>
+
+    <a href="https://www.youtube.com/@turismoenelmundo3058" target="_blank" class="btn">
+      Turismo por el Mundo
+    </a>
+
+    <iframe src="https://www.youtube.com/embed/v=CSgI5UoQPXI"></iframe>
+  </div>
 </div>
 
+<!-- STORE SECTION -->
+<div class="section section-bg" style="background-image: url('store-bg.jpg');">
+  <div class="section-content">
+    <h2>👕 Our Store</h2>
 
-<div class="section">
-  <h2>👕 Our Store</h2>
-  <a href="https://rockisland.pabloyluisagarcia.com/" target="_blank">Shop Rock Island T-Shirts</a>
+    <a href="https://rockisland.pabloyluisagarcia.com/" target="_blank" class="btn">
+      Shop Rock Island
+    </a>
+  </div>
 </div>
 
-
+<!-- SOCIAL SECTION -->
 <div class="section">
   <h2>🌎 Follow Us</h2>
-  <a href="https://www.instagram.com/rock_island_l_p_g/" target="_blank">Instagram</a>
-  <a href="#">TikTok</a>
+
+  <a href="https://www.instagram.com/rock_island_l_p_g/" target="_blank" class="btn">
+    Instagram
+  </a>
+
+  <a href="#" class="btn">
+    TikTok
+  </a>
 </div>
 
-
-<div class="section">
-  <p>© 2026 Pablo y Luisa Garcia</p>
-</div>
-
+<footer>
+  © 2026 Pablo y Luisa Garcia
+</footer>
 
 </body>
 </html>
