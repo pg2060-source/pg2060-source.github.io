@@ -16,18 +16,18 @@
 
     /* NAVBAR */
     .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(0,0,0,0.5);
-  color: white;
-  z-index: 1000;
-  box-sizing: border-box;
-}
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.5);
+      color: white;
+      z-index: 1000;
+      box-sizing: border-box;
+    }
 
     .nav-links a {
       margin-left: 20px;
@@ -42,8 +42,9 @@
       height: 100vh;
       background: url('Main Image.png') center/cover no-repeat;
       display: flex;
-      align-items: center;
+      align-items: flex-start; /* moved to top */
       justify-content: center;
+      padding-top: 140px; /* space from top (adjust if needed) */
       color: white;
     }
 
@@ -59,6 +60,7 @@
       position: relative;
       z-index: 1;
       animation: fadeIn 2s ease;
+      max-width: 600px;
     }
 
     h1 {
@@ -147,14 +149,19 @@
 
     /* MOBILE */
     @media (max-width: 768px) {
+      header {
+        height: 80vh;
+        padding-top: 100px; /* slightly less spacing on mobile */
+      }
+
       .store-overlay {
         position: static;
         margin: 20px;
         text-align: center;
       }
 
-      header {
-        height: 80vh;
+      h1 {
+        font-size: 2em;
       }
     }
   </style>
