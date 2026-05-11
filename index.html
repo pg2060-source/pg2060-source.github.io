@@ -5,113 +5,264 @@
   <title>Pablo y Luisa Garcia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- FAVICON -->
-  <link rel="icon" type="image/png" href="favicon.png">
+<!-- FAVICONS -->
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png">
 
-  <!-- GOOGLE FONTS -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- Standard ICO fallback -->
+<link rel="icon" href="/favicon.ico">
+
+<!-- Apple (iPhone/iPad) -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<!-- Android / Chrome -->
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
+
+<!-- Optional theme color (matches your purple) -->
+<meta name="theme-color" content="#4b2cff">
+
+  <!-- OPEN GRAPH (PREVIEW WHEN SHARING) -->
+  <meta property="og:title" content="Pablo & Luisa Garcia">
+  <meta property="og:description" content="Musicians • Entrepreneurs • Travelers">
+  <meta property="og:url" content="https://www.pabloyluisagarcia.com">
+  <meta property="og:image" content="https://www.pabloyluisagarcia.com/preview.jpg?v=3">
+  <meta property="og:type" content="website">
+
+  <!-- TWITTER PREVIEW -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pablo & Luisa Garcia">
+  <meta name="twitter:description" content="Musicians • Entrepreneurs • Travelers">
+  <meta name="twitter:image" content="https://pabloyluisagarcia.com/preview.jpg">
 
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #0b0b0b;
-      color: white;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #111;
       text-align: center;
     }
 
-    .hero {
-      height: 100vh;
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
-                  url('your-background.jpg') center/cover no-repeat;
+    /* NAVBAR */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 15px 20px;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
+      background: rgba(0,0,0,0.5);
+      color: white;
+      z-index: 1000;
+      box-sizing: border-box;
+    }
+
+    .nav-links a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+
+    /* HERO */
+    header {
+      position: relative;
+      height: 100vh;
+      background: url('Main Image.png') center/cover no-repeat;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 140px;
+      color: white;
+    }
+
+    .hero-content {
+      animation: fadeIn 2s ease;
+      max-width: 600px;
     }
 
     h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.7);
     }
 
     p {
-      font-size: 18px;
-      margin-bottom: 30px;
-      opacity: 0.8;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.7);
     }
 
-    /* EMAIL FORM */
+    /* EMAIL CAPTURE */
     .email-box {
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
+      margin-top: 20px;
     }
 
-    .email-box input {
-      padding: 14px 18px;
-      border-radius: 10px;
+    input {
+      padding: 10px;
+      width: 200px;
       border: none;
-      width: 260px;
-      font-size: 14px;
-      outline: none;
+      border-radius: 5px;
     }
 
-    .email-box button {
-      padding: 14px 22px;
-      background: #00c2a8;
+    /* SECTIONS */
+    .section {
+      padding: 80px 20px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    /* BUTTONS */
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background: #111;
       color: white;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
       transition: 0.3s;
     }
 
-    .email-box button:hover {
-      background: #00a892;
-      transform: scale(1.05);
+    .btn:hover {
+      background: #333;
     }
 
+    /* YOUTUBE */
+    iframe {
+      margin-top: 20px;
+      width: 90%;
+      max-width: 700px;
+      height: 350px;
+      border-radius: 10px;
+    }
+
+    /* STORE */
+    .store-premium {
+      position: relative;
+    }
+
+    .store-img {
+      width: 100%;
+    }
+
+    .store-overlay {
+      position: absolute;
+      top: 20%;
+      right: 8%;
+      color: white;
+      background: rgba(0,0,0,0.6);
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 320px;
+      text-align: left;
+    }
+
+    /* FOOTER */
     footer {
-      padding: 20px;
-      font-size: 12px;
-      opacity: 0.5;
+      padding: 30px;
+      background: #f5f5f5;
+    }
+
+    /* ANIMATION */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      header {
+        height: 80vh;
+        padding-top: 100px;
+      }
+
+      .store-overlay {
+        position: static;
+        margin: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <section class="hero">
-    <h1>Pablo & Luisa</h1>
-    <p>Join our journey around the world 🌍</p>
+<!-- NAVBAR -->
+<div class="navbar">
+  <div><strong>Pablo & Luisa</strong></div>
+  <div class="nav-links">
+    <a href="#youtube">YouTube</a>
+    <a href="#store">Store</a>
+    <a href="#social">Social</a>
+  </div>
+</div>
 
-    <!-- MAILCHIMP FORM -->
-    <form action="https://pabloyluisagarcia.us9.list-manage.com/subscribe/post?u=6a5eadb807d31f1781acc56a3&amp;id=1ed23d17e2&amp;f_id=009949e1f0"
-          method="post"
-          target="_blank"
-          class="email-box">
+<!-- HERO -->
+<header>
+  <div class="hero-content">
+    <h1>Pablo & Luisa Garcia</h1>
+    <p>Musicians • Entrepreneurs • Travelers</p>
 
-      <input type="email" name="EMAIL" placeholder="Enter your email" required>
+    <div class="email-box">
+      <input type="email" placeholder="Enter your email">
+      <a href="#" class="btn">Join Us</a>
+    </div>
+  </div>
+</header>
 
-      <!-- Anti-bot field -->
-      <input type="text" name="b_6a5eadb807d31f1781acc56a3_1ed23d17e2"
-             tabindex="-1"
-             value=""
-             style="position:absolute; left:-5000px;">
+<!-- YOUTUBE -->
+<div class="section" id="youtube">
+  <h2>🎥 Our YouTube Channels</h2>
 
-      <button type="submit">Join Us</button>
+  <a href="https://www.youtube.com/@RockIsland-LPG-Studios/videos" target="_blank" class="btn">
+    Rock Island Channel
+  </a>
 
-    </form>
+  <iframe src="https://www.youtube.com/embed/eokOdDlruzI"></iframe>
 
-  </section>
+  <a href="https://www.youtube.com/@turismoenelmundo3058" target="_blank" class="btn">
+    Turismo por el Mundo
+  </a>
 
-  <footer>
-    © 2026 Pablo & Luisa Garcia
-  </footer>
+  <iframe src="https://www.youtube.com/embed/CSgI5UoQPXI"></iframe>
+</div>
+
+<!-- STORE -->
+<div class="store-premium" id="store">
+  <img src="Identity.webp" class="store-img">
+
+  <div class="store-overlay">
+    <h2>Rock Island Apparel</h2>
+    <p>Wear the attitude. Live the rock.</p>
+
+    <a href="https://rockisland.pabloyluisagarcia.com/" target="_blank" class="btn">
+      Shop Now
+    </a>
+  </div>
+</div>
+
+<!-- SOCIAL -->
+<div class="section" id="social">
+  <h2>🌎 Follow Us</h2>
+
+  <a href="https://www.instagram.com/rock_island_l_p_g/" target="_blank" class="btn">
+    Instagram
+  </a>
+
+  <a href="https://www.tiktok.com/@pabloyluisagarcia" target="_blank" class="btn">TikTok</a>
+</div>
+
+<footer>
+  © 2026 Pablo y Luisa Garcia
+</footer>
 
 </body>
 </html>
