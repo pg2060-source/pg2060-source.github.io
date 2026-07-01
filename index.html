@@ -5,16 +5,6 @@
   <title>Pablo y Luisa Garcia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3NC3C9DM0S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-3NC3C9DM0S');
-</script>
-  
   <!-- FAVICONS -->
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -474,6 +464,247 @@
         padding: 72px 20px;
       }
     }
+
+    /* ── TRAVEL ── */
+    .travel-bg {
+      background: var(--apple-light);
+    }
+
+    .destination-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 48px;
+    }
+
+    .destination-card {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 320px;
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .destination-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.18);
+    }
+
+    .destination-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .destination-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .destination-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.0) 55%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 24px;
+      text-align: left;
+    }
+
+    .destination-card-overlay h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #f5f5f7;
+      letter-spacing: -0.02em;
+      margin-bottom: 4px;
+    }
+
+    .destination-card-overlay span {
+      font-size: 13px;
+      color: rgba(255,255,255,0.7);
+      font-weight: 400;
+    }
+
+    .dest-tag {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: rgba(0,0,0,0.45);
+      backdrop-filter: blur(8px);
+      color: white;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 980px;
+    }
+
+    /* ── DESTINATION PAGE (modal/panel) ── */
+    .dest-panel {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      background: var(--apple-white);
+      overflow-y: auto;
+      animation: panelSlideUp 0.4s cubic-bezier(0.16,1,0.3,1);
+    }
+
+    .dest-panel.active {
+      display: block;
+    }
+
+    @keyframes panelSlideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to   { transform: translateY(0);    opacity: 1; }
+    }
+
+    .dest-panel-hero {
+      position: relative;
+      height: 420px;
+      overflow: hidden;
+    }
+
+    .dest-panel-hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .dest-panel-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.55) 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      padding-bottom: 48px;
+      text-align: center;
+    }
+
+    .dest-panel-hero-overlay h2 {
+      color: #f5f5f7;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      margin-bottom: 8px;
+    }
+
+    .dest-panel-hero-overlay p {
+      color: rgba(255,255,255,0.75);
+      font-size: 16px;
+      text-shadow: none;
+    }
+
+    .dest-panel-back {
+      position: absolute;
+      top: 60px;
+      left: 24px;
+      background: rgba(0,0,0,0.4);
+      backdrop-filter: blur(10px);
+      color: white;
+      border: none;
+      border-radius: 980px;
+      padding: 8px 18px;
+      font-size: 14px;
+      font-family: inherit;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.2s;
+      z-index: 10;
+    }
+
+    .dest-panel-back:hover {
+      background: rgba(0,0,0,0.6);
+    }
+
+    .dest-panel-content {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+    }
+
+    .tours-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-top: 16px;
+    }
+
+    .tour-card {
+      background: var(--apple-light);
+      border-radius: 18px;
+      padding: 28px 32px;
+      text-align: left;
+      border: 1px solid var(--apple-border);
+    }
+
+    .tour-card h3 {
+      font-size: 19px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--apple-dark);
+      margin-bottom: 10px;
+    }
+
+    .tour-card p {
+      font-size: 15px;
+      color: var(--apple-gray);
+      line-height: 1.65;
+      text-shadow: none;
+      margin-bottom: 22px;
+    }
+
+    .tour-book-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn-gyg {
+      background: #FF5533;
+    }
+    .btn-gyg:hover { background: #e04a2d; }
+
+    .btn-viator {
+      background: #1A1A2E;
+    }
+    .btn-viator:hover { background: #2a2a4e; }
+
+    .btn-tripadvisor {
+      background: #34E0A1;
+      color: #1d1d1f;
+    }
+    .btn-tripadvisor:hover { background: #28c98e; }
+
+    .btn-coming-soon {
+      background: var(--apple-gray);
+      cursor: default;
+      opacity: 0.7;
+    }
+    .btn-coming-soon:hover {
+      background: var(--apple-gray);
+      transform: none;
+    }
+
+    @media (max-width: 768px) {
+      .destination-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .destination-card { height: 240px; }
+      .dest-panel-hero { height: 300px; }
+      .tour-card { padding: 22px 20px; }
+    }
+
   </style>
 </head>
 <body>
@@ -484,6 +715,7 @@
   <div class="nav-links">
     <a href="#youtube">YouTube</a>
     <a href="#store">Store</a>
+    <a href="#travel">Travel</a>
     <a href="#social">Social</a>
   </div>
 </div>
@@ -568,6 +800,192 @@
 
 <div class="section-divider"></div>
 
+
+<div class="section-divider"></div>
+
+<!-- TRAVEL -->
+<div class="travel-bg" id="travel">
+  <div class="section">
+    <p class="section-label">Explore</p>
+    <h2>Travel With Us</h2>
+    <p class="section-desc">We don't just visit destinations — we live them. Join us on guided tours across South America's most breathtaking places.</p>
+
+    <div class="destination-grid">
+
+      <!-- Balneário Camboriú -->
+      <a class="destination-card" onclick="openDest('camboriu'); return false;" href="#">
+        <img src="https://images.unsplash.com/photo-1544989164-30b9f1f6b8f8?w=600&q=80" alt="Balneário Camboriú" onerror="this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80'">
+        <span class="dest-tag">Brazil</span>
+        <div class="destination-card-overlay">
+          <h3>Balneário Camboriú</h3>
+          <span>5 tours available</span>
+        </div>
+      </a>
+
+      <!-- Rio de Janeiro -->
+      <a class="destination-card" onclick="openDest('rio'); return false;" href="#">
+        <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=600&q=80" alt="Rio de Janeiro">
+        <span class="dest-tag">Brazil</span>
+        <div class="destination-card-overlay">
+          <h3>Rio de Janeiro</h3>
+          <span>1 tour available</span>
+        </div>
+      </a>
+
+      <!-- Iguazú -->
+      <a class="destination-card" onclick="openDest('iguazu'); return false;" href="#">
+        <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=600&q=80" alt="Iguazú Falls">
+        <span class="dest-tag">Argentina & Brazil</span>
+        <div class="destination-card-overlay">
+          <h3>Iguazú Falls</h3>
+          <span>1 tour available</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<!-- ── DESTINATION PANELS ── -->
+
+<!-- BALNEÁRIO CAMBORIÚ -->
+<div class="dest-panel" id="panel-camboriu">
+  <div class="dest-panel-hero">
+    <img src="https://images.unsplash.com/photo-1544989164-30b9f1f6b8f8?w=1200&q=80" alt="Balneário Camboriú" onerror="this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80'">
+    <button class="dest-panel-back" onclick="closeDest()">← Back</button>
+    <div class="dest-panel-hero-overlay">
+      <h2>Balneário Camboriú</h2>
+      <p>Santa Catarina, Brazil</p>
+    </div>
+  </div>
+  <div class="dest-panel-content">
+    <p class="section-label">5 Tours Available</p>
+    <h2 style="text-align:left; margin-bottom:32px;">Explore Our Tours</h2>
+    <div class="tours-grid">
+
+      <div class="tour-card">
+        <h3>Cable Car Ride and Pirate Boat Cruise</h3>
+        <p>Discover Balneário Camboriú on a cable car ride and pirate boat cruise. Glide above the Atlantic Forest, enjoy coastal views, and soak up the tropical atmosphere at Laranjeiras Beach.</p>
+        <div class="tour-book-btns">
+          <a href="https://gyg.me/XT2ToYHE" target="_blank" class="btn btn-gyg">GetYourGuide</a>
+          <a href="https://www.viator.com/tours/Balneario-Camboriu/Balneario-Camboriu-Cable-Car-and-Pirate-Boat-Adventure/d28407-5592317P33?medium=social-share-copy" target="_blank" class="btn btn-viator">Viator</a>
+          <a href="https://www.tripadvisor.com/AttractionProductReview-g680306-d34144773-Balneario_Camboriu_Cable_Car_Pirate_Boat_Adventure-Balneario_Camboriu_State_of_San.html" target="_blank" class="btn btn-tripadvisor">TripAdvisor</a>
+        </div>
+      </div>
+
+      <div class="tour-card">
+        <h3>Brazilian Street Food Tour</h3>
+        <p>Discover the flavors of Brazil on a guided street food tour in Balneário Camboriú. Taste iconic snacks, sip on fresh tropical juices, and learn about Brazilian food culture.</p>
+        <div class="tour-book-btns">
+          <a href="https://gyg.me/odKrFTdq" target="_blank" class="btn btn-gyg">GetYourGuide</a>
+          <a href="https://www.viator.com/tours/Balneario-Camboriu/Brazilian-Street-Food-Tour-in-Balneario-Camboriu/d28407-5592317P44?medium=social-share-copy" target="_blank" class="btn btn-viator">Viator</a>
+          <a href="https://www.tripadvisor.com/AttractionProductReview-g680306-d34333289-Brazilian_Street_Food_Tour_in_Balneario_Camboriu-Balneario_Camboriu_State_of_Santa.html" target="_blank" class="btn btn-tripadvisor">TripAdvisor</a>
+        </div>
+      </div>
+
+      <div class="tour-card">
+        <h3>Private Tour: Cable Car, Big Wheel & Lunch</h3>
+        <p>Discover Balneário Camboriú on a guided private tour. Ride the Parque Unipraias cable car, enjoy a beachside lunch, and experience the FG Big Wheel.</p>
+        <div class="tour-book-btns">
+          <a href="https://gyg.me/XVGqeiGZ" target="_blank" class="btn btn-gyg">GetYourGuide</a>
+          <a href="https://www.viator.com/tours/Balneario-Camboriu/Balneario-Camboriu-Exclusive-5-Hour-Private-Tour-with-Lunch/d28407-5592317P27?medium=social-share-copy" target="_blank" class="btn btn-viator">Viator</a>
+          <a href="https://www.tripadvisor.com/AttractionProductReview-g680306-d34076173-Private_Tour_Balneario_Camboriu_Cable_Car_Big_Wheel_Lunch-Balneario_Camboriu_State.html" target="_blank" class="btn btn-tripadvisor">TripAdvisor</a>
+        </div>
+      </div>
+
+      <div class="tour-card">
+        <h3>Scenic Private Tour: Praia Brava & Northern Beaches</h3>
+        <p>Explore the stunning beaches of Balneário Camboriú on this half-day scenic tour. Discover Praia Brava, known for its clean waters and chic vibe, and enjoy breathtaking ocean views along the iconic Estrada da Rainha.</p>
+        <div class="tour-book-btns">
+          <a href="https://www.viator.com/tours/Balneario-Camboriu/Camboriu-Scenic-Tour-Praia-Brava-and-Northern-Beaches/d28407-5592317P45?medium=social-share-copy" target="_blank" class="btn btn-viator">Viator</a>
+          <a href="https://www.tripadvisor.com/AttractionProductReview-g680306-d34389574-Camboriu_Scenic_Private_Tour_Praia_Brava_Northern_Beaches-Balneario_Camboriu_State.html" target="_blank" class="btn btn-tripadvisor">TripAdvisor</a>
+        </div>
+      </div>
+
+      <div class="tour-card">
+        <h3>Aquarium + NASA Experience with Lunch: Best of Balneário</h3>
+        <p>Discover the best of Balneário Camboriú in one day with marine life at the Oceanic Aquarium, authentic NASA exhibits, a great lunch, and a relaxing coffee break.</p>
+        <div class="tour-book-btns">
+          <a href="https://www.viator.com/tours/Balneario-Camboriu/Balneario-Camboriu-Day-Tour-Aquarium-Shopping-Space-Adventure/d28407-5592317P32?medium=social-share-copy" target="_blank" class="btn btn-viator">Viator</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- RIO DE JANEIRO -->
+<div class="dest-panel" id="panel-rio">
+  <div class="dest-panel-hero">
+    <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=1200&q=80" alt="Rio de Janeiro">
+    <button class="dest-panel-back" onclick="closeDest()">← Back</button>
+    <div class="dest-panel-hero-overlay">
+      <h2>Rio de Janeiro</h2>
+      <p>Rio de Janeiro, Brazil</p>
+    </div>
+  </div>
+  <div class="dest-panel-content">
+    <p class="section-label">1 Tour Available</p>
+    <h2 style="text-align:left; margin-bottom:32px;">Explore Our Tours</h2>
+    <div class="tours-grid">
+
+      <div class="tour-card">
+        <h3>Best of Rio: Culture, Local Flavors, History & Beaches</h3>
+        <p>Experience Rio de Janeiro's highlights in one unforgettable day, featuring iconic beaches, vibrant street art, and visits to the Museu do Amanhã and Centro Cultural Banco do Brasil. Enjoy local flavors while discovering the city's rich culture, history, and stunning waterfront views.</p>
+        <div class="tour-book-btns">
+          <a href="https://www.viator.com/tours/Rio-de-Janeiro/Best-of-Rio-Culture-Local-Flavors-History-and-Beaches/d712-5592317P46?medium=social-share-copy" target="_blank" class="btn btn-viator">Viator</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- IGUAZÚ -->
+<div class="dest-panel" id="panel-iguazu">
+  <div class="dest-panel-hero">
+    <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=1200&q=80" alt="Iguazú Falls">
+    <button class="dest-panel-back" onclick="closeDest()">← Back</button>
+    <div class="dest-panel-hero-overlay">
+      <h2>Iguazú Falls</h2>
+      <p>Argentina & Brazil</p>
+    </div>
+  </div>
+  <div class="dest-panel-content">
+    <p class="section-label">1 Tour Available</p>
+    <h2 style="text-align:left; margin-bottom:32px;">Explore Our Tours</h2>
+    <div class="tours-grid">
+
+      <div class="tour-card">
+        <h3>Iguazú: 2 Countries, 1 Day</h3>
+        <p>Experience the best of Iguazú Falls in one unforgettable day, exploring both the Argentine and Brazilian sides for breathtaking panoramic views and immersive rainforest trails. Complete your adventure with a visit to the Triple Frontier and a traditional Argentine lunch.</p>
+        <div class="tour-book-btns">
+          <a href="#" class="btn btn-coming-soon" onclick="return false;">GetYourGuide — Coming Soon</a>
+          <a href="#" class="btn btn-coming-soon" onclick="return false;">Viator — Coming Soon</a>
+          <a href="#" class="btn btn-coming-soon" onclick="return false;">TripAdvisor — Coming Soon</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  function openDest(dest) {
+    document.getElementById('panel-' + dest).classList.add('active');
+    document.body.style.overflow = 'hidden';
+    window.scrollTo(0, 0);
+  }
+  function closeDest() {
+    document.querySelectorAll('.dest-panel').forEach(p => p.classList.remove('active'));
+    document.body.style.overflow = '';
+  }
+  // Close on Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeDest();
+  });
+</script>
+
 <!-- SOCIAL -->
 <div id="social">
   <div class="section">
@@ -594,3 +1012,4 @@
 
 </body>
 </html>
+
