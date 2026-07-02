@@ -1,1 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Unlock a premium Santa Catarina travel guide with seven ready-to-use itineraries, hidden beaches, maps, and local recommendations."
+    />
+    <title>The Ultimate Santa Catarina Travel Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" aria-label="Primary">
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="brand" href="#hero" aria-label="Santa Catarina Guide home">
+          SC Guide
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#features">Features</a>
+          <a href="#itineraries">Itineraries</a>
+          <a href="#included">Included</a>
+          <a href="#unlock" class="nav-cta">Unlock</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=82"
+            alt=""
+            width="1800"
+            height="1200"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Santa Catarina, beautifully planned</p>
+          <h1 id="hero-title">The Ultimate Santa Catarina Travel Guide</h1>
+          <p class="hero-subtitle">
+            Explore Brazil's most beautiful state with 7 ready-to-use
+            itineraries, hidden beaches, interactive maps and local
+            recommendations.
+          </p>
+          <form class="unlock-form" aria-label="Unlock the free guide">
+            <label>
+              <span>Name</span>
+              <input
+                type="text"
+                name="name"
+                autocomplete="name"
+                placeholder="Your name"
+                required
+              />
+            </label>
+            <label>
+              <span>Email</span>
+              <input
+                type="email"
+                name="email"
+                autocomplete="email"
+                placeholder="you@example.com"
+                required
+              />
+            </label>
+            <button type="submit">Unlock Free Guide</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section section-light" id="features" aria-labelledby="features-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Everything in reach</p>
+          <h2 id="features-title">Plan less. See more.</h2>
+          <p>
+            A polished field guide built for travelers who want clarity,
+            beauty, and the good places without losing a day to research.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="icon-pill" aria-hidden="true">⌖</div>
+            <h3>Interactive Maps</h3>
+            <p>
+              Beaches, viewpoints, trailheads, restaurants, and day routes
+              organized into calm, glanceable layers.
+            </p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="icon-pill" aria-hidden="true">★</div>
+            <h3>Local Recommendations</h3>
+            <p>
+              Cafes, seafood counters, surf towns, and quiet streets chosen for
+              real-world ease, not generic lists.
+            </p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="icon-pill" aria-hidden="true">◆</div>
+            <h3>Hidden Gems</h3>
+            <p>
+              Lesser-known coves, hilltop lookouts, and small detours that make
+              the state feel personal.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section preview-section" aria-labelledby="preview-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Guide preview</p>
+          <h2 id="preview-title">A travel guide that feels considered.</h2>
+        </div>
+        <div class="browser-mockup reveal">
+          <div class="browser-bar" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="browser-content">
+            <img
+              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80"
+              alt="A scenic coastal travel guide preview"
+              loading="lazy"
+              width="1400"
+              height="900"
+            />
+            <div class="guide-panel">
+              <p>Day 03</p>
+              <h3>Florianopolis Island Loop</h3>
+              <span>9 stops · 42 km · swim-friendly</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-light" id="itineraries" aria-labelledby="itineraries-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Seven days, ready to go</p>
+          <h2 id="itineraries-title">Day-by-day itineraries.</h2>
+        </div>
+        <div class="itinerary-grid">
+          <article class="itinerary-card reveal">
+            <span>Day 1</span>
+            <h3>Florianopolis Arrival</h3>
+            <p>Lagoa da Conceicao, sunset dunes, and an easy first dinner.</p>
+          </article>
+          <article class="itinerary-card reveal">
+            <span>Day 2</span>
+            <h3>East Coast Beaches</h3>
+            <p>Mole, Joaquina, Barra da Lagoa, and quiet surf-town stops.</p>
+          </article>
+          <article class="itinerary-card reveal">
+            <span>Day 3</span>
+            <h3>South Island Drive</h3>
+            <p>Campeche, Armacao, Matadeiro, and dramatic cliff views.</p>
+          </article>
+          <article class="itinerary-card reveal">
+            <span>Day 4</span>
+            <h3>Balneario Camboriu</h3>
+            <p>Skyline views, cable cars, seafood, and an evening promenade.</p>
+          </article>
+          <article class="itinerary-card reveal">
+            <span>Day 5</span>
+            <h3>Bombinhas Coves</h3>
+            <p>Clear water beaches, short hikes, and slow coastal lunches.</p>
+          </article>
+          <article class="itinerary-card reveal">
+            <span>Day 6</span>
+            <h3>Serra Catarinense</h3>
+            <p>Mountain roads, canyons, wineries, and cooler highland air.</p>
+          </article>
+          <article class="itinerary-card reveal">
+            <span>Day 7</span>
+            <h3>Final Swim</h3>
+            <p>A relaxed beach morning with smart airport timing built in.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section map-section" aria-labelledby="map-title">
+        <div class="split-layout">
+          <div class="split-copy reveal">
+            <p class="eyebrow">Map preview</p>
+            <h2 id="map-title">Every stop, placed with intention.</h2>
+            <p>
+              Preview the route logic before you travel, then open the map on
+              the road with beaches, viewpoints, food, hikes, and drive times
+              already grouped by day.
+            </p>
+          </div>
+          <div class="map-preview reveal" role="img" aria-label="Stylized interactive map preview">
+            <img
+              src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1200&q=80"
+              alt=""
+              loading="lazy"
+              width="1200"
+              height="900"
+            />
+            <span class="pin pin-one"></span>
+            <span class="pin pin-two"></span>
+            <span class="pin pin-three"></span>
+            <span class="route-line"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-light" id="included" aria-labelledby="included-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">What's included</p>
+          <h2 id="included-title">All the essentials, refined.</h2>
+        </div>
+        <div class="included-grid">
+          <div class="included-item reveal"><span>☼</span>Beach shortlist</div>
+          <div class="included-item reveal"><span>⌁</span>Drive routes</div>
+          <div class="included-item reveal"><span>⌖</span>Map pins</div>
+          <div class="included-item reveal"><span>◐</span>Best timing</div>
+          <div class="included-item reveal"><span>◇</span>Food picks</div>
+          <div class="included-item reveal"><span>↗</span>Viewpoints</div>
+          <div class="included-item reveal"><span>✓</span>Packing notes</div>
+          <div class="included-item reveal"><span>＋</span>Local tips</div>
+        </div>
+      </section>
+
+      <section class="section testimonials" aria-labelledby="testimonials-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Traveler notes</p>
+          <h2 id="testimonials-title">Quietly indispensable.</h2>
+        </div>
+        <div class="testimonial-grid">
+          <figure class="testimonial-card reveal">
+            <blockquote>
+              "The itinerary felt personal, polished, and realistic. We stopped
+              guessing and started enjoying the coastline."
+            </blockquote>
+            <figcaption>Marina L. · Sao Paulo</figcaption>
+          </figure>
+          <figure class="testimonial-card reveal">
+            <blockquote>
+              "It gave us the beautiful places, but also the tiny timing details
+              that made each day feel easy."
+            </blockquote>
+            <figcaption>Daniel R. · Austin</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="final-cta" id="unlock" aria-labelledby="unlock-title">
+        <div class="final-cta-inner reveal">
+          <img
+            src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=80"
+            alt=""
+            loading="lazy"
+            width="1600"
+            height="1067"
+          />
+          <p class="eyebrow">Free instant access</p>
+          <h2 id="unlock-title">Unlock the guide before your trip does.</h2>
+          <p>
+            Get the complete Santa Catarina starter guide, including seven
+            polished itineraries and map-ready recommendations.
+          </p>
+          <a class="button-link" href="#hero">Unlock Free Guide</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Santa Catarina Guide. Crafted for better travel days.</p>
+      <a href="#hero">Back to top</a>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
 
