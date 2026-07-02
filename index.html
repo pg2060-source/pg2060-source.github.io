@@ -640,11 +640,32 @@
     }
 
     .tour-card {
+      display: flex;
+      align-items: center;
+      gap: 0;
       background: var(--apple-light);
       border-radius: 18px;
-      padding: 28px 32px;
+      overflow: hidden;
       text-align: left;
       border: 1px solid var(--apple-border);
+    }
+
+    .tour-card.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .tour-card-img {
+      width: 320px;
+      min-width: 320px;
+      height: 260px;
+      object-fit: cover;
+      display: block;
+      flex-shrink: 0;
+    }
+
+    .tour-card-body {
+      padding: 28px 32px;
+      flex: 1;
     }
 
     .tour-card h3 {
@@ -661,6 +682,12 @@
       line-height: 1.65;
       text-shadow: none;
       margin-bottom: 22px;
+    }
+
+    @media (max-width: 768px) {
+      .tour-card, .tour-card.reverse { flex-direction: column; }
+      .tour-card-img { width: 100%; min-width: 100%; height: 200px; }
+      .tour-card-body { padding: 22px 20px; }
     }
 
     .tour-book-btns {
@@ -864,49 +891,64 @@
     <div class="tours-grid">
 
       <div class="tour-card">
-        <h3>Cable Car Ride and Pirate Boat Cruise</h3>
-        <p>Discover Balneário Camboriú on a cable car ride and pirate boat cruise. Glide above the Atlantic Forest, enjoy coastal views, and soak up the tropical atmosphere at Laranjeiras Beach.</p>
-        <div class="tour-book-btns">
-          <a href="https://gyg.me/XT2ToYHE" target="_blank" class="btn btn-gyg">GetYourGuide</a>
-          <a href="https://www.viator.com/tours/Balneario-Camboriu/Balneario-Camboriu-Cable-Car-and-Pirate-Boat-Adventure/d28407-5592317P33?medium=social-share-copy" target="_blank" class="btn btn-viator">Viator</a>
-          <a href="https://www.tripadvisor.com/AttractionProductReview-g680306-d34144773-Balneario_Camboriu_Cable_Car_Pirate_Boat_Adventure-Balneario_Camboriu_State_of_San.html" target="_blank" class="btn btn-tripadvisor">TripAdvisor</a>
+        <img class="tour-card-img" src="https://images.unsplash.com/photo-1544989164-30b9f1f6b8f8?w=600&q=80" alt="Cable Car Balneário Camboriú">
+        <div class="tour-card-body">
+          <h3>Cable Car Ride and Pirate Boat Cruise</h3>
+          <p>Discover Balneário Camboriú on a cable car ride and pirate boat cruise. Glide above the Atlantic Forest, enjoy coastal views, and soak up the tropical atmosphere at Laranjeiras Beach.</p>
+          <div class="tour-book-btns">
+            <a href="https://gyg.me/XT2ToYHE" target="_blank" class="btn btn-gyg">GetYourGuide</a>
+            <a href="https://www.viator.com/tours/Balneario-Camboriu/Balneario-Camboriu-Cable-Car-and-Pirate-Boat-Adventure/d28407-5592317P33?medium=social-share-copy" target="_blank" class="btn btn-viator">Viator</a>
+            <a href="https://www.tripadvisor.com/AttractionProductReview-g680306-d34144773-Balneario_Camboriu_Cable_Car_Pirate_Boat_Adventure-Balneario_Camboriu_State_of_San.html" target="_blank" class="btn btn-tripadvisor">TripAdvisor</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tour-card reverse">
+        <img class="tour-card-img" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Brazilian Street Food">
+        <div class="tour-card-body">
+          <h3>Brazilian Street Food Tour</h3>
+          <p>Discover the flavors of Brazil on a guided street food tour in Balneário Camboriú. Taste iconic snacks, sip on fresh tropical juices, and learn about Brazilian food culture.</p>
+          <div class="tour-book-btns">
+            <a href="https://gyg.me/odKrFTdq" target="_blank" class="btn btn-gyg">GetYourGuide</a>
+            <a href="https://www.viator.com/tours/Balneario-Camboriu/Brazilian-Street-Food-Tour-in-Balneario-Camboriu/d28407-5592317P44?medium=social-share-copy" target="_blank" class="btn btn-viator">Viator</a>
+            <a href="https://www.tripadvisor.com/AttractionProductReview-g680306-d34333289-Brazilian_Street_Food_Tour_in_Balneario_Camboriu-Balneario_Camboriu_State_of_Santa.html" target="_blank" class="btn btn-tripadvisor">TripAdvisor</a>
+          </div>
         </div>
       </div>
 
       <div class="tour-card">
-        <h3>Brazilian Street Food Tour</h3>
-        <p>Discover the flavors of Brazil on a guided street food tour in Balneário Camboriú. Taste iconic snacks, sip on fresh tropical juices, and learn about Brazilian food culture.</p>
-        <div class="tour-book-btns">
-          <a href="https://gyg.me/odKrFTdq" target="_blank" class="btn btn-gyg">GetYourGuide</a>
-          <a href="https://www.viator.com/tours/Balneario-Camboriu/Brazilian-Street-Food-Tour-in-Balneario-Camboriu/d28407-5592317P44?medium=social-share-copy" target="_blank" class="btn btn-viator">Viator</a>
-          <a href="https://www.tripadvisor.com/AttractionProductReview-g680306-d34333289-Brazilian_Street_Food_Tour_in_Balneario_Camboriu-Balneario_Camboriu_State_of_Santa.html" target="_blank" class="btn btn-tripadvisor">TripAdvisor</a>
+        <img class="tour-card-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Private Tour Big Wheel">
+        <div class="tour-card-body">
+          <h3>Private Tour: Cable Car, Big Wheel &amp; Lunch</h3>
+          <p>Discover Balneário Camboriú on a guided private tour. Ride the Parque Unipraias cable car, enjoy a beachside lunch, and experience the FG Big Wheel.</p>
+          <div class="tour-book-btns">
+            <a href="https://gyg.me/XVGqeiGZ" target="_blank" class="btn btn-gyg">GetYourGuide</a>
+            <a href="https://www.viator.com/tours/Balneario-Camboriu/Balneario-Camboriu-Exclusive-5-Hour-Private-Tour-with-Lunch/d28407-5592317P27?medium=social-share-copy" target="_blank" class="btn btn-viator">Viator</a>
+            <a href="https://www.tripadvisor.com/AttractionProductReview-g680306-d34076173-Private_Tour_Balneario_Camboriu_Cable_Car_Big_Wheel_Lunch-Balneario_Camboriu_State.html" target="_blank" class="btn btn-tripadvisor">TripAdvisor</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tour-card reverse">
+        <img class="tour-card-img" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="Praia Brava Northern Beaches">
+        <div class="tour-card-body">
+          <h3>Scenic Private Tour: Praia Brava &amp; Northern Beaches</h3>
+          <p>Explore the stunning beaches of Balneário Camboriú on this half-day scenic tour. Discover Praia Brava, known for its clean waters and chic vibe, and enjoy breathtaking ocean views along the iconic Estrada da Rainha.</p>
+          <div class="tour-book-btns">
+            <a href="https://www.viator.com/tours/Balneario-Camboriu/Camboriu-Scenic-Tour-Praia-Brava-and-Northern-Beaches/d28407-5592317P45?medium=social-share-copy" target="_blank" class="btn btn-viator">Viator</a>
+            <a href="https://www.tripadvisor.com/AttractionProductReview-g680306-d34389574-Camboriu_Scenic_Private_Tour_Praia_Brava_Northern_Beaches-Balneario_Camboriu_State.html" target="_blank" class="btn btn-tripadvisor">TripAdvisor</a>
+          </div>
         </div>
       </div>
 
       <div class="tour-card">
-        <h3>Private Tour: Cable Car, Big Wheel & Lunch</h3>
-        <p>Discover Balneário Camboriú on a guided private tour. Ride the Parque Unipraias cable car, enjoy a beachside lunch, and experience the FG Big Wheel.</p>
-        <div class="tour-book-btns">
-          <a href="https://gyg.me/XVGqeiGZ" target="_blank" class="btn btn-gyg">GetYourGuide</a>
-          <a href="https://www.viator.com/tours/Balneario-Camboriu/Balneario-Camboriu-Exclusive-5-Hour-Private-Tour-with-Lunch/d28407-5592317P27?medium=social-share-copy" target="_blank" class="btn btn-viator">Viator</a>
-          <a href="https://www.tripadvisor.com/AttractionProductReview-g680306-d34076173-Private_Tour_Balneario_Camboriu_Cable_Car_Big_Wheel_Lunch-Balneario_Camboriu_State.html" target="_blank" class="btn btn-tripadvisor">TripAdvisor</a>
-        </div>
-      </div>
-
-      <div class="tour-card">
-        <h3>Scenic Private Tour: Praia Brava & Northern Beaches</h3>
-        <p>Explore the stunning beaches of Balneário Camboriú on this half-day scenic tour. Discover Praia Brava, known for its clean waters and chic vibe, and enjoy breathtaking ocean views along the iconic Estrada da Rainha.</p>
-        <div class="tour-book-btns">
-          <a href="https://www.viator.com/tours/Balneario-Camboriu/Camboriu-Scenic-Tour-Praia-Brava-and-Northern-Beaches/d28407-5592317P45?medium=social-share-copy" target="_blank" class="btn btn-viator">Viator</a>
-          <a href="https://www.tripadvisor.com/AttractionProductReview-g680306-d34389574-Camboriu_Scenic_Private_Tour_Praia_Brava_Northern_Beaches-Balneario_Camboriu_State.html" target="_blank" class="btn btn-tripadvisor">TripAdvisor</a>
-        </div>
-      </div>
-
-      <div class="tour-card">
-        <h3>Aquarium + NASA Experience with Lunch: Best of Balneário</h3>
-        <p>Discover the best of Balneário Camboriú in one day with marine life at the Oceanic Aquarium, authentic NASA exhibits, a great lunch, and a relaxing coffee break.</p>
-        <div class="tour-book-btns">
-          <a href="https://www.viator.com/tours/Balneario-Camboriu/Balneario-Camboriu-Day-Tour-Aquarium-Shopping-Space-Adventure/d28407-5592317P32?medium=social-share-copy" target="_blank" class="btn btn-viator">Viator</a>
+        <img class="tour-card-img" src="https://images.unsplash.com/photo-1559825481-12a05cc00344?w=600&q=80" alt="Aquarium NASA Experience">
+        <div class="tour-card-body">
+          <h3>Aquarium + NASA Experience with Lunch: Best of Balneário</h3>
+          <p>Discover the best of Balneário Camboriú in one day with marine life at the Oceanic Aquarium, authentic NASA exhibits, a great lunch, and a relaxing coffee break.</p>
+          <div class="tour-book-btns">
+            <a href="https://www.viator.com/tours/Balneario-Camboriu/Balneario-Camboriu-Day-Tour-Aquarium-Shopping-Space-Adventure/d28407-5592317P32?medium=social-share-copy" target="_blank" class="btn btn-viator">Viator</a>
+          </div>
         </div>
       </div>
 
@@ -930,10 +972,13 @@
     <div class="tours-grid">
 
       <div class="tour-card">
-        <h3>Best of Rio: Culture, Local Flavors, History & Beaches</h3>
-        <p>Experience Rio de Janeiro's highlights in one unforgettable day, featuring iconic beaches, vibrant street art, and visits to the Museu do Amanhã and Centro Cultural Banco do Brasil. Enjoy local flavors while discovering the city's rich culture, history, and stunning waterfront views.</p>
-        <div class="tour-book-btns">
-          <a href="https://www.viator.com/tours/Rio-de-Janeiro/Best-of-Rio-Culture-Local-Flavors-History-and-Beaches/d712-5592317P46?medium=social-share-copy" target="_blank" class="btn btn-viator">Viator</a>
+        <img class="tour-card-img" src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=600&q=80" alt="Rio de Janeiro">
+        <div class="tour-card-body">
+          <h3>Best of Rio: Culture, Local Flavors, History &amp; Beaches</h3>
+          <p>Experience Rio de Janeiro's highlights in one unforgettable day, featuring iconic beaches, vibrant street art, and visits to the Museu do Amanhã and Centro Cultural Banco do Brasil. Enjoy local flavors while discovering the city's rich culture, history, and stunning waterfront views.</p>
+          <div class="tour-book-btns">
+            <a href="https://www.viator.com/tours/Rio-de-Janeiro/Best-of-Rio-Culture-Local-Flavors-History-and-Beaches/d712-5592317P46?medium=social-share-copy" target="_blank" class="btn btn-viator">Viator</a>
+          </div>
         </div>
       </div>
 
@@ -957,12 +1002,15 @@
     <div class="tours-grid">
 
       <div class="tour-card">
-        <h3>Iguazú: 2 Countries, 1 Day</h3>
-        <p>Experience the best of Iguazú Falls in one unforgettable day, exploring both the Argentine and Brazilian sides for breathtaking panoramic views and immersive rainforest trails. Complete your adventure with a visit to the Triple Frontier and a traditional Argentine lunch.</p>
-        <div class="tour-book-btns">
-          <a href="#" class="btn btn-coming-soon" onclick="return false;">GetYourGuide — Coming Soon</a>
-          <a href="#" class="btn btn-coming-soon" onclick="return false;">Viator — Coming Soon</a>
-          <a href="#" class="btn btn-coming-soon" onclick="return false;">TripAdvisor — Coming Soon</a>
+        <img class="tour-card-img" src="Iguazu.png" alt="Iguazú Falls">
+        <div class="tour-card-body">
+          <h3>Iguazú: 2 Countries, 1 Day</h3>
+          <p>Experience the best of Iguazú Falls in one unforgettable day, exploring both the Argentine and Brazilian sides for breathtaking panoramic views and immersive rainforest trails. Complete your adventure with a visit to the Triple Frontier and a traditional Argentine lunch.</p>
+          <div class="tour-book-btns">
+            <a href="#" class="btn btn-coming-soon" onclick="return false;">GetYourGuide — Coming Soon</a>
+            <a href="#" class="btn btn-coming-soon" onclick="return false;">Viator — Coming Soon</a>
+            <a href="#" class="btn btn-coming-soon" onclick="return false;">TripAdvisor — Coming Soon</a>
+          </div>
         </div>
       </div>
 
