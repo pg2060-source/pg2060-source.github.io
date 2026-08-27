@@ -1032,6 +1032,12 @@
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closeDest();
   });
+  
+  window.addEventListener('DOMContentLoaded', () => {
+  if (window.location.hash === '#iguazu') {
+    openDest('iguazu');
+  }
+});
 </script>
 
 <!-- SOCIAL -->
