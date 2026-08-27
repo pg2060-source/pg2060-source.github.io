@@ -1025,9 +1025,15 @@
     window.scrollTo(0, 0);
   }
   function closeDest() {
-    document.querySelectorAll('.dest-panel').forEach(p => p.classList.remove('active'));
-    document.body.style.overflow = '';
-  }
+  document.querySelectorAll('.dest-panel').forEach(p => p.classList.remove('active'));
+  document.body.style.overflow = '';
+
+  window.history.replaceState(null, '', '#travel');
+  document.getElementById('travel').scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+}
   // Close on Escape key
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closeDest();
