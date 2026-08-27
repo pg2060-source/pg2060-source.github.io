@@ -1034,8 +1034,10 @@
   });
   
   window.addEventListener('DOMContentLoaded', () => {
-  if (window.location.hash === '#iguazu') {
-    openDest('iguazu');
+  const destination = window.location.hash.substring(1);
+
+  if (['iguazu', 'camboriu', 'rio'].includes(destination)) {
+    openDest(destination);
   }
 });
 </script>
