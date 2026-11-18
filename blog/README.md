@@ -82,7 +82,7 @@ Extra photos can be another `.destination-card` in a `.destination-grid`.
 
 ## Copy you still have to write
 
-Every page has a white card whose label reads **Placeholder — replace this text**. That card is for the owner’s own introduction. Replace the reminder, and keep the inline tour link if the city has one. Do not invent a personal travel story to fill the gap.
+The published introductions and the Travel tips lists are the owner’s copy. Keep the inline tour links (`/#camboriu`, `/#rio`, `/#iguazu`) when you edit those paragraphs. Do not invent a personal travel story to fill a gap.
 
 ## Images
 

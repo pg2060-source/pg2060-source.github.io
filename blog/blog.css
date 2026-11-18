@@ -522,8 +522,31 @@ footer {
   gap: 10px;
 }
 
-.stories-block {
+.stories-block,
+.tips {
   margin-top: 72px;
+  text-align: left;
+}
+
+.tips ul {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.tips li {
+  background: var(--apple-light);
+  border-radius: 18px;
+  padding: 18px 22px;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--apple-gray);
+}
+
+.tips li strong {
+  color: var(--apple-dark);
+  font-weight: 600;
 }
 
 /* ── BREADCRUMBS ── */

@@ -1,6 +1,6 @@
 # Image credits
 
-Photos added for the travel blog. The Balneário Camboriú and Iguazú pictures are the site's own files in `/images/` and are not listed here.
+Photos added for the travel blog. The Balneário Camboriú and Iguazú pictures are the site's own files in `/images/` and are not listed here. Those own photos are the blog index hero (Balneário Camboriú), the South America and Argentina heroes (Iguazú), and the Brazil hero (Balneário Camboriú).
 
 Licenses below allow commercial use. CC BY and CC BY-SA require attribution, a link to the license, and a note when the file was changed. The WebP files on this site are resized copies. Captions on the city page and on the country card meet that requirement.
 
@@ -13,6 +13,7 @@ Licenses below allow commercial use. CC BY and CC BY-SA require attribution, a l
 - Author: Steffen Schmitz
 - License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 - Local files: `images/bogota-640.webp`, `images/bogota-1200.webp`, `images/bogota-1600.webp`
+- Also used as the Colombia country-page hero.
 
 ### Villa de Leyva
 
@@ -37,6 +38,7 @@ Licenses below allow commercial use. CC BY and CC BY-SA require attribution, a l
 - Author: Laslovarga
 - License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 - Local files: `images/cartagena-640.webp`, `images/cartagena-1200.webp`, `images/cartagena-1600.webp`
+- Also used as the Colombia card on the South America page.
 
 ### Barranquilla
 

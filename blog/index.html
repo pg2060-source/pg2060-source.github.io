@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="/blog/blog.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Blog","item":"https://pabloyluisagarcia.com/blog/"}]}</script>
 </head>
-<body>
+<body class="has-hero">
 <a class="skip-link" href="#main">Skip to content</a>
 <nav class="navbar" aria-label="Primary">
   <a class="nav-brand" href="/">Pablo &amp; Luisa</a>
@@ -48,20 +48,22 @@
   </div>
 </nav>
 
-<main id="main" class="travel-bg">
-  <div class="section">
+<header class="dest-panel-hero">
+  <img src="/images/balneario-1665.webp" srcset="/images/balneario-640.webp 640w, /images/balneario-1200.webp 1200w, /images/balneario-1665.webp 1665w" sizes="100vw" alt="Balneário Camboriú" width="1665" height="945" loading="lazy" decoding="async">
+  <div class="dest-panel-hero-overlay">
+    <h1>Travel Blog</h1>
+    <p>Places and tours, organized by continent, country, and city.</p>
+  </div>
+</header>
+<main id="main" class="dest-panel-content">
     <nav class="crumbs" aria-label="Breadcrumb">
   <ol>
     <li aria-current="page">Blog</li>
   </ol>
 </nav>
-    <p class="section-label">Explore</p>
-    <h1>Travel Blog</h1>
-    <p class="section-desc">Places and tours, organized by continent, country, and city.</p>
-    <div class="placeholder-card">
-        <p class="section-label">Placeholder — replace this text</p>
-        <p>The introduction for the travel blog has not been written yet. Replace this card with your own welcome. This note is a reminder for the site owner, not a travel story.</p>
-      </div>
+    <div class="city-copy">
+      <p>Welcome to our travel blog! This is where we share the places that inspire us, from vibrant cities and colonial towns to Caribbean beaches and roaring waterfalls. Everything is organized by continent, country and city, so you can start wide and zoom in on exactly where you want to go. For each destination you'll find what makes it special, the top things to see and do, the best time to visit and practical tips to help you plan. Pick a continent below and start exploring with us.</p>
+    </div>
     <div class="destination-grid cols-1">
       <a class="destination-card" href="/blog/south-america/">
         
@@ -69,11 +71,10 @@
         <span class="dest-tag">Continent</span>
         <div class="destination-card-overlay">
           <h3>South America</h3>
-          <span>3 countries</span>
+          <span>Rainforests, mountains, beaches and cities full of rhythm, all on one continent.</span>
         </div>
       </a>
     </div>
-  </div>
 </main>
 <footer>
   &copy; 2026 Pablo y Luisa Garcia

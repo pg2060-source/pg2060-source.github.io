@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="/blog/blog.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Blog","item":"https://pabloyluisagarcia.com/blog/"},{"@type":"ListItem","position":2,"name":"South America","item":"https://pabloyluisagarcia.com/blog/south-america/"},{"@type":"ListItem","position":3,"name":"Argentina","item":"https://pabloyluisagarcia.com/blog/south-america/argentina/"}]}</script>
 </head>
-<body>
+<body class="has-hero">
 <a class="skip-link" href="#main">Skip to content</a>
 <nav class="navbar" aria-label="Primary">
   <a class="nav-brand" href="/">Pablo &amp; Luisa</a>
@@ -48,8 +48,14 @@
   </div>
 </nav>
 
-<main id="main" class="travel-bg">
-  <div class="section">
+<header class="dest-panel-hero">
+  <img src="/images/iguazu-1683.webp" srcset="/images/iguazu-640.webp 640w, /images/iguazu-1200.webp 1200w, /images/iguazu-1683.webp 1683w" sizes="100vw" alt="Iguazú Falls" width="1683" height="935" loading="lazy" decoding="async">
+  <div class="dest-panel-hero-overlay">
+    <h1>Argentina</h1>
+    <p>Wild nature, rich traditions and some of the world's most stunning waterfalls.</p>
+  </div>
+</header>
+<main id="main" class="dest-panel-content">
     <nav class="crumbs" aria-label="Breadcrumb">
   <ol>
     <li><a href="/blog/">Blog</a></li>
@@ -57,13 +63,10 @@
     <li aria-current="page">Argentina</li>
   </ol>
 </nav>
-    <p class="section-label">South America</p>
-    <h1>Argentina</h1>
-    <p class="section-desc">City guides for Argentina.</p>
-    <div class="placeholder-card">
-        <p class="section-label">Placeholder — replace this text</p>
-        <p>The introduction for Argentina has not been written yet. Replace this card with your own introduction. This note is a reminder for the site owner, not a travel story.</p>
-      </div>
+    <div class="city-copy">
+      <p>Argentina stretches from the subtropical north all the way down to Patagonia, offering an astonishing range of landscapes along the way: the Andes, vineyards, glaciers, grasslands and rainforest. It's a country of passionate traditions, from tango and mate to long, sociable dinners and famous Argentine beef. Spanish is the official language.</p>
+      <p>Our Argentina section begins in the northeast, in the province of Misiones, home to Puerto Iguazú and the breathtaking Iguazú Falls. Surrounded by lush rainforest and protected as a UNESCO World Heritage Site, the falls are one of the most impressive natural sights in South America, and the Argentine side lets you walk right up to the edge of the water. It's a must for nature lovers, and we offer <a href="/#iguazu">our own tours</a> there.</p>
+    </div>
     <div class="destination-grid cols-1">
       <a class="destination-card" href="/blog/south-america/argentina/puerto-iguazu/">
         
@@ -75,7 +78,6 @@
         </div>
       </a>
     </div>
-  </div>
 </main>
 <footer>
   &copy; 2026 Pablo y Luisa Garcia
