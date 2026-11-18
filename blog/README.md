@@ -58,7 +58,7 @@ Hierarchy is continent, then country, then city. City pages hold the photos, tou
 4. Add a card on the continent page (`blog/south-america/index.html`) that links to the new country.
 5. Until a city folder exists, leave a “Cities coming soon” card. That card uses `destination-card destination-card-plain destination-card-static` and is not a link.
 
-A city with no photo yet uses `destination-card destination-card-plain` on the country page (no `<img>`) and `dest-panel-hero dest-panel-hero-placeholder` on the city page. Do not drop in a stock photo and present it as yours. Mark the introduction with the placeholder label, and leave tours as “Tours coming soon” until there is a real booking link.
+A city with no photo yet uses `destination-card destination-card-plain` on the country page (no `<img>`) and `dest-panel-hero dest-panel-hero-placeholder` on the city page. Do not drop in a stock photo and present it as yours. Mark the introduction with the placeholder label.
 
 ## Add a continent
 
@@ -66,17 +66,23 @@ A city with no photo yet uses `destination-card destination-card-plain` on the c
 2. Update breadcrumbs so the trail is Blog → Europe.
 3. Add one card on `blog/index.html` only when the continent has a real page. Do not add empty continents.
 
-## Photos, posts, and tours
+## Photos and posts
 
-City pages already use the home page tour card (photo, description, booking buttons). Copy a `.tour-card` block to add another tour. Keep the link text and button classes: `btn btn-gyg`, `btn btn-viator`, `btn btn-tripadvisor`. A tour that is not on sale yet uses `btn btn-coming-soon`.
+Tours stay on the home page. Do not add booking cards or GetYourGuide, Viator, or TripAdvisor buttons to a city page. If that city already has a tour panel, put one inline link in the introduction paragraph. The home page opens the panel from the hash:
+
+- Balneário Camboriú → `/#camboriu`
+- Rio de Janeiro → `/#rio`
+- Iguazú → `/#iguazu`
+
+Example: `<a href="/#camboriu">Check our tours in Balneário Camboriú</a>`. Cities without a home-page panel get no tour link.
 
 The Journal block at the bottom is where posts go. Replace the “No stories published yet” card with a `.channel-card` per story. Do not publish the placeholder.
 
-Extra photos that are not attached to a tour can be another `.destination-card` (or a `.tour-card` with no buttons) in a `.destination-grid`.
+Extra photos can be another `.destination-card` in a `.destination-grid`.
 
 ## Copy you still have to write
 
-Every page has a white card whose label reads **Placeholder — replace this text**. That card is for the owner’s own introduction. Replace it, including the label. Do not invent a personal travel story to fill the gap. Tour descriptions already published on the home page can be reused as-is.
+Every page has a white card whose label reads **Placeholder — replace this text**. That card is for the owner’s own introduction. Replace the reminder, and keep the inline tour link if the city has one. Do not invent a personal travel story to fill the gap.
 
 ## Images
 
