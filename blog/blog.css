@@ -401,6 +401,26 @@ footer {
   box-shadow: none;
 }
 
+.destination-card-static:hover img {
+  transform: none;
+}
+
+/* Serengeti acacia sits left of center; keep it in the card and mobile hero crop. */
+.focus-savanna {
+  object-position: 28% 62%;
+}
+
+/* Seven continent cards: three columns, last card centered on its own row. */
+@media (min-width: 769px) {
+  .dest-panel-content.has-continent-grid {
+    max-width: 1080px;
+  }
+
+  .destination-grid.continent-grid > :last-child:nth-child(3n + 1) {
+    grid-column: 2;
+  }
+}
+
 /* ── CITY HERO (same frame as the home destination panel) ── */
 .dest-panel-hero {
   position: relative;
