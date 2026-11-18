@@ -574,7 +574,7 @@ footer {
 .fx-converter {
   margin-top: 28px;
   padding: 22px 22px 18px;
-  background: var(--apple-light);
+  background: #e8f2fd;
   border-radius: 18px;
   text-align: left;
 }
