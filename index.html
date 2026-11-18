@@ -25,6 +25,8 @@
   <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
   <meta name="theme-color" content="#4b2cff">
 
+  <link rel="preload" as="image" href="images/hero-1448.webp" imagesrcset="images/hero-800.webp 800w, images/hero-1200.webp 1200w, images/hero-1448.webp 1448w" imagesizes="100vw" fetchpriority="high">
+
   <!-- OPEN GRAPH -->
   <meta property="og:title" content="Pablo & Luisa Garcia">
   <meta property="og:description" content="Musicians • Entrepreneurs • Travelers">
@@ -122,7 +124,6 @@
       position: relative;
       height: 100vh;
       min-height: 600px;
-      background: url('Main Image.png') center/cover no-repeat;
       display: flex;
       align-items: flex-start;
       justify-content: center;
@@ -131,10 +132,21 @@
       overflow: hidden;
     }
 
+    .hero-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      z-index: 0;
+    }
+
     header::after {
       content: '';
       position: absolute;
       inset: 0;
+      z-index: 1;
       background: linear-gradient(
         to bottom,
         rgba(0,0,0,0.45) 0%,
@@ -146,7 +158,7 @@
 
     .hero-content {
       position: relative;
-      z-index: 1;
+      z-index: 2;
       max-width: 680px;
       padding: 0 24px;
       animation: heroFadeUp 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
@@ -896,6 +908,7 @@
 
 <!-- HERO -->
 <header>
+  <img class="hero-photo" src="images/hero-1448.webp" srcset="images/hero-800.webp 800w, images/hero-1200.webp 1200w, images/hero-1448.webp 1448w" sizes="100vw" alt="" width="1448" height="1086" fetchpriority="high" decoding="async">
   <div class="hero-content">
     <h1>Pablo &amp; Luisa Garcia</h1>
     <p class="hero-sub">Musicians &bull; Entrepreneurs &bull; Travelers</p>
@@ -1000,7 +1013,7 @@
 
 <!-- STORE -->
 <div class="store-section" id="store">
-  <img src="Identity.webp" class="store-img" alt="Rock Island Apparel">
+  <img class="store-img" src="images/identity-2560.webp" srcset="images/identity-960.webp 960w, images/identity-1600.webp 1600w, images/identity-2560.webp 2560w" sizes="100vw" alt="Rock Island Apparel" width="2560" height="1440" loading="lazy" decoding="async">
   <div class="store-overlay">
     <p class="section-label">Shop</p>
     <h2>Rock Island Apparel</h2>
@@ -1025,7 +1038,7 @@
 
       <!-- Balneário Camboriú -->
       <a class="destination-card" onclick="openDest('camboriu'); return false;" href="#">
-        <img src="BalnearioCamboriu.png" alt="Balneário Camboriú" onerror="this.src='BalnearioCamboriu.png'">
+        <img src="images/balneario-1665.webp" srcset="images/balneario-640.webp 640w, images/balneario-1200.webp 1200w, images/balneario-1665.webp 1665w" sizes="(max-width: 768px) 100vw, 320px" alt="Balneário Camboriú" width="1665" height="945" loading="lazy" decoding="async">
         <span class="dest-tag">Brazil</span>
         <div class="destination-card-overlay">
           <h3>Balneário Camboriú</h3>
@@ -1045,7 +1058,7 @@
 
       <!-- Iguazú -->
       <a class="destination-card" onclick="openDest('iguazu'); return false;" href="#">
-        <img src="Iguazu.png" alt="Iguazú Falls">
+        <img src="images/iguazu-1683.webp" srcset="images/iguazu-640.webp 640w, images/iguazu-1200.webp 1200w, images/iguazu-1683.webp 1683w" sizes="(max-width: 768px) 100vw, 320px" alt="Iguazú Falls" width="1683" height="935" loading="lazy" decoding="async">
         <span class="dest-tag">Argentina & Brazil</span>
         <div class="destination-card-overlay">
           <h3>Iguazú Falls</h3>
@@ -1062,7 +1075,7 @@
 <!-- BALNEÁRIO CAMBORIÚ -->
 <div class="dest-panel" id="panel-camboriu">
   <div class="dest-panel-hero">
-    <img src="BalnearioCamboriu.png" alt="Balneário Camboriú" onerror="this.src='BalnearioCamboriu.png'">
+    <img src="images/balneario-1665.webp" srcset="images/balneario-640.webp 640w, images/balneario-1200.webp 1200w, images/balneario-1665.webp 1665w" sizes="100vw" alt="Balneário Camboriú" width="1665" height="945" loading="lazy" decoding="async">
     <button class="dest-panel-back" onclick="closeDest()">← Back</button>
     <div class="dest-panel-hero-overlay">
       <h2>Balneário Camboriú</h2>
@@ -1075,7 +1088,7 @@
     <div class="tours-grid">
 
       <div class="tour-card">
-        <img class="tour-card-img" src="Pirate boat.png" alt="Cable Car Balneário Camboriú">
+        <img class="tour-card-img" src="images/pirate-boat-1600.webp" srcset="images/pirate-boat-640.webp 640w, images/pirate-boat-1100.webp 1100w, images/pirate-boat-1600.webp 1600w" sizes="(max-width: 768px) 100vw, 320px" alt="Cable Car Balneário Camboriú" width="1767" height="890" loading="lazy" decoding="async">
         <div class="tour-card-body">
           <h3>Cable Car Ride and Pirate Boat Cruise</h3>
           <p>Discover Balneário Camboriú on a cable car ride and pirate boat cruise. Glide above the Atlantic Forest, enjoy coastal views, and soak up the tropical atmosphere at Laranjeiras Beach.</p>
@@ -1088,7 +1101,7 @@
       </div>
 
       <div class="tour-card reverse">
-        <img class="tour-card-img" src="FoodTour.png" alt="Brazilian Street Food">
+        <img class="tour-card-img" src="images/food-tour-1600.webp" srcset="images/food-tour-640.webp 640w, images/food-tour-1100.webp 1100w, images/food-tour-1600.webp 1600w" sizes="(max-width: 768px) 100vw, 320px" alt="Brazilian Street Food" width="2070" height="1346" loading="lazy" decoding="async">
         <div class="tour-card-body">
           <h3>Brazilian Street Food Tour</h3>
           <p>Discover the flavors of Brazil on a guided street food tour in Balneário Camboriú. Taste iconic snacks, sip on fresh tropical juices, and learn about Brazilian food culture.</p>
@@ -1101,7 +1114,7 @@
       </div>
 
       <div class="tour-card">
-        <img class="tour-card-img" src="CableCar.png" alt="Private Tour Big Wheel">
+        <img class="tour-card-img" src="images/cable-car-1600.webp" srcset="images/cable-car-640.webp 640w, images/cable-car-1100.webp 1100w, images/cable-car-1600.webp 1600w" sizes="(max-width: 768px) 100vw, 320px" alt="Private Tour Big Wheel" width="1792" height="1338" loading="lazy" decoding="async">
         <div class="tour-card-body">
           <h3>Private Tour: Cable Car, Big Wheel &amp; Lunch</h3>
           <p>Discover Balneário Camboriú on a guided private tour. Ride the Parque Unipraias cable car, enjoy a beachside lunch, and experience the FG Big Wheel.</p>
@@ -1114,7 +1127,7 @@
       </div>
 
       <div class="tour-card reverse">
-        <img class="tour-card-img" src="NorthernBeaches.png" alt="Praia Brava Northern Beaches">
+        <img class="tour-card-img" src="images/northern-beaches-1506.webp" srcset="images/northern-beaches-640.webp 640w, images/northern-beaches-1100.webp 1100w, images/northern-beaches-1506.webp 1506w" sizes="(max-width: 768px) 100vw, 320px" alt="Praia Brava Northern Beaches" width="1506" height="1092" loading="lazy" decoding="async">
         <div class="tour-card-body">
           <h3>Scenic Private Tour: Praia Brava &amp; Northern Beaches</h3>
           <p>Explore the stunning beaches of Balneário Camboriú on this half-day scenic tour. Discover Praia Brava, known for its clean waters and chic vibe, and enjoy breathtaking ocean views along the iconic Estrada da Rainha.</p>
@@ -1126,7 +1139,7 @@
       </div>
 
       <div class="tour-card">
-        <img class="tour-card-img" src="Aquarium.png" alt="Aquarium NASA Experience">
+        <img class="tour-card-img" src="images/aquarium-1496.webp" srcset="images/aquarium-640.webp 640w, images/aquarium-1100.webp 1100w, images/aquarium-1496.webp 1496w" sizes="(max-width: 768px) 100vw, 320px" alt="Aquarium NASA Experience" width="1496" height="1074" loading="lazy" decoding="async">
         <div class="tour-card-body">
           <h3>Aquarium + NASA Experience with Lunch: Best of Balneário</h3>
           <p>Discover the best of Balneário Camboriú in one day with marine life at the Oceanic Aquarium, authentic NASA exhibits, a great lunch, and a relaxing coffee break.</p>
@@ -1173,7 +1186,7 @@
 <!-- IGUAZÚ -->
 <div class="dest-panel" id="panel-iguazu">
   <div class="dest-panel-hero">
-    <img src="Iguazu.png" alt="Iguazú Falls">
+    <img src="images/iguazu-1683.webp" srcset="images/iguazu-640.webp 640w, images/iguazu-1200.webp 1200w, images/iguazu-1683.webp 1683w" sizes="100vw" alt="Iguazú Falls" width="1683" height="935" loading="lazy" decoding="async">
     <button class="dest-panel-back" onclick="closeDest()">← Back</button>
     <div class="dest-panel-hero-overlay">
       <h2>Iguazú Falls</h2>
@@ -1186,7 +1199,7 @@
     <div class="tours-grid">
 
       <div class="tour-card">
-        <img class="tour-card-img" src="Iguazu.png" alt="Iguazú Falls">
+        <img class="tour-card-img" src="images/iguazu-1683.webp" srcset="images/iguazu-640.webp 640w, images/iguazu-1200.webp 1200w, images/iguazu-1683.webp 1683w" sizes="(max-width: 768px) 100vw, 320px" alt="Iguazú Falls" width="1683" height="935" loading="lazy" decoding="async">
         <div class="tour-card-body">
           <h3>Iguazú: 2 Countries, 1 Day</h3>
           <p>Experience the best of Iguazú Falls in one unforgettable day, exploring both the Argentine and Brazilian sides for breathtaking panoramic views and immersive rainforest trails. Complete your adventure with a visit to the Triple Frontier and a traditional Argentine lunch.</p>
