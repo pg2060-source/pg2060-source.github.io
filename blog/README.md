@@ -21,7 +21,7 @@ blog/
       index.html
       puerto-iguazu/index.html       Puerto Iguazú / Iguazú Falls
     colombia/
-      index.html                     Country page only; cities coming soon
+      index.html                     Bogotá, Villa de Leyva, Santa Marta, Cartagena, Barranquilla
 ```
 
 Hierarchy is continent, then country, then city. City pages hold the photos, tour links, and (later) posts.
@@ -52,7 +52,9 @@ Hierarchy is continent, then country, then city. City pages hold the photos, tou
 2. Put it in the right continent folder: `blog/south-america/peru/index.html`.
 3. Update the title, description, canonical URL, breadcrumbs, heading, and placeholder.
 4. Add a card on the continent page (`blog/south-america/index.html`) that links to the new country.
-5. Leave the city area as the “Cities coming soon” card until a city folder exists. That card uses `destination-card destination-card-plain destination-card-static` and is not a link.
+5. Until a city folder exists, leave a “Cities coming soon” card. That card uses `destination-card destination-card-plain destination-card-static` and is not a link.
+
+A city with no photo yet uses `destination-card destination-card-plain` on the country page (no `<img>`) and `dest-panel-hero dest-panel-hero-placeholder` on the city page. Do not drop in a stock photo and present it as yours. Mark the introduction with the placeholder label, and leave tours as “Tours coming soon” until there is a real booking link.
 
 ## Add a continent
 

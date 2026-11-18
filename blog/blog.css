@@ -384,9 +384,12 @@ footer {
   z-index: 1;
 }
 
-/* Photo-less card. Same frame, type, and tag as a destination card. */
+/* Photo-less card. Same frame, type, and tag as a destination card.
+   Used when the owner has not supplied a photo. Not a stock image. */
 .destination-card-plain {
-  background: var(--apple-dark);
+  background:
+    radial-gradient(ellipse at 20% 0%, rgba(0, 113, 227, 0.22), transparent 55%),
+    var(--apple-dark);
 }
 
 .destination-card-static {
@@ -403,6 +406,17 @@ footer {
   position: relative;
   height: 420px;
   overflow: hidden;
+}
+
+.dest-panel-hero-placeholder {
+  background:
+    radial-gradient(ellipse at 30% 0%, rgba(0, 113, 227, 0.28), transparent 52%),
+    linear-gradient(165deg, var(--apple-dark) 0%, var(--apple-mid) 52%, var(--apple-dark) 100%);
+}
+
+.dest-panel-hero-placeholder .dest-tag {
+  top: calc(var(--nav-height) + 16px);
+  left: 24px;
 }
 
 .dest-panel-hero img {
