@@ -523,19 +523,26 @@ footer {
 }
 
 .stories-block,
-.tips {
+.tips,
+.money {
   margin-top: 72px;
   text-align: left;
 }
 
-.tips ul {
+.tips ul,
+.money ul {
   list-style: none;
   display: grid;
   gap: 12px;
   margin-top: 8px;
 }
 
-.tips li {
+.money ul {
+  margin-top: 0;
+}
+
+.tips li,
+.money li {
   background: var(--apple-light);
   border-radius: 18px;
   padding: 18px 22px;
@@ -544,9 +551,207 @@ footer {
   color: var(--apple-gray);
 }
 
-.tips li strong {
+.tips li strong,
+.money li strong {
   color: var(--apple-dark);
   font-weight: 600;
+}
+
+.money h2 {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.money-intro {
+  margin: 0 0 20px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--apple-gray);
+}
+
+/* ── CURRENCY CONVERTER ── */
+.fx-converter {
+  margin-top: 28px;
+  padding: 22px 22px 18px;
+  background: var(--apple-light);
+  border-radius: 18px;
+  text-align: left;
+}
+
+.fx-converter form {
+  margin: 0;
+}
+
+.fx-title {
+  margin: 0 0 16px;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--apple-dark);
+  text-align: left;
+}
+
+.fx-fields {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) auto;
+  gap: 12px 14px;
+  align-items: end;
+}
+
+.fx-field label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--apple-gray);
+  text-align: left;
+}
+
+.fx-amount,
+.fx-currency {
+  display: block;
+  width: 100%;
+  height: 48px;
+  margin: 0;
+  padding: 0 14px;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--apple-dark);
+  background: var(--apple-white);
+  border: 1px solid #d2d2d7;
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+.fx-amount::-webkit-outer-spin-button,
+.fx-amount::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.fx-amount[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.fx-currency {
+  padding-right: 36px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 L6 6.5 L11 1.5' fill='none' stroke='%236e6e73' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 12px 8px;
+}
+
+.fx-swap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 48px;
+  min-height: 48px;
+  padding: 0 16px;
+  border-radius: 12px;
+  border: 1px solid #d2d2d7;
+  background: var(--apple-white);
+  color: var(--apple-blue);
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.fx-swap svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+.fx-swap:hover {
+  background: rgba(0, 113, 227, 0.06);
+}
+
+.fx-swap[aria-pressed="true"] {
+  background: var(--apple-blue);
+  border-color: var(--apple-blue);
+  color: #fff;
+}
+
+.fx-swap[aria-pressed="true"]:hover {
+  background: var(--apple-blue-hover);
+}
+
+.fx-output {
+  margin-top: 18px;
+  min-height: 3.2rem;
+  text-align: left;
+}
+
+.fx-equals {
+  margin: 0 0 4px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--apple-gray);
+}
+
+.fx-result {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--apple-dark);
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+
+.fx-message {
+  margin: 0;
+  padding-top: 6px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--apple-gray);
+}
+
+.fx-note {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  margin: 14px 0 0;
+  font-size: 12px;
+  line-height: 1.45;
+  letter-spacing: 0.01em;
+  color: var(--apple-gray);
+}
+
+.fx-note[hidden] {
+  display: none !important;
+}
+
+.fx-note a {
+  color: var(--apple-blue);
+  font-weight: 500;
+  text-underline-offset: 2px;
+}
+
+.fx-note a:hover {
+  color: var(--apple-blue-hover);
+}
+
+.fx-amount:focus-visible,
+.fx-currency:focus-visible,
+.fx-swap:focus-visible {
+  outline: 2px solid var(--apple-blue);
+  outline-offset: 3px;
 }
 
 /* ── BREADCRUMBS ── */
@@ -716,6 +921,18 @@ button:focus-visible {
 
   .destination-card {
     height: 340px;
+  }
+
+  .fx-converter {
+    padding: 18px 16px 16px;
+  }
+
+  .fx-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .fx-swap {
+    width: 100%;
   }
 
   .dest-panel-hero {
