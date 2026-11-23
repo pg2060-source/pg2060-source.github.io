@@ -477,3 +477,628 @@ Photos for the country galleries added alongside Brazil, Argentina and Colombia.
 - License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
 - Note: The file page also offers the GNU Free Documentation License. This site uses the CC BY-SA 3.0 terms.
 - Local files: `images/kukenan-640.webp`, `images/kukenan-1200.webp`, `images/kukenan-1600.webp`
+
+## North America countries
+
+Photos for the country pages. Each license was read from the Wikimedia Commons file page. The WebP files are resized copies. The hero of each country page is also the image on that country's card on the North America page. The continent page still uses its existing Grand Canyon, Banff, and Niagara Falls photographs.
+
+### Antigua and Barbuda
+
+#### Nelson's Dockyard
+
+- What it shows: Yachts and palms at Nelson's Dockyard in English Harbour, Antigua.
+- File on Wikimedia Commons: [Antigua English Harbour Nelson's Dockyard 2.jpg](https://commons.wikimedia.org/wiki/File:Antigua_English_Harbour_Nelson%27s_Dockyard_2.jpg)
+- Author: Dr. Thomas Liptak
+- License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- Local files: `images/nelsons-dockyard-640.webp`, `images/nelsons-dockyard-1200.webp`, `images/nelsons-dockyard-1600.webp`
+- Also used as the Antigua and Barbuda hero and the Antigua and Barbuda card on the North America page.
+
+#### Shirley Heights
+
+- What it shows: English Harbour seen from Shirley Heights, Antigua.
+- File on Wikimedia Commons: [Antigua Shirley's Heights English Harbour.jpg](https://commons.wikimedia.org/wiki/File:Antigua_Shirley%27s_Heights_English_Harbour.jpg)
+- Author: Dr. Thomas Liptak
+- License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- Local files: `images/shirley-heights-640.webp`, `images/shirley-heights-1200.webp`, `images/shirley-heights-1600.webp`
+
+#### Barbuda
+
+- What it shows: Umbrellas on Princess Diana Beach, Barbuda.
+- File on Wikimedia Commons: [Princess Diana Beach in 2026.jpg](https://commons.wikimedia.org/wiki/File:Princess_Diana_Beach_in_2026.jpg)
+- Author: CROIX
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/barbuda-beach-640.webp`, `images/barbuda-beach-1200.webp`, `images/barbuda-beach-1600.webp`
+
+### Bahamas
+
+#### Nassau
+
+- What it shows: Nassau Harbor and the bridge toward Paradise Island.
+- File on Wikimedia Commons: [Nassau Harbor 2024.jpg](https://commons.wikimedia.org/wiki/File:Nassau_Harbor_2024.jpg)
+- Author: Larry D. Moore
+- License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- Local files: `images/nassau-harbor-640.webp`, `images/nassau-harbor-1200.webp`, `images/nassau-harbor-1600.webp`
+- Also used as the Bahamas hero and the Bahamas card on the North America page.
+
+#### Exuma
+
+- What it shows: Small cays in the Exuma islands, the Bahamas.
+- File on Wikimedia Commons: [Bahamas 1989 (592) Exuma (25249275789).jpg](https://commons.wikimedia.org/wiki/File:Bahamas_1989_(592)_Exuma_(25249275789).jpg)
+- Author: Rüdiger Stehn
+- License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+- Local files: `images/exuma-cays-640.webp`, `images/exuma-cays-1200.webp`, `images/exuma-cays-1600.webp`
+
+#### Harbour Island
+
+- What it shows: Pink sand at Harbour Island in the Bahamas.
+- File on Wikimedia Commons: [Pink Sands Beach, Harbour Island, Bahamas (5279465868).jpg](https://commons.wikimedia.org/wiki/File:Pink_Sands_Beach,_Harbour_Island,_Bahamas_(5279465868).jpg)
+- Author: Mike's Birds
+- License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+- Local files: `images/harbour-island-640.webp`, `images/harbour-island-1200.webp`, `images/harbour-island-1600.webp`
+
+### Barbados
+
+#### Bridgetown
+
+- What it shows: The Parliament Buildings and Careenage in Bridgetown, Barbados.
+- File on Wikimedia Commons: [Barbados Parliament and Central Bank.jpg](https://commons.wikimedia.org/wiki/File:Barbados_Parliament_and_Central_Bank.jpg)
+- Author: Barry haynes
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/bridgetown-parliament-640.webp`, `images/bridgetown-parliament-1200.webp`, `images/bridgetown-parliament-1600.webp`
+- Also used as the Barbados hero and the Barbados card on the North America page.
+
+#### Bathsheba
+
+- What it shows: Rock formations along the Atlantic coast at Bathsheba, Barbados.
+- File on Wikimedia Commons: [Bathsheba, Barbados 38.jpg](https://commons.wikimedia.org/wiki/File:Bathsheba,_Barbados_38.jpg)
+- Author: Postdlf
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- Local files: `images/bathsheba-640.webp`, `images/bathsheba-1200.webp`, `images/bathsheba-1600.webp`
+
+#### Crane Beach
+
+- What it shows: Crane Beach on the southeast coast of Barbados.
+- File on Wikimedia Commons: [View of the beach at The Crane Resort in Barbados in March 2024.jpg](https://commons.wikimedia.org/wiki/File:View_of_the_beach_at_The_Crane_Resort_in_Barbados_in_March_2024.jpg)
+- Author: Upjav
+- License: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+- Local files: `images/crane-beach-640.webp`, `images/crane-beach-1200.webp`, `images/crane-beach-1600.webp`
+
+### Belize
+
+#### Great Blue Hole
+
+- What it shows: Aerial view of the Great Blue Hole in the Belize Barrier Reef.
+- File on Wikimedia Commons: [Belize Blue Hole.jpg](https://commons.wikimedia.org/wiki/File:Belize_Blue_Hole.jpg)
+- Author: The TerraMar Project
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+- Local files: `images/belize-blue-hole-640.webp`, `images/belize-blue-hole-1200.webp`, `images/belize-blue-hole-1600.webp`
+- Also used as the Belize hero and the Belize card on the North America page.
+
+#### Xunantunich
+
+- What it shows: El Castillo at the Maya site of Xunantunich, Belize.
+- File on Wikimedia Commons: [Xunantunich Belize 1 19.jpg](https://commons.wikimedia.org/wiki/File:Xunantunich_Belize_1_19.jpg)
+- Author: Denis Barthel
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/xunantunich-640.webp`, `images/xunantunich-1200.webp`, `images/xunantunich-1600.webp`
+
+#### Caye Caulker
+
+- What it shows: Aerial view of Caye Caulker on the Belize Barrier Reef.
+- File on Wikimedia Commons: [Caye Caulker Belize aerial (20688990128).jpg](https://commons.wikimedia.org/wiki/File:Caye_Caulker_Belize_aerial_(20688990128).jpg)
+- Author: dronepicr
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+- Local files: `images/caye-caulker-640.webp`, `images/caye-caulker-1200.webp`, `images/caye-caulker-1600.webp`
+
+### Canada
+
+#### Quebec City
+
+- What it shows: Château Frontenac and the Terrasse Dufferin in Quebec City.
+- File on Wikimedia Commons: [Chateau Frontenac at dusk from the Terrasse Dufferin.jpg](https://commons.wikimedia.org/wiki/File:Chateau_Frontenac_at_dusk_from_the_Terrasse_Dufferin.jpg)
+- Author: Wilfredor
+- License: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+- Local files: `images/chateau-frontenac-640.webp`, `images/chateau-frontenac-1200.webp`, `images/chateau-frontenac-1600.webp`
+- Also used as the Canada hero and the Canada card on the North America page.
+
+#### Toronto
+
+- What it shows: The Toronto skyline and CN Tower from Ireland Park.
+- File on Wikimedia Commons: [Toronto skyline as viewed from Ireland Park.jpg](https://commons.wikimedia.org/wiki/File:Toronto_skyline_as_viewed_from_Ireland_Park.jpg)
+- Author: Maksim Sokolov
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/toronto-skyline-640.webp`, `images/toronto-skyline-1200.webp`, `images/toronto-skyline-1600.webp`
+
+#### Peggy's Cove
+
+- What it shows: Peggy's Cove Lighthouse on the Nova Scotia coast.
+- File on Wikimedia Commons: [Lighthouse DSC02754 - Peggy's Cove Lighthouse (8100732997).jpg](https://commons.wikimedia.org/wiki/File:Lighthouse_DSC02754_-_Peggy%27s_Cove_Lighthouse_(8100732997).jpg)
+- Author: Dennis G. Jarvis
+- License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+- Local files: `images/peggys-cove-640.webp`, `images/peggys-cove-1200.webp`, `images/peggys-cove-1600.webp`
+
+### Costa Rica
+
+#### Arenal
+
+- What it shows: Arenal Volcano seen through the forest in Costa Rica.
+- File on Wikimedia Commons: [Arenal Volcano (70602).jpg](https://commons.wikimedia.org/wiki/File:Arenal_Volcano_(70602).jpg)
+- Author: Rhododendrites
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/arenal-volcano-640.webp`, `images/arenal-volcano-1200.webp`, `images/arenal-volcano-1600.webp`
+- Also used as the Costa Rica hero and the Costa Rica card on the North America page.
+
+#### Manuel Antonio
+
+- What it shows: A beach in Manuel Antonio National Park, Costa Rica.
+- File on Wikimedia Commons: [Parque Nacional Manuel Antonio 02.jpg](https://commons.wikimedia.org/wiki/File:Parque_Nacional_Manuel_Antonio_02.jpg)
+- Author: Bernard Gagnon
+- License: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+- Local files: `images/manuel-antonio-640.webp`, `images/manuel-antonio-1200.webp`, `images/manuel-antonio-1600.webp`
+
+#### Carara
+
+- What it shows: A brown-throated three-toed sloth in Carara National Park, Costa Rica.
+- File on Wikimedia Commons: [Brown-throated three-toed sloth female.JPG](https://commons.wikimedia.org/wiki/File:Brown-throated_three-toed_sloth_female.JPG)
+- Author: Charles J. Sharp
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- Local files: `images/carara-sloth-640.webp`, `images/carara-sloth-1200.webp`, `images/carara-sloth-1600.webp`
+
+### Cuba
+
+#### Havana
+
+- What it shows: The Malecón seawall in Havana, Cuba.
+- File on Wikimedia Commons: [1 Malecon Havana.jpg](https://commons.wikimedia.org/wiki/File:1_Malecon_Havana.jpg)
+- Author: PLBechly
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/havana-malecon-640.webp`, `images/havana-malecon-1200.webp`, `images/havana-malecon-1600.webp`
+- Also used as the Cuba hero and the Cuba card on the North America page.
+
+#### Viñales
+
+- What it shows: A limestone mogote in the Viñales Valley, Cuba.
+- File on Wikimedia Commons: [Viñales-mogote.jpg](https://commons.wikimedia.org/wiki/File:Vi%C3%B1ales-mogote.jpg)
+- Author: Ricardusmd
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/vinales-valley-640.webp`, `images/vinales-valley-1200.webp`, `images/vinales-valley-1600.webp`
+
+#### Trinidad
+
+- What it shows: Plaza Mayor in the colonial center of Trinidad, Cuba.
+- File on Wikimedia Commons: [Plaza Mayor - Trinidad - Cuba.jpg](https://commons.wikimedia.org/wiki/File:Plaza_Mayor_-_Trinidad_-_Cuba.jpg)
+- Author: DominiqueMichel
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- Local files: `images/trinidad-cuba-640.webp`, `images/trinidad-cuba-1200.webp`, `images/trinidad-cuba-1600.webp`
+
+### Dominica
+
+#### Boiling Lake
+
+- What it shows: The Boiling Lake in Morne Trois Pitons National Park, Dominica.
+- File on Wikimedia Commons: [Dominica Boiling Lake.jpg](https://commons.wikimedia.org/wiki/File:Dominica_Boiling_Lake.jpg)
+- Author: Bayukjdr
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/boiling-lake-640.webp`, `images/boiling-lake-1200.webp`, `images/boiling-lake-1600.webp`
+- Also used as the Dominica hero and the Dominica card on the North America page.
+
+#### Trafalgar Falls
+
+- What it shows: Trafalgar Falls in the rainforest of Dominica.
+- File on Wikimedia Commons: [Cascadas Trafalgar, Dominica.jpg](https://commons.wikimedia.org/wiki/File:Cascadas_Trafalgar,_Dominica.jpg)
+- Author: Pabernosmatao
+- License: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+- Local files: `images/trafalgar-falls-640.webp`, `images/trafalgar-falls-1200.webp`, `images/trafalgar-falls-1600.webp`
+
+#### Roseau
+
+- What it shows: Old Street in Roseau, Dominica.
+- File on Wikimedia Commons: [Old St in Roseau (1).jpg](https://commons.wikimedia.org/wiki/File:Old_St_in_Roseau_(1).jpg)
+- Author: Tournasol7
+- License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- Local files: `images/roseau-street-640.webp`, `images/roseau-street-1200.webp`, `images/roseau-street-1600.webp`
+
+### Dominican Republic
+
+#### Santo Domingo
+
+- What it shows: The National School of Visual Arts in Santo Domingo's Colonial Zone.
+- File on Wikimedia Commons: [Zona Colonial, Santo Domingo, Dominican Republic - panoramio (40).jpg](https://commons.wikimedia.org/wiki/File:Zona_Colonial,_Santo_Domingo,_Dominican_Republic_-_panoramio_(40).jpg)
+- Author: Максим Улитин
+- License: [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+- Local files: `images/santo-domingo-colonial-640.webp`, `images/santo-domingo-colonial-1200.webp`, `images/santo-domingo-colonial-1600.webp`
+- Also used as the Dominican Republic hero and the Dominican Republic card on the North America page.
+
+#### Punta Cana
+
+- What it shows: Playa Bávaro at Punta Cana, Dominican Republic.
+- File on Wikimedia Commons: [2023 - Playa Bavaro Punta Cana - 08.jpg](https://commons.wikimedia.org/wiki/File:2023_-_Playa_Bavaro_Punta_Cana_-_08.jpg)
+- Author: Oleg Yunakov
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/punta-cana-640.webp`, `images/punta-cana-1200.webp`, `images/punta-cana-1600.webp`
+
+#### Samaná
+
+- What it shows: The waterfront along Avenida La Marina in Samaná.
+- File on Wikimedia Commons: [Avenida La Marina, Samaná 32000, Dominican Republic - panoramio (19).jpg](https://commons.wikimedia.org/wiki/File:Avenida_La_Marina,_Saman%C3%A1_32000,_Dominican_Republic_-_panoramio_(19).jpg)
+- Author: Максим Улитин
+- License: [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+- Local files: `images/samana-waterfront-640.webp`, `images/samana-waterfront-1200.webp`, `images/samana-waterfront-1600.webp`
+
+### El Salvador
+
+#### Santa Ana
+
+- What it shows: The crater lake of Santa Ana volcano, also called Ilamatepec, in El Salvador.
+- File on Wikimedia Commons: [Laguna cratérica del Volcán de Santa Ana - El Salvador.jpg](https://commons.wikimedia.org/wiki/File:Laguna_crat%C3%A9rica_del_Volc%C3%A1n_de_Santa_Ana_-_El_Salvador.jpg)
+- Author: Erneestoo
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/santa-ana-volcano-640.webp`, `images/santa-ana-volcano-1200.webp`, `images/santa-ana-volcano-1600.webp`
+- Also used as the El Salvador hero and the El Salvador card on the North America page.
+
+#### Suchitoto
+
+- What it shows: Santa Lucía church on the square in Suchitoto, El Salvador.
+- File on Wikimedia Commons: [Iglesia De Suchitoto..JPG](https://commons.wikimedia.org/wiki/File:Iglesia_De_Suchitoto..JPG)
+- Author: ElmerGuevara
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- Local files: `images/suchitoto-640.webp`, `images/suchitoto-1200.webp`, `images/suchitoto-1600.webp`
+
+#### El Tunco
+
+- What it shows: Surfers at El Tunco on the Pacific coast of El Salvador.
+- File on Wikimedia Commons: [Surfistas en El Tunco.jpg](https://commons.wikimedia.org/wiki/File:Surfistas_en_El_Tunco.jpg)
+- Author: Casa Presidencial El Salvador
+- License: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+- Local files: `images/el-tunco-640.webp`, `images/el-tunco-1200.webp`, `images/el-tunco-1600.webp`
+
+### Grenada
+
+#### St. George's
+
+- What it shows: Boats in the Carenage harbor of St. George's, Grenada.
+- File on Wikimedia Commons: [The Carenage C IMG 0472.JPG](https://commons.wikimedia.org/wiki/File:The_Carenage_C_IMG_0472.JPG)
+- Author: Anneli Salo
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- Local files: `images/st-georges-carenage-640.webp`, `images/st-georges-carenage-1200.webp`, `images/st-georges-carenage-1600.webp`
+- Also used as the Grenada hero and the Grenada card on the North America page.
+
+#### Grand Anse
+
+- What it shows: Grand Anse Beach in Grenada.
+- File on Wikimedia Commons: [Great Anse beach, Grenada.jpg](https://commons.wikimedia.org/wiki/File:Great_Anse_beach,_Grenada.jpg)
+- Author: Ian Gratton
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+- Local files: `images/grand-anse-640.webp`, `images/grand-anse-1200.webp`, `images/grand-anse-1600.webp`
+
+#### Grand Etang
+
+- What it shows: Grand Etang Lake in Grenada.
+- File on Wikimedia Commons: [Grand Etang Lake.jpg](https://commons.wikimedia.org/wiki/File:Grand_Etang_Lake.jpg)
+- Author: Jerzy Bereszko
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/grand-etang-640.webp`, `images/grand-etang-1200.webp`, `images/grand-etang-1600.webp`
+
+### Guatemala
+
+#### Antigua Guatemala
+
+- What it shows: Volcán de Agua behind the streets of Antigua Guatemala.
+- File on Wikimedia Commons: [Agua Volcano in Antigua Guatemala.jpg](https://commons.wikimedia.org/wiki/File:Agua_Volcano_in_Antigua_Guatemala.jpg)
+- Author: Chad Davis
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+- Local files: `images/antigua-guatemala-640.webp`, `images/antigua-guatemala-1200.webp`, `images/antigua-guatemala-1600.webp`
+- Also used as the Guatemala hero and the Guatemala card on the North America page.
+
+#### Tikal
+
+- What it shows: Maya temples in the main plaza of Tikal, Guatemala.
+- File on Wikimedia Commons: [Tikal mayan ruins 2009.jpg](https://commons.wikimedia.org/wiki/File:Tikal_mayan_ruins_2009.jpg)
+- Author: chensiyuan
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/tikal-640.webp`, `images/tikal-1200.webp`, `images/tikal-1600.webp`
+
+#### Lake Atitlán
+
+- What it shows: Lake Atitlán and Atitlán volcano in Guatemala.
+- File on Wikimedia Commons: [1 lake atitlan panorama 2009.jpg](https://commons.wikimedia.org/wiki/File:1_lake_atitlan_panorama_2009.jpg)
+- Author: chensiyuan
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/lake-atitlan-640.webp`, `images/lake-atitlan-1200.webp`, `images/lake-atitlan-1600.webp`
+
+### Haiti
+
+#### Citadelle Laferrière
+
+- What it shows: Citadelle Laferrière on its ridge in northern Haiti.
+- File on Wikimedia Commons: [The Citadelle Laferrière, Haiti (7761638618).jpg](https://commons.wikimedia.org/wiki/File:The_Citadelle_Laferri%C3%A8re,_Haiti_(7761638618).jpg)
+- Author: Alex Proimos
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+- Local files: `images/citadelle-laferriere-640.webp`, `images/citadelle-laferriere-1200.webp`, `images/citadelle-laferriere-1600.webp`
+- Also used as the Haiti hero and the Haiti card on the North America page.
+
+#### Sans-Souci
+
+- What it shows: The ruins of Sans-Souci Palace in Haiti's National History Park.
+- File on Wikimedia Commons: [Sans-Souci Palace, National History Park, Haiti.jpg](https://commons.wikimedia.org/wiki/File:Sans-Souci_Palace,_National_History_Park,_Haiti.jpg)
+- Author: Didier Moïse
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/sans-souci-640.webp`, `images/sans-souci-1200.webp`, `images/sans-souci-1600.webp`
+
+#### The ramparts
+
+- What it shows: Cannon positions on top of Citadelle Laferrière, Haiti.
+- File on Wikimedia Commons: [Citadelle Laferrière top roof.jpg](https://commons.wikimedia.org/wiki/File:Citadelle_Laferri%C3%A8re_top_roof.jpg)
+- Author: Rémi Kaupp
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- Local files: `images/citadelle-ramparts-640.webp`, `images/citadelle-ramparts-1200.webp`, `images/citadelle-ramparts-1600.webp`
+
+### Honduras
+
+#### Copán
+
+- What it shows: A Maya structure at the Copán archaeological site, Honduras.
+- File on Wikimedia Commons: [Ruinas MAYA Copan Honduras 10.jpg](https://commons.wikimedia.org/wiki/File:Ruinas_MAYA_Copan_Honduras_10.jpg)
+- Author: Mónica J. Mora
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/copan-ruins-640.webp`, `images/copan-ruins-1200.webp`, `images/copan-ruins-1600.webp`
+- Also used as the Honduras hero and the Honduras card on the North America page.
+
+#### Roatán
+
+- What it shows: West Bay Beach on Roatán, Honduras.
+- File on Wikimedia Commons: [West Bay Beach -Roatan -Honduras-23May2009.jpg](https://commons.wikimedia.org/wiki/File:West_Bay_Beach_-Roatan_-Honduras-23May2009.jpg)
+- Author: Adalberto Hernandez Vega
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+- Local files: `images/west-bay-roatan-640.webp`, `images/west-bay-roatan-1200.webp`, `images/west-bay-roatan-1600.webp`
+
+#### Lake Yojoa
+
+- What it shows: The shore of Lake Yojoa, Honduras.
+- File on Wikimedia Commons: [Lake Yojoa Shore.jpg](https://commons.wikimedia.org/wiki/File:Lake_Yojoa_Shore.jpg)
+- Author: Luis Alfredo Romero
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/lake-yojoa-640.webp`, `images/lake-yojoa-1200.webp`, `images/lake-yojoa-1600.webp`
+
+### Jamaica
+
+#### Dunn's River Falls
+
+- What it shows: Dunn's River Falls near Ocho Rios, Jamaica.
+- File on Wikimedia Commons: [Jamaica Ocho Rios Dunn's River Falls 2.jpg](https://commons.wikimedia.org/wiki/File:Jamaica_Ocho_Rios_Dunn%27s_River_Falls_2.jpg)
+- Author: Dr. Thomas Liptak
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/dunns-river-falls-640.webp`, `images/dunns-river-falls-1200.webp`, `images/dunns-river-falls-1600.webp`
+- Also used as the Jamaica hero and the Jamaica card on the North America page.
+
+#### Negril
+
+- What it shows: Sunset on the beach at Negril, Jamaica.
+- File on Wikimedia Commons: [Jamaica - Negril - 048.jpg](https://commons.wikimedia.org/wiki/File:Jamaica_-_Negril_-_048.jpg)
+- Author: Oleg Yunakov
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/negril-beach-640.webp`, `images/negril-beach-1200.webp`, `images/negril-beach-1600.webp`
+
+#### Blue Mountains
+
+- What it shows: The village of Section in the Blue Mountains, Jamaica.
+- File on Wikimedia Commons: [Fog hangs over the village of Section in the Blue Mountains of Portland Parish, Jamaica.jpg](https://commons.wikimedia.org/wiki/File:Fog_hangs_over_the_village_of_Section_in_the_Blue_Mountains_of_Portland_Parish,_Jamaica.jpg)
+- Author: Matthew.kowal
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/blue-mountains-jamaica-640.webp`, `images/blue-mountains-jamaica-1200.webp`, `images/blue-mountains-jamaica-1600.webp`
+
+### Mexico
+
+#### Chichén Itzá
+
+- What it shows: El Castillo at Chichén Itzá, Mexico.
+- File on Wikimedia Commons: [Chichen Itza 3.jpg](https://commons.wikimedia.org/wiki/File:Chichen_Itza_3.jpg)
+- Author: Daniel Schwen
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/chichen-itza-640.webp`, `images/chichen-itza-1200.webp`, `images/chichen-itza-1600.webp`
+- Also used as the Mexico hero and the Mexico card on the North America page.
+
+#### Mexico City
+
+- What it shows: Palacio de Bellas Artes in Mexico City.
+- File on Wikimedia Commons: [Palacio de Bellas Artes, Ciudad de México, México, 2015-07-18, DD 10.JPG](https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes,_Ciudad_de_M%C3%A9xico,_M%C3%A9xico,_2015-07-18,_DD_10.JPG)
+- Author: Diego Delso
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/bellas-artes-640.webp`, `images/bellas-artes-1200.webp`, `images/bellas-artes-1600.webp`
+
+#### Tulum
+
+- What it shows: Maya ruins on the cliffs at Tulum, Mexico.
+- File on Wikimedia Commons: [Ruins at Tulum, QR Mexico 2023.jpg](https://commons.wikimedia.org/wiki/File:Ruins_at_Tulum,_QR_Mexico_2023.jpg)
+- Author: Erik Cleves Kristensen
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+- Local files: `images/tulum-640.webp`, `images/tulum-1200.webp`, `images/tulum-1600.webp`
+
+### Nicaragua
+
+#### Granada
+
+- What it shows: Our Lady of the Assumption Cathedral in Granada, Nicaragua.
+- File on Wikimedia Commons: [Cathedral of Granada at sunset.jpg](https://commons.wikimedia.org/wiki/File:Cathedral_of_Granada_at_sunset.jpg)
+- Author: JacobKlinger
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- Local files: `images/granada-cathedral-640.webp`, `images/granada-cathedral-1200.webp`, `images/granada-cathedral-1600.webp`
+- Also used as the Nicaragua hero and the Nicaragua card on the North America page.
+
+#### Ometepe
+
+- What it shows: Concepción volcano on Ometepe island, Nicaragua.
+- File on Wikimedia Commons: [Nicaragua Ometepe Concepción 15.jpg](https://commons.wikimedia.org/wiki/File:Nicaragua_Ometepe_Concepci%C3%B3n_15.jpg)
+- Author: Claude Humbert
+- License: [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+- Local files: `images/ometepe-640.webp`, `images/ometepe-1200.webp`, `images/ometepe-1600.webp`
+
+#### León
+
+- What it shows: The cathedral facade in León, Nicaragua.
+- File on Wikimedia Commons: [Facade of Cathedral at Sunset - Leon - Nicaragua (31563044745).jpg](https://commons.wikimedia.org/wiki/File:Facade_of_Cathedral_at_Sunset_-_Leon_-_Nicaragua_(31563044745).jpg)
+- Author: Adam Jones
+- License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+- Local files: `images/leon-cathedral-640.webp`, `images/leon-cathedral-1200.webp`, `images/leon-cathedral-1600.webp`
+
+### Panama
+
+#### Panama Canal
+
+- What it shows: A cruise ship in the Agua Clara locks of the Panama Canal.
+- File on Wikimedia Commons: [Panama Canal, Agua Clara locks, Control tower (Torre de control).jpg](https://commons.wikimedia.org/wiki/File:Panama_Canal,_Agua_Clara_locks,_Control_tower_(Torre_de_control).jpg)
+- Author: Dr. Thomas Liptak
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/panama-canal-640.webp`, `images/panama-canal-1200.webp`, `images/panama-canal-1600.webp`
+- Also used as the Panama hero and the Panama card on the North America page.
+
+#### Casco Viejo
+
+- What it shows: Casco Viejo in Panama City, seen from the bay.
+- File on Wikimedia Commons: [Panama City - Casco Viejo.jpg](https://commons.wikimedia.org/wiki/File:Panama_City_-_Casco_Viejo.jpg)
+- Author: Dr. Thomas Liptak
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/casco-viejo-640.webp`, `images/casco-viejo-1200.webp`, `images/casco-viejo-1600.webp`
+
+#### Bocas del Toro
+
+- What it shows: A beach on the Zapatillas Islands, Bocas del Toro, Panama.
+- File on Wikimedia Commons: [Zapatillas Islands - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Zapatillas_Islands_-_panoramio.jpg)
+- Author: ogwen
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- Local files: `images/zapatillas-640.webp`, `images/zapatillas-1200.webp`, `images/zapatillas-1600.webp`
+
+### Saint Kitts and Nevis
+
+#### Brimstone Hill
+
+- What it shows: A cannon at Brimstone Hill Fortress on Saint Kitts, with Nevis across the channel.
+- File on Wikimedia Commons: [Saint Kitts - Brimstone Hill Fortress 03.JPG](https://commons.wikimedia.org/wiki/File:Saint_Kitts_-_Brimstone_Hill_Fortress_03.JPG)
+- Author: Martin Falbisoner
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/brimstone-hill-640.webp`, `images/brimstone-hill-1200.webp`, `images/brimstone-hill-1600.webp`
+- Also used as the Saint Kitts and Nevis hero and the Saint Kitts and Nevis card on the North America page.
+
+#### Basseterre
+
+- What it shows: Basseterre, Saint Kitts, seen from the harbor.
+- File on Wikimedia Commons: [St. Kitts Basseterre Port Zante.jpg](https://commons.wikimedia.org/wiki/File:St._Kitts_Basseterre_Port_Zante.jpg)
+- Author: Dr. Thomas Liptak
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/basseterre-640.webp`, `images/basseterre-1200.webp`, `images/basseterre-1600.webp`
+
+#### Charlestown
+
+- What it shows: The ferry pier and waterfront in Charlestown, Nevis.
+- File on Wikimedia Commons: [Nevis Charlestown Ferry Pier 1.jpg](https://commons.wikimedia.org/wiki/File:Nevis_Charlestown_Ferry_Pier_1.jpg)
+- Author: Dr. Thomas Liptak
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/charlestown-nevis-640.webp`, `images/charlestown-nevis-1200.webp`, `images/charlestown-nevis-1600.webp`
+
+### Saint Lucia
+
+#### The Pitons
+
+- What it shows: Soufrière and the Pitons in Saint Lucia.
+- File on Wikimedia Commons: [Soufriere town and the Pitons, Saint Lucia (wide view).jpg](https://commons.wikimedia.org/wiki/File:Soufriere_town_and_the_Pitons,_Saint_Lucia_(wide_view).jpg)
+- Author: DavidMPyle
+- License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- Local files: `images/the-pitons-640.webp`, `images/the-pitons-1200.webp`, `images/the-pitons-1600.webp`
+- Also used as the Saint Lucia hero and the Saint Lucia card on the North America page.
+
+#### Petit Piton
+
+- What it shows: Petit Piton rising above the forest in Saint Lucia.
+- File on Wikimedia Commons: [Petit Piton, Soufriere District, Saint Lucia.jpg](https://commons.wikimedia.org/wiki/File:Petit_Piton,_Soufriere_District,_Saint_Lucia.jpg)
+- Author: DavidMPyle
+- License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- Local files: `images/petit-piton-640.webp`, `images/petit-piton-1200.webp`, `images/petit-piton-1600.webp`
+
+#### Marigot Bay
+
+- What it shows: Yachts anchored in Marigot Bay, Saint Lucia.
+- File on Wikimedia Commons: [Yachts, Marigot Bay, St. Lucia.jpg](https://commons.wikimedia.org/wiki/File:Yachts,_Marigot_Bay,_St._Lucia.jpg)
+- Author: ImagePerson
+- License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- Local files: `images/marigot-bay-640.webp`, `images/marigot-bay-1200.webp`, `images/marigot-bay-1600.webp`
+
+### Saint Vincent and the Grenadines
+
+#### Tobago Cays
+
+- What it shows: Aerial view of the Tobago Cays, Saint Vincent and the Grenadines.
+- File on Wikimedia Commons: [Tobagocays2018.jpg](https://commons.wikimedia.org/wiki/File:Tobagocays2018.jpg)
+- Author: Stefan Schäfer, Lich
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/tobago-cays-640.webp`, `images/tobago-cays-1200.webp`, `images/tobago-cays-1600.webp`
+- Also used as the Saint Vincent and the Grenadines hero and the Saint Vincent and the Grenadines card on the North America page.
+
+#### Bequia
+
+- What it shows: Friendship Beach on Bequia, with hills behind the shore.
+- File on Wikimedia Commons: [Bequia Beach Hotel, Friendship Beach - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Bequia_Beach_Hotel,_Friendship_Beach_-_panoramio.jpg)
+- Author: qwesy qwesy
+- License: [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+- Local files: `images/bequia-640.webp`, `images/bequia-1200.webp`, `images/bequia-1600.webp`
+
+#### Kingstown
+
+- What it shows: Kingstown and the hills behind it, Saint Vincent.
+- File on Wikimedia Commons: [St. Vincent, Karibik - Kingstown City - panoramio.jpg](https://commons.wikimedia.org/wiki/File:St._Vincent,_Karibik_-_Kingstown_City_-_panoramio.jpg)
+- Author: giggel
+- License: [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+- Local files: `images/kingstown-640.webp`, `images/kingstown-1200.webp`, `images/kingstown-1600.webp`
+
+### Trinidad and Tobago
+
+#### Pigeon Point
+
+- What it shows: The jetty at Pigeon Point, Tobago.
+- File on Wikimedia Commons: [Pigeon Point, Tobago - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Pigeon_Point,_Tobago_-_panoramio.jpg)
+- Author: sarah moolchan
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- Local files: `images/pigeon-point-640.webp`, `images/pigeon-point-1200.webp`, `images/pigeon-point-1600.webp`
+- Also used as the Trinidad and Tobago hero and the Trinidad and Tobago card on the North America page.
+
+#### Port of Spain
+
+- What it shows: Queen's Park Savannah in Port of Spain, Trinidad.
+- File on Wikimedia Commons: [TnT PoS Queen's Park Savannah.jpg](https://commons.wikimedia.org/wiki/File:TnT_PoS_Queen%27s_Park_Savannah.jpg)
+- Author: Grueslayer
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/queens-park-savannah-640.webp`, `images/queens-park-savannah-1200.webp`, `images/queens-park-savannah-1600.webp`
+
+#### Maracas Bay
+
+- What it shows: Maracas Bay on the north coast of Trinidad, from the lookout.
+- File on Wikimedia Commons: [TnT Maracas Bay 3.jpg](https://commons.wikimedia.org/wiki/File:TnT_Maracas_Bay_3.jpg)
+- Author: Grueslayer
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/maracas-bay-640.webp`, `images/maracas-bay-1200.webp`, `images/maracas-bay-1600.webp`
+
+### United States
+
+#### Yosemite
+
+- What it shows: Tunnel View in Yosemite National Park, with El Capitan and Half Dome.
+- File on Wikimedia Commons: [“Tunnel View” overlook showing famous rock formations in Yosemite Valley 04.jpg](https://commons.wikimedia.org/wiki/File:%E2%80%9CTunnel_View%E2%80%9D_overlook_showing_famous_rock_formations_in_Yosemite_Valley_04.jpg)
+- Author: EF5
+- License: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+- Local files: `images/yosemite-tunnel-view-640.webp`, `images/yosemite-tunnel-view-1200.webp`, `images/yosemite-tunnel-view-1600.webp`
+- Also used as the United States hero and the United States card on the North America page.
+
+#### New York
+
+- What it shows: The Statue of Liberty on Liberty Island, New York.
+- File on Wikimedia Commons: [Statue of Liberty, statue, Liberty Island, New York.jpg](https://commons.wikimedia.org/wiki/File:Statue_of_Liberty,_statue,_Liberty_Island,_New_York.jpg)
+- Author: Christian David
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/statue-of-liberty-640.webp`, `images/statue-of-liberty-1200.webp`, `images/statue-of-liberty-1600.webp`
+
+#### San Francisco
+
+- What it shows: The Golden Gate Bridge from Battery East in San Francisco.
+- File on Wikimedia Commons: [Golden Gate Bridge as seen from Battery East.jpg](https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_as_seen_from_Battery_East.jpg)
+- Author: Frank Schulenburg
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/golden-gate-640.webp`, `images/golden-gate-1200.webp`, `images/golden-gate-1600.webp`
