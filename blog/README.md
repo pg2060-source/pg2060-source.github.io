@@ -2,9 +2,7 @@
 
 Static pages for the Pablo & Luisa travel blog. There is no build step. GitHub Pages serves each folder’s `index.html` as a clean URL.
 
-The home page does not link here yet. Do not add a Blog link to `index.html` until the owner says the posts and photos are finished.
-
-Every blog page has `<meta name="robots" content="noindex">` so unfinished pages stay out of search results. Remove that tag at launch.
+The home page links here from the main navigation (`/blog/`). Pages are public, so do not add a robots `noindex` tag.
 
 The blog is separate from the Santa Catarina sales page in `guides/santa-catarina/`. Do not move, edit, or merge that guide into the blog.
 
