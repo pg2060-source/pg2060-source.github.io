@@ -3,7 +3,9 @@
    Optional data-from sets the starting traveler currency. It defaults to USD.
    On a US-dollar page, omit data-from or set data-from="EUR" so the widget
    does not open as USD to USD. Ecuador uses data-local="USD" data-from="EUR".
-   Rates: https://open.er-api.com/v6/latest/{BASE} cached in localStorage for 12 hours. */
+   Rates: https://open.er-api.com/v6/latest/{BASE} cached in localStorage for 12 hours.
+   A real change (amount, currency, or swap) sends converter_use through gtag,
+   debounced 800ms, with from and to currency codes. The first paint does not. */
 (function () {
   var CACHE_MS = 12 * 60 * 60 * 1000;
   var CACHE_PREFIX = "fx-open-er-api-v1:";
@@ -187,6 +189,20 @@
     var id = ++widgetCount;
     var swapped = false;
     var request = 0;
+    var trackTimer = 0;
+    var trackArmed = false;
+
+    function scheduleConverterUse(from, to) {
+      if (!trackArmed || !isCode(from) || !isCode(to)) return;
+      if (trackTimer) clearTimeout(trackTimer);
+      trackTimer = setTimeout(function () {
+        trackTimer = 0;
+        try {
+          if (typeof window.gtag !== "function") return;
+          window.gtag("event", "converter_use", { from: from, to: to });
+        } catch (err) {}
+      }, 800);
+    }
 
     var form = document.createElement("form");
     form.setAttribute("autocomplete", "off");
@@ -312,6 +328,7 @@
       var from = swapped ? local : traveler;
       var to = swapped ? traveler : local;
       updateLabels(from, to);
+      scheduleConverterUse(from, to);
 
       if (!validLocal || !isCode(traveler)) {
         showMessage("Rates unavailable right now");
@@ -355,6 +372,7 @@
     });
 
     render();
+    trackArmed = true;
   }
 
   var widgets = document.querySelectorAll(".fx-converter");
