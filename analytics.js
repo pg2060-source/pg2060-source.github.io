@@ -6,7 +6,8 @@
    3. gtag.js for G-3NC3C9DM0S, including the cross-domain linker.
    Click events are delegated here. converter_use is sent from blog/converter.js.
    Affiliate links carry data-affiliate-partner and data-affiliate-placement.
-   Those clicks emit affiliate_click only, never tour_click or shop_click. */
+   Those clicks emit affiliate_click only, never tour_click or shop_click.
+   The in-page Discounted tickets jump emits tickets_button_click only. */
 (function () {
   "use strict";
 
@@ -171,6 +172,11 @@
   document.addEventListener("click", function (event) {
     var link = closest(event.target, function (node) { return node.tagName === "A"; });
     if (!link || link.classList.contains("btn-coming-soon")) return;
+
+    if (link.hasAttribute("data-tickets-jump")) {
+      track("tickets_button_click");
+      return;
+    }
 
     if (link.hasAttribute("data-affiliate-partner") || link.hasAttribute("data-affiliate-placement")) {
       var partner = cleanText(link.getAttribute("data-affiliate-partner")).toLowerCase();
