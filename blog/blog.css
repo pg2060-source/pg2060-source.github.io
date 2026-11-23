@@ -410,6 +410,11 @@ footer {
   object-position: 28% 62%;
 }
 
+/* The iguana's head sits right of center; keep it in the tall card crop. */
+.focus-iguana {
+  object-position: 78% 58%;
+}
+
 /* Seven continent cards: three columns, last card centered on its own row. */
 @media (min-width: 769px) {
   .dest-panel-content.has-continent-grid {

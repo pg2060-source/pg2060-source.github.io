@@ -1,5 +1,8 @@
 /* Shared currency converter for country pages.
    Mount: <div class="fx-converter" data-local="BRL"></div>
+   Optional data-from sets the starting traveler currency. It defaults to USD.
+   On a US-dollar page, omit data-from or set data-from="EUR" so the widget
+   does not open as USD to USD. Ecuador uses data-local="USD" data-from="EUR".
    Rates: https://open.er-api.com/v6/latest/{BASE} cached in localStorage for 12 hours. */
 (function () {
   var CACHE_MS = 12 * 60 * 60 * 1000;
@@ -14,9 +17,14 @@
     { code: "CAD", name: "Canadian dollar" },
     { code: "AUD", name: "Australian dollar" },
     { code: "MXN", name: "Mexican peso" },
+    { code: "BOB", name: "Bolivian boliviano" },
     { code: "CLP", name: "Chilean peso" },
+    { code: "GYD", name: "Guyanese dollar" },
+    { code: "PYG", name: "Paraguayan guaraní" },
     { code: "PEN", name: "Peruvian sol" },
+    { code: "SRD", name: "Surinamese dollar" },
     { code: "UYU", name: "Uruguayan peso" },
+    { code: "VES", name: "Venezuelan bolívar" },
     { code: "BRL", name: "Brazilian real" },
     { code: "ARS", name: "Argentine peso" },
     { code: "COP", name: "Colombian peso" },
@@ -169,6 +177,13 @@
 
     var local = (root.getAttribute("data-local") || "").trim().toUpperCase();
     var validLocal = isCode(local);
+    var fromAttr = (root.getAttribute("data-from") || "").trim().toUpperCase();
+    var defaultFrom = "USD";
+    if (NAMES[fromAttr] && fromAttr !== local) {
+      defaultFrom = fromAttr;
+    } else if (local === "USD") {
+      defaultFrom = "EUR";
+    }
     var id = ++widgetCount;
     var swapped = false;
     var request = 0;
@@ -217,7 +232,7 @@
       var option = document.createElement("option");
       option.value = currency.code;
       option.textContent = currency.code + " \u2014 " + currency.name;
-      if (currency.code === "USD") option.selected = true;
+      if (currency.code === defaultFrom) option.selected = true;
       select.appendChild(option);
     });
     currencyField.appendChild(currencyLabel);
