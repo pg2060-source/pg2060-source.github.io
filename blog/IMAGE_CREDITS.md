@@ -221,3 +221,259 @@ Photos for the continent cards and galleries. Each license was read from the Wik
 - Author: Krzysztof Golik
 - License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 - Local files: `images/milford-sound-640.webp`, `images/milford-sound-1200.webp`, `images/milford-sound-1600.webp`
+
+## South America countries
+
+Photos for the country galleries added alongside Brazil, Argentina and Colombia. Each license was read from the Wikimedia Commons file page. The WebP files are resized copies. The hero of each country page is also the image on that country's card on the South America page.
+
+### Bolivia
+
+#### Salar de Uyuni
+
+- What it shows: Sunrise reflections on the Salar de Uyuni, with a vehicle and two people on the wet salt.
+- File on Wikimedia Commons: [Salar de Uyuni, Bolivia, 2016-02-04, DD 16-18 HDR.JPG](https://commons.wikimedia.org/wiki/File:Salar_de_Uyuni,_Bolivia,_2016-02-04,_DD_16-18_HDR.JPG)
+- Author: Diego Delso
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/salar-de-uyuni-640.webp`, `images/salar-de-uyuni-1200.webp`, `images/salar-de-uyuni-1600.webp`
+- Also used as the Bolivia hero and the Bolivia card on the South America page.
+
+#### Lake Titicaca
+
+- What it shows: Isla del Sol and the Strait of Yampupata on Lake Titicaca, seen from the Copacabana peninsula.
+- File on Wikimedia Commons: [Estrecho de Yampupata - Isla del Sol, Lago Titicaca.jpg](https://commons.wikimedia.org/wiki/File:Estrecho_de_Yampupata_-_Isla_del_Sol,_Lago_Titicaca.jpg)
+- Author: Mandy
+- License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+- Local files: `images/isla-del-sol-640.webp`, `images/isla-del-sol-1200.webp`, `images/isla-del-sol-1600.webp`
+
+#### Sucre
+
+- What it shows: An aerial view of Sucre's whitewashed center and red-tiled roofs.
+- File on Wikimedia Commons: [Ciudad de Sucre, Bolivia.jpg](https://commons.wikimedia.org/wiki/File:Ciudad_de_Sucre,_Bolivia.jpg)
+- Author: Parallelepiped09
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/sucre-640.webp`, `images/sucre-1200.webp`, `images/sucre-1600.webp`
+
+### Chile
+
+#### Valle de la Luna
+
+- What it shows: Las Tres Marías, salt-encrusted rock pillars in the Valle de la Luna, Atacama Desert.
+- File on Wikimedia Commons: [Las 3 Marias, Valle de la Luna, Atacama, Chile.JPG](https://commons.wikimedia.org/wiki/File:Las_3_Marias,_Valle_de_la_Luna,_Atacama,_Chile.JPG)
+- Author: Claire Provost
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- Local files: `images/valle-de-la-luna-640.webp`, `images/valle-de-la-luna-1200.webp`, `images/valle-de-la-luna-1600.webp`
+
+#### Torres del Paine
+
+- What it shows: Horses grazing below the Cuernos del Paine in Torres del Paine National Park.
+- File on Wikimedia Commons: [Caballos ante los Cuernos del Paine, Parque Nacional Torres del Paine, Chile1.jpg](https://commons.wikimedia.org/wiki/File:Caballos_ante_los_Cuernos_del_Paine,_Parque_Nacional_Torres_del_Paine,_Chile1.jpg)
+- Author: Diego Delso
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- Local files: `images/torres-del-paine-640.webp`, `images/torres-del-paine-1200.webp`, `images/torres-del-paine-1600.webp`
+- Also used as the Chile hero and the Chile card on the South America page.
+
+#### Rapa Nui
+
+- What it shows: Seven moai at Ahu Nau Nau on Rapa Nui (Easter Island).
+- File on Wikimedia Commons: [Rapa Nui Moai (Easter Island).jpg](https://commons.wikimedia.org/wiki/File:Rapa_Nui_Moai_(Easter_Island).jpg)
+- Author: Docrgd
+- License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- Local files: `images/rapa-nui-640.webp`, `images/rapa-nui-1200.webp`, `images/rapa-nui-1600.webp`
+
+### Ecuador
+
+#### Quito
+
+- What it shows: Quito's historic center from El Panecillo, with the Basílica del Voto Nacional in the middle.
+- File on Wikimedia Commons: [Quito as from panecillo Basilica.jpg](https://commons.wikimedia.org/wiki/File:Quito_as_from_panecillo_Basilica.jpg)
+- Author: Cayambe
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- Note: The file page also offers the GNU Free Documentation License. This site uses the CC BY-SA 3.0 terms.
+- Local files: `images/quito-640.webp`, `images/quito-1200.webp`, `images/quito-1600.webp`
+- Also used as the Ecuador hero and the Ecuador card on the South America page.
+
+#### Galápagos
+
+- What it shows: A marine iguana on the sand at Las Bachas, Santa Cruz, in the Galápagos.
+- File on Wikimedia Commons: [Iguana marina (Amblyrhynchus cristatus), Las Bachas, isla Santa Cruz, islas Galápagos, Ecuador, 2015-07-23, DD 33.jpg](https://commons.wikimedia.org/wiki/File:Iguana_marina_(Amblyrhynchus_cristatus),_Las_Bachas,_isla_Santa_Cruz,_islas_Gal%C3%A1pagos,_Ecuador,_2015-07-23,_DD_33.jpg)
+- Author: Diego Delso
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/galapagos-iguana-640.webp`, `images/galapagos-iguana-1200.webp`, `images/galapagos-iguana-1600.webp`
+
+#### Cuenca
+
+- What it shows: The blue-tiled domes of the Catedral de la Inmaculada Concepción in Cuenca.
+- File on Wikimedia Commons: [Catedral de Cuenca, Ecuador.JPG](https://commons.wikimedia.org/wiki/File:Catedral_de_Cuenca,_Ecuador.JPG)
+- Author: Jome
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/cuenca-640.webp`, `images/cuenca-1200.webp`, `images/cuenca-1600.webp`
+
+### Guyana
+
+#### Georgetown
+
+- What it shows: The bandstand in the Georgetown Botanical Gardens.
+- File on Wikimedia Commons: [Guyana Botanical Gardens - Georgetown (23625575976).jpg](https://commons.wikimedia.org/wiki/File:Guyana_Botanical_Gardens_-_Georgetown_(23625575976).jpg)
+- Author: Dan Sloan
+- License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+- Note: The file page records a Flickr review confirming CC BY-SA 2.0.
+- Local files: `images/georgetown-gardens-640.webp`, `images/georgetown-gardens-1200.webp`, `images/georgetown-gardens-1600.webp`
+
+#### Kaieteur Falls
+
+- What it shows: Kaieteur Falls dropping from the escarpment into the rainforest.
+- File on Wikimedia Commons: [Kaieteur Falls Guyana (2) 2007.jpg](https://commons.wikimedia.org/wiki/File:Kaieteur_Falls_Guyana_(2)_2007.jpg)
+- Author: Bill Cameron
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- Note: The file page also offers the GNU Free Documentation License. This site uses the CC BY-SA 3.0 terms.
+- Local files: `images/kaieteur-falls-640.webp`, `images/kaieteur-falls-1200.webp`, `images/kaieteur-falls-1600.webp`
+- Also used as the Guyana hero and the Guyana card on the South America page.
+
+#### Iwokrama
+
+- What it shows: A caiman beside a wooden dock in the Iwokrama Rainforest.
+- File on Wikimedia Commons: [Iwokrama Rainforest, Guyana (12179447146).jpg](https://commons.wikimedia.org/wiki/File:Iwokrama_Rainforest,_Guyana_(12179447146).jpg)
+- Author: M M
+- License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+- Note: The file page records a Flickr review confirming CC BY-SA 2.0. The photographer is credited on Commons as M M from Switzerland.
+- Local files: `images/iwokrama-640.webp`, `images/iwokrama-1200.webp`, `images/iwokrama-1600.webp`
+
+### Paraguay
+
+#### Asunción
+
+- What it shows: Palacio de los López, the government palace in Asunción, lit at night.
+- File on Wikimedia Commons: [Palacio de los López (8039941540).jpg](https://commons.wikimedia.org/wiki/File:Palacio_de_los_L%C3%B3pez_(8039941540).jpg)
+- Author: Leandro Neumann Ciuffo
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+- Note: The file page records a Flickr review confirming CC BY 2.0.
+- Local files: `images/palacio-de-lopez-640.webp`, `images/palacio-de-lopez-1200.webp`, `images/palacio-de-lopez-1600.webp`
+
+#### Saltos del Monday
+
+- What it shows: Saltos del Monday in Presidente Franco, Alto Paraná, with a rainbow in the spray.
+- File on Wikimedia Commons: [Saltos del Monday, Presidente Franco, Alto Paraná, Paraguay (28).jpg](https://commons.wikimedia.org/wiki/File:Saltos_del_Monday,_Presidente_Franco,_Alto_Paran%C3%A1,_Paraguay_(28).jpg)
+- Author: FFE.Franco
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/saltos-del-monday-640.webp`, `images/saltos-del-monday-1200.webp`, `images/saltos-del-monday-1600.webp`
+
+#### Jesús de Tavarangue
+
+- What it shows: The unfinished church facade at the Jesuit mission of Jesús de Tavarangue.
+- File on Wikimedia Commons: [J37 717 ruinas jesuíticas de Jesús de Tavarangüé.jpg](https://commons.wikimedia.org/wiki/File:J37_717_ruinas_jesu%C3%ADticas_de_Jes%C3%BAs_de_Tavarang%C3%BC%C3%A9.jpg)
+- Author: Falk2
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/jesus-de-tavarangue-640.webp`, `images/jesus-de-tavarangue-1200.webp`, `images/jesus-de-tavarangue-1600.webp`
+- Also used as the Paraguay hero and the Paraguay card on the South America page.
+
+### Peru
+
+#### Machu Picchu
+
+- What it shows: The stone houses of Machu Picchu, with Huayna Picchu behind them.
+- File on Wikimedia Commons: [Machu Picchu, Perú, 2015-07-30, DD 47.JPG](https://commons.wikimedia.org/wiki/File:Machu_Picchu,_Per%C3%BA,_2015-07-30,_DD_47.JPG)
+- Author: Diego Delso
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/machu-picchu-640.webp`, `images/machu-picchu-1200.webp`, `images/machu-picchu-1600.webp`
+- Also used as the Peru hero and the Peru card on the South America page.
+
+#### Colca Canyon
+
+- What it shows: The Colca Canyon, with the river in the gorge and terraced slopes above it.
+- File on Wikimedia Commons: [Valle del Colca, Perú, 2015-08-02, DD 64.JPG](https://commons.wikimedia.org/wiki/File:Valle_del_Colca,_Per%C3%BA,_2015-08-02,_DD_64.JPG)
+- Author: Diego Delso
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/colca-canyon-640.webp`, `images/colca-canyon-1200.webp`, `images/colca-canyon-1600.webp`
+
+#### Nazca Lines
+
+- What it shows: An aerial view of the hummingbird geoglyph in the Nazca Lines.
+- File on Wikimedia Commons: [Líneas de Nazca, Nazca, Perú, 2015-07-29, DD 52.JPG](https://commons.wikimedia.org/wiki/File:L%C3%ADneas_de_Nazca,_Nazca,_Per%C3%BA,_2015-07-29,_DD_52.JPG)
+- Author: Diego Delso
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/nazca-lines-640.webp`, `images/nazca-lines-1200.webp`, `images/nazca-lines-1600.webp`
+
+### Suriname
+
+#### Paramaribo
+
+- What it shows: The wooden Cathedral Basilica of Saints Peter and Paul in Paramaribo.
+- File on Wikimedia Commons: [Nieuw gerestaureerde kathedraal anno 2011.JPG](https://commons.wikimedia.org/wiki/File:Nieuw_gerestaureerde_kathedraal_anno_2011.JPG)
+- Author: A. Tjon Kiem Sang
+- License: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+- Local files: `images/paramaribo-cathedral-640.webp`, `images/paramaribo-cathedral-1200.webp`, `images/paramaribo-cathedral-1600.webp`
+- Also used as the Suriname hero and the Suriname card on the South America page.
+
+#### Waterkant
+
+- What it shows: Wooden colonial houses along the Waterkant in Paramaribo's historic inner city.
+- File on Wikimedia Commons: [Waterkant Paramaribo.jpg](https://commons.wikimedia.org/wiki/File:Waterkant_Paramaribo.jpg)
+- Author: Forrestjunky
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- Note: The file page also offers the GNU Free Documentation License. This site uses the CC BY-SA 3.0 terms.
+- Local files: `images/paramaribo-waterkant-640.webp`, `images/paramaribo-waterkant-1200.webp`, `images/paramaribo-waterkant-1600.webp`
+
+#### Voltzberg
+
+- What it shows: The granite dome of Voltzberg rising over rainforest in the Central Suriname Nature Reserve.
+- File on Wikimedia Commons: [Voltzberg Mountain top.jpg](https://commons.wikimedia.org/wiki/File:Voltzberg_Mountain_top.jpg)
+- Author: Jan Willem Broekema and Hans Erren
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Note: The file on Commons is a crop by Hans Erren of a photograph by Jan Willem Broekema. This site's WebP files are a further resize of that crop.
+- Local files: `images/voltzberg-640.webp`, `images/voltzberg-1200.webp`, `images/voltzberg-1600.webp`
+
+### Uruguay
+
+#### Montevideo
+
+- What it shows: An old chimney on the Rambla Francia, looking over the Río de la Plata in Montevideo.
+- File on Wikimedia Commons: [Rambla Francia MRD 02.jpg](https://commons.wikimedia.org/wiki/File:Rambla_Francia_MRD_02.jpg)
+- Author: Mike Dickison
+- License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- Local files: `images/montevideo-rambla-640.webp`, `images/montevideo-rambla-1200.webp`, `images/montevideo-rambla-1600.webp`
+
+#### Colonia del Sacramento
+
+- What it shows: A cobblestone street in Colonia del Sacramento opening onto the river.
+- File on Wikimedia Commons: [Colonia del Sacramento4 - Uruguay.jpg](https://commons.wikimedia.org/wiki/File:Colonia_del_Sacramento4_-_Uruguay.jpg)
+- Author: Diego Delso
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- Local files: `images/colonia-640.webp`, `images/colonia-1200.webp`, `images/colonia-1600.webp`
+
+#### Punta del Este
+
+- What it shows: La Mano, the giant hand sculpture on the beach at Punta del Este.
+- File on Wikimedia Commons: [La Mano (8453942138).jpg](https://commons.wikimedia.org/wiki/File:La_Mano_(8453942138).jpg)
+- Author: Davi Sanchez
+- License: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+- Note: The file page records a Flickr review confirming CC BY 2.0.
+- Local files: `images/punta-del-este-640.webp`, `images/punta-del-este-1200.webp`, `images/punta-del-este-1600.webp`
+- Also used as the Uruguay hero and the Uruguay card on the South America page.
+
+### Venezuela
+
+#### Angel Falls
+
+- What it shows: Angel Falls pouring off the tepui in Canaima National Park.
+- File on Wikimedia Commons: [Green Salto Ángel.jpg](https://commons.wikimedia.org/wiki/File:Green_Salto_%C3%81ngel.jpg)
+- Author: Maira2691
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Local files: `images/angel-falls-640.webp`, `images/angel-falls-1200.webp`, `images/angel-falls-1600.webp`
+- Also used as the Venezuela hero and the Venezuela card on the South America page.
+
+#### Los Roques
+
+- What it shows: White sand and clear water at Cayo Nordisqui in the Los Roques archipelago.
+- File on Wikimedia Commons: [Nordisqui, Los Roques Archipelago, Venezuela 1.jpg](https://commons.wikimedia.org/wiki/File:Nordisqui,_Los_Roques_Archipelago,_Venezuela_1.jpg)
+- Author: Pedro Graciano
+- License: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+- Local files: `images/los-roques-640.webp`, `images/los-roques-1200.webp`, `images/los-roques-1600.webp`
+
+#### Kukenan
+
+- What it shows: Kukenan tepui at sunset in the Gran Sabana, Venezuela.
+- File on Wikimedia Commons: [Kukenan Tepuy at Sunset.jpg](https://commons.wikimedia.org/wiki/File:Kukenan_Tepuy_at_Sunset.jpg)
+- Author: Paolo Costa Baldi
+- License: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- Note: The file page also offers the GNU Free Documentation License. This site uses the CC BY-SA 3.0 terms.
+- Local files: `images/kukenan-640.webp`, `images/kukenan-1200.webp`, `images/kukenan-1600.webp`
