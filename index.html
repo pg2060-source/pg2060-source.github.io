@@ -63,6 +63,7 @@
       --apple-gray: #6e6e73;
       --apple-border: rgba(0,0,0,0.08);
       --nav-height: 48px;
+      --tickets-jump-space: 46px;
     }
 
     *, *::before, *::after {
@@ -142,6 +143,47 @@
 
     .nav-toggle:hover {
       color: #f5f5f7;
+    }
+
+    .tickets-jump {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      padding-top: 10px;
+      pointer-events: none;
+    }
+
+    .tickets-jump-btn {
+      pointer-events: auto;
+      display: inline-block;
+      padding: 8px 18px;
+      background: #e30000;
+      color: #fff;
+      border-radius: 980px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      font-family: inherit;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+
+    .tickets-jump-btn:hover {
+      background: #cc0000;
+    }
+
+    .tickets-jump-btn:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: 3px;
+    }
+
+    #tickets {
+      scroll-margin-top: calc(var(--nav-height) + var(--tickets-jump-space));
     }
 
     /* ── HERO ── */
@@ -956,7 +998,7 @@
       .nav-links {
         display: none;
         position: absolute;
-        top: var(--nav-height);
+        top: calc(var(--nav-height) + var(--tickets-jump-space));
         left: 0;
         right: 0;
         flex-direction: column;
@@ -995,6 +1037,9 @@
     <a href="#travel">Travel</a>
     <a href="/blog/">Blog</a>
     <a href="#social">Social</a>
+  </div>
+  <div class="tickets-jump">
+    <a class="tickets-jump-btn" href="#tickets" data-tickets-jump>Discounted tickets</a>
   </div>
 </div>
 
