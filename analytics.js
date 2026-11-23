@@ -4,7 +4,9 @@
    1. Consent Mode v2 defaults to denied.
    2. Cookie banner. The choice is stored in localStorage as plg-consent.
    3. gtag.js for G-3NC3C9DM0S, including the cross-domain linker.
-   Click events are delegated here. converter_use is sent from blog/converter.js. */
+   Click events are delegated here. converter_use is sent from blog/converter.js.
+   Affiliate links carry data-affiliate-partner and data-affiliate-placement.
+   Those clicks emit affiliate_click only, never tour_click or shop_click. */
 (function () {
   "use strict";
 
@@ -169,6 +171,18 @@
   document.addEventListener("click", function (event) {
     var link = closest(event.target, function (node) { return node.tagName === "A"; });
     if (!link || link.classList.contains("btn-coming-soon")) return;
+
+    if (link.hasAttribute("data-affiliate-partner") || link.hasAttribute("data-affiliate-placement")) {
+      var partner = cleanText(link.getAttribute("data-affiliate-partner")).toLowerCase();
+      var placement = cleanText(link.getAttribute("data-affiliate-placement"));
+      if (partner && placement) {
+        track("affiliate_click", {
+          partner: partner,
+          placement: placement
+        });
+      }
+      return;
+    }
 
     var host = hostOf(link);
     var platform = platformOf(link, host);
