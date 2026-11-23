@@ -119,6 +119,23 @@
       color: #f5f5f7;
     }
 
+    .nav-toggle {
+      display: none;
+      background: transparent;
+      border: 0;
+      color: rgba(245,245,247,0.85);
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      padding: 8px 0;
+      cursor: pointer;
+    }
+
+    .nav-toggle:hover {
+      color: #f5f5f7;
+    }
+
     /* ── HERO ── */
     header {
       position: relative;
@@ -890,6 +907,40 @@
       }
     }
 
+    /* Same six links as the blog. Under 840px they move into the menu
+       so the row does not clip Blog or Social. */
+    @media (max-width: 840px) {
+      .nav-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: var(--nav-height);
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 8px 0 14px;
+        background: rgba(22, 22, 23, 0.92);
+        backdrop-filter: saturate(180%) blur(20px);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        border-bottom: 0.5px solid rgba(255,255,255,0.1);
+      }
+
+      .nav-links.is-open {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 12px 22px;
+        font-size: 14px;
+        text-align: left;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -897,11 +948,13 @@
 <!-- NAVBAR -->
 <div class="navbar">
   <div class="nav-brand">Pablo &amp; Luisa</div>
-  <div class="nav-links">
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+  <div class="nav-links" id="nav-links">
     <a href="#youtube">YouTube</a>
     <a href="#music">Music</a>
     <a href="#store">Store</a>
     <a href="#travel">Travel</a>
+    <a href="/blog/">Blog</a>
     <a href="#social">Social</a>
   </div>
 </div>
@@ -1268,6 +1321,18 @@
 <footer>
   &copy; 2026 Pablo y Luisa Garcia
 </footer>
+<script>
+(function () {
+  var btn = document.querySelector(".nav-toggle");
+  var links = document.getElementById("nav-links");
+  if (!btn || !links) return;
+  btn.addEventListener("click", function () {
+    var open = links.classList.toggle("is-open");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+    btn.textContent = open ? "Close" : "Menu";
+  });
+})();
+</script>
 
 </body>
 </html>
