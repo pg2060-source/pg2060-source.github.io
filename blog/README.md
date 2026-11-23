@@ -8,6 +8,34 @@ The blog is separate from the Santa Catarina sales page in `guides/santa-catarin
 
 Visual design lives in one file, [`blog.css`](blog.css). Those rules match the home page (`index.html`): the same CSS variables, system / SF Pro stack, dark translucent navbar, section labels, buttons, destination cards, tour cards, and footer. Add a place by copying a folder and reusing those classes. Do not invent a second stylesheet.
 
+## Analytics
+
+Every HTML page under `/blog/` includes the same snippet in `<head>`, immediately after the viewport tag. Copy it with the page. Do not add a second Google tag, and do not add this snippet to `guides/santa-catarina/`.
+
+```html
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+</script>
+<script src="/analytics.js" defer></script>
+```
+
+`/analytics.js` is the only analytics file. It sets Google Consent Mode v2 (`analytics_storage`, `ad_storage`, `ad_user_data`, and `ad_personalization`) to `denied`, shows the cookie banner, and loads measurement ID `G-3NC3C9DM0S`. Accept stores `granted` in `localStorage` under `plg-consent` and calls `gtag('consent', 'update', ...)`. Decline stores `denied` and leaves those signals denied. The banner is created by the script, so a new page does not need banner markup.
+
+Two events apply to blog pages, and both fire without extra code:
+
+- `blog_tour_click` fires for a link whose text starts with `Check our tours in `. The `destination` parameter is the place name in that sentence.
+- `converter_use` fires from [`converter.js`](converter.js), 800ms after the visitor changes the amount, the currency, or the swap direction. `from` and `to` are the ISO currency codes. The first paint does not count.
+
+The same script also tracks the home page. New blog pages do not need markup for these:
+
+- `generate_lead` is the Mailchimp subscribe form submit. It has no custom parameters.
+- `tour_click` is a GetYourGuide, Viator, or TripAdvisor link. Parameters are `destination`, `platform` (`getyourguide`, `viator`, `tripadvisor`), and `tour_name`.
+- `shop_click` is a link to `rockisland.pabloyluisagarcia.com`. It has no custom parameters.
+- `social_click` is a YouTube, Spotify, YouTube Music, Instagram, or TikTok link. The `platform` parameter is `youtube`, `spotify`, `youtube_music`, `instagram`, or `tiktok`.
+
+Booking links can set `data-tour-destination`, `data-tour-platform`, and `data-tour-name` on the anchor. If those attributes are missing, the script reads the destination panel title, the card heading, and the link host. Cross-domain linking is configured for `pabloyluisagarcia.com` and `rockisland.pabloyluisagarcia.com`.
+
 ## Map
 
 ```
@@ -32,7 +60,7 @@ Hierarchy is continent, then country, then city. City pages hold the photos, tou
 
 1. Copy an existing city folder. `rio-de-janeiro/` is the short template. `balneario-camboriu/` shows several tours.
 2. Rename the folder with a lowercase slug: `buenos-aires`. The URL is the folder path.
-3. In the new `index.html`, replace the title, meta description, canonical URL, Open Graph URL, breadcrumb labels and links, hero text, and placeholder name.
+3. In the new `index.html`, replace the title, meta description, canonical URL, Open Graph URL, breadcrumb labels and links, hero text, and placeholder name. Leave the analytics snippet that sits after the viewport tag.
 4. On the parent country page, add one card inside `.destination-grid`:
 
 ```html
@@ -113,4 +141,4 @@ Cards and tour photos use the home page size hint. Full-bleed heroes use `sizes=
 
 Copy the `<nav class="navbar">` and `<footer>` from a blog page when you create a new one. Section links point at the home page (`/#travel`, `/#music`, and the rest). The Blog link stays `aria-current="page"`. The small menu script at the bottom of the page is part of the copy; it only appears under 840px so the same six links still fit.
 
-Favicons in `<head>` are the same files as the home page (`/favicon-32x32.png`, `/apple-touch-icon.png`, and the rest). Give every page its own `<title>`, meta description, canonical URL, and Open Graph tags.
+Favicons in `<head>` are the same files as the home page (`/favicon-32x32.png`, `/apple-touch-icon.png`, and the rest). Give every page its own `<title>`, meta description, canonical URL, and Open Graph tags. Keep the analytics snippet from the [Analytics](#analytics) section in `<head>`.

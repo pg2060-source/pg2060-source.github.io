@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page not found | Pablo &amp; Luisa Garcia</title>
+  <meta name="description" content="That page isn't on pabloyluisagarcia.com.">
+  <meta name="robots" content="noindex">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+  </script>
+  <script src="/analytics.js" defer></script>
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
+  <meta name="theme-color" content="#4b2cff">
+
+  <link rel="stylesheet" href="/blog/blog.css">
+  <style>
+    body.page-404 {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* The shared navbar is translucent. Over a photo it reads as black.
+       This page has no photo behind it, so keep the same black solid. */
+    body.page-404 .navbar {
+      background: #161617;
+    }
+
+    body.page-404 main.section {
+      width: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    body.page-404 .section-desc {
+      margin-bottom: 28px;
+    }
+
+    .page-404-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body class="page-404">
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="navbar" aria-label="Primary">
+  <a class="nav-brand" href="/">Pablo &amp; Luisa</a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+  <div class="nav-links" id="nav-links">
+    <a href="/#youtube">YouTube</a>
+    <a href="/#music">Music</a>
+    <a href="/#store">Store</a>
+    <a href="/#travel">Travel</a>
+    <a href="/blog/">Blog</a>
+    <a href="/#social">Social</a>
+  </div>
+</nav>
+<main id="main" class="section">
+  <p class="section-label">404</p>
+  <h1>Page not found</h1>
+  <p class="section-desc">That link doesn't go anywhere. It may be mistyped, or the page may have moved.</p>
+  <div class="page-404-actions">
+    <a class="btn" href="/">Home</a>
+    <a class="btn btn-secondary" href="/blog/">Blog</a>
+  </div>
+</main>
+<footer>
+  &copy; 2026 Pablo y Luisa Garcia
+</footer>
+<script>
+(function () {
+  var btn = document.querySelector(".nav-toggle");
+  var links = document.getElementById("nav-links");
+  if (!btn || !links) return;
+  btn.addEventListener("click", function () {
+    var open = links.classList.toggle("is-open");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+    btn.textContent = open ? "Close" : "Menu";
+  });
+})();
+</script>
+</body>
+</html>
