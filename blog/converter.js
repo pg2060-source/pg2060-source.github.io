@@ -2,7 +2,8 @@
    Mount: <div class="fx-converter" data-local="BRL"></div>
    Optional data-from sets the starting traveler currency. It defaults to USD.
    On a US-dollar page, omit data-from or set data-from="EUR" so the widget
-   does not open as USD to USD. Ecuador uses data-local="USD" data-from="EUR".
+   does not open as USD to USD. Ecuador, El Salvador, and the United States
+   use data-local="USD" data-from="EUR".
    Rates: https://open.er-api.com/v6/latest/{BASE} cached in localStorage for 12 hours.
    A real change (amount, currency, or swap) sends converter_use through gtag,
    debounced 800ms, with from and to currency codes. The first paint does not. */
@@ -19,6 +20,20 @@
     { code: "CAD", name: "Canadian dollar" },
     { code: "AUD", name: "Australian dollar" },
     { code: "MXN", name: "Mexican peso" },
+    { code: "XCD", name: "East Caribbean dollar" },
+    { code: "BSD", name: "Bahamian dollar" },
+    { code: "BBD", name: "Barbados dollar" },
+    { code: "BZD", name: "Belize dollar" },
+    { code: "CRC", name: "Costa Rican colón" },
+    { code: "CUP", name: "Cuban peso" },
+    { code: "DOP", name: "Dominican peso" },
+    { code: "GTQ", name: "Guatemalan quetzal" },
+    { code: "HTG", name: "Haitian gourde" },
+    { code: "HNL", name: "Honduran lempira" },
+    { code: "JMD", name: "Jamaican dollar" },
+    { code: "NIO", name: "Nicaraguan córdoba" },
+    { code: "PAB", name: "Panamanian balboa" },
+    { code: "TTD", name: "Trinidad and Tobago dollar" },
     { code: "BOB", name: "Bolivian boliviano" },
     { code: "CLP", name: "Chilean peso" },
     { code: "GYD", name: "Guyanese dollar" },

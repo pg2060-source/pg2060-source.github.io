@@ -52,6 +52,31 @@ blog/
       puerto-iguazu/index.html       Puerto Iguazú / Iguazú Falls
     colombia/
       index.html                     Bogotá, Villa de Leyva, Santa Marta, Cartagena, Barranquilla
+  north-america/
+    index.html                       /blog/north-america/
+    antigua-and-barbuda/index.html
+    bahamas/index.html
+    barbados/index.html
+    belize/index.html
+    canada/index.html
+    costa-rica/index.html
+    cuba/index.html
+    dominica/index.html
+    dominican-republic/index.html
+    el-salvador/index.html
+    grenada/index.html
+    guatemala/index.html
+    haiti/index.html
+    honduras/index.html
+    jamaica/index.html
+    mexico/index.html
+    nicaragua/index.html
+    panama/index.html
+    saint-kitts-and-nevis/index.html
+    saint-lucia/index.html
+    saint-vincent-and-the-grenadines/index.html
+    trinidad-and-tobago/index.html
+    united-states/index.html
 ```
 
 Hierarchy is continent, then country, then city. City pages hold the photos, tour links, and (later) posts.
