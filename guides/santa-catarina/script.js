@@ -265,6 +265,9 @@ const GUIDE_URL_PT = "https://drive.google.com/file/d/1M9OljzWi3CAUWCf4edcrfZ_5q
       body: params.toString()
     })
       .then(function () {
+        try {
+          localStorage.setItem("sc_guide_claimed", "1");
+        } catch (err) {}
         if (!honeypot && typeof window.gtag === "function") {
           window.gtag("event", "generate_lead", {
             form: "santa_catarina_guide",

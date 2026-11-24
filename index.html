@@ -12,6 +12,18 @@
   })();
 </script>
   <meta charset="UTF-8">
+  <script>
+    function dismissGuideCard() {
+      try { localStorage.setItem("sc_guide_card_dismissed", "1"); } catch (err) {}
+      document.documentElement.classList.add("guide-card-hidden");
+      if (typeof gtag === "function") gtag("event", "guide_card_dismiss", { placement: "home_hero" });
+    }
+    try {
+      if (localStorage.getItem("sc_guide_card_dismissed") === "1" || localStorage.getItem("sc_guide_claimed") === "1") {
+        document.documentElement.classList.add("guide-card-hidden");
+      }
+    } catch (err) {}
+  </script>
   <title>Pablo y Luisa Garcia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Musicians, entrepreneurs, and travelers. Original rock music, travel films, Rock Island apparel, and guided tours across South America.">
@@ -253,13 +265,14 @@
 
     /* ── GUIDE CARD ── */
     .guide-card {
+      position: relative;
       display: flex;
       align-items: center;
       gap: 16px;
       width: 100%;
       max-width: 540px;
       margin: 0 auto;
-      padding: 12px 16px 12px 12px;
+      padding: 12px 44px 12px 12px;
       text-align: left;
       background: rgba(255, 255, 255, 0.9);
       -webkit-backdrop-filter: saturate(180%) blur(24px);
@@ -267,6 +280,42 @@
       border: 1px solid rgba(255, 255, 255, 0.72);
       border-radius: 22px;
       box-shadow: 0 10px 36px rgba(0, 0, 0, 0.18);
+    }
+
+    html.guide-card-hidden .guide-card {
+      display: none;
+    }
+
+    .guide-card-close {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      z-index: 1;
+      width: 32px;
+      height: 32px;
+      min-width: 32px;
+      min-height: 32px;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      border-radius: 50%;
+      background: transparent;
+      color: rgba(29, 29, 31, 0.78);
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .guide-card-close:hover {
+      background: rgba(0, 0, 0, 0.06);
+      color: var(--apple-dark);
+    }
+
+    .guide-card-close:focus-visible {
+      outline: 2px solid var(--apple-blue);
+      outline-offset: 2px;
     }
 
     .guide-card-cover {
@@ -330,7 +379,7 @@
         text-align: center;
         gap: 10px;
         max-width: 300px;
-        padding: 14px 16px 16px;
+        padding: 16px 16px 16px;
       }
 
       .guide-card-cover {
@@ -1112,6 +1161,11 @@
     <p class="hero-sub">Musicians &bull; Entrepreneurs &bull; Travelers</p>
 
     <div class="guide-card">
+      <button type="button" class="guide-card-close" aria-label="Close" onclick="dismissGuideCard()">
+        <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false">
+          <path d="M4 4l8 8M12 4L4 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </button>
       <img class="guide-card-cover" src="/guides/santa-catarina/img/cover-en-640.webp" srcset="/guides/santa-catarina/img/cover-en-640.webp 640w, /guides/santa-catarina/img/cover-en-1200.webp 1200w, /guides/santa-catarina/img/cover-en-1600.webp 1600w" sizes="(max-width: 640px) 56px, 78px" alt="Cover of the Santa Catarina Nature Travel Guide 2026. Rennie, the illustrated guide, waves above a beach and forested hills." width="1600" height="2263" decoding="async">
       <div class="guide-card-copy">
         <p class="guide-card-eyebrow">FREE PDF GUIDE</p>
