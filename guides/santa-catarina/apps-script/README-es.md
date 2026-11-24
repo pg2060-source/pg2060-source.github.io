@@ -47,12 +47,12 @@ Si el enlace pide permiso, la gente no va a poder bajar la guía.
 Al principio de `Code.gs` hay dos líneas:
 
 ```javascript
-const GUIDE_URL_ES = 'PASTE_GUIDE_URL_ES_HERE';
-const GUIDE_URL_EN = 'PASTE_GUIDE_URL_EN_HERE';
-const GUIDE_URL_PT = 'PASTE_GUIDE_URL_PT_HERE';
+const GUIDE_URL_ES = 'https://drive.google.com/file/d/1pMaLtY9xGUU9FSCeMqvcq_aPF08rTYtD/view?usp=sharing';
+const GUIDE_URL_EN = 'https://drive.google.com/file/d/1hSOW5je5IiQijxPdsSKecmyOYGj5ljQG/view?usp=sharing';
+const GUIDE_URL_PT = 'https://drive.google.com/file/d/1M9OljzWi3CAUWCf4edcrfZ_5qeQ8P2im/view?usp=sharing';
 ```
 
-Reemplazá `PASTE_GUIDE_URL_ES_HERE` por el enlace del PDF en español, `PASTE_GUIDE_URL_EN_HERE` por el del PDF en inglés, y `PASTE_GUIDE_URL_PT_HERE` por el del PDF en portugués. Dejá las comillas.
+Esos enlaces son el PDF en español, el PDF en inglés y el PDF en portugués. Dejá las comillas.
 
 La página ofrece los tres idiomas del PDF. Si la persona elige portugués, el mail y el botón usan `GUIDE_URL_PT`. El mail sale en portugués cuando la página está en portugués, con el enlace del idioma que eligió. No hace falta cambiar las columnas de la hoja.
 

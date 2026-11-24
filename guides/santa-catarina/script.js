@@ -59,6 +59,19 @@ const GUIDE_URL_PT = "https://drive.google.com/file/d/1M9OljzWi3CAUWCf4edcrfZ_5q
     return GUIDE_URL_EN;
   }
 
+  function resolveGuideLanguage() {
+    var select = document.getElementById("guide-language");
+    var chosen = select ? select.value : "";
+    if (chosen === "es" || chosen === "en" || chosen === "pt") return chosen;
+    if (lang === "es" || lang === "pt") return lang;
+    return "en";
+  }
+
+  function applyDownloadLink() {
+    var download = document.getElementById("thanks-download");
+    if (download) download.href = guideUrl(resolveGuideLanguage());
+  }
+
   function photoSrcset(base, code) {
     return (
       "img/" + base + "-" + code + "-640.webp 640w, " +
@@ -143,6 +156,7 @@ const GUIDE_URL_PT = "https://drive.google.com/file/d/1M9OljzWi3CAUWCf4edcrfZ_5q
     if (guideLanguage && guideLanguage.getAttribute("data-touched") !== "true") {
       guideLanguage.value = guideDefault(lang);
     }
+    applyDownloadLink();
   }
 
   document.querySelectorAll("[data-set-lang]").forEach(function (button) {
@@ -173,6 +187,7 @@ const GUIDE_URL_PT = "https://drive.google.com/file/d/1M9OljzWi3CAUWCf4edcrfZ_5q
   if (guideLanguage) {
     guideLanguage.addEventListener("change", function () {
       guideLanguage.setAttribute("data-touched", "true");
+      applyDownloadLink();
     });
   }
 
@@ -219,9 +234,7 @@ const GUIDE_URL_PT = "https://drive.google.com/file/d/1M9OljzWi3CAUWCf4edcrfZ_5q
     var email = (form.email.value || "").trim();
     var consent = form.consent && form.consent.checked;
     var honeypot = form.honeypot ? form.honeypot.value : "";
-    var selectedGuide = guideLanguage && (guideLanguage.value === "es" || guideLanguage.value === "pt")
-      ? guideLanguage.value
-      : "en";
+    var selectedGuide = resolveGuideLanguage();
 
     if (!name) {
       showError(currentCopy().errorName);
