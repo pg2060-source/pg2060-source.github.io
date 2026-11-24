@@ -25,12 +25,13 @@ Cada envío suma una fila. Si la misma persona pide la guía dos veces, quedan d
 3. Abrí `Code.gs` de esta carpeta, copiá el archivo entero y pegalo en el editor.
 4. Arriba a la izquierda, fijate que el proyecto use el entorno de ejecución **V8** (es el habitual). Si ves un error de sintaxis con `const`, cambialo en Configuración del proyecto.
 
-## 3. Subí los dos PDF a Drive
+## 3. Subí los tres PDF a Drive
 
-Subí estos dos archivos a tu Drive. **No los subas al sitio ni al repositorio.** La página pública no debe tener el PDF.
+Subí estos tres archivos a tu Drive. **No los subas al sitio ni al repositorio.** La página pública no debe tener el PDF.
 
 - La guía en español
 - La guía en inglés
+- La guía en portugués
 
 En cada archivo:
 
@@ -48,15 +49,16 @@ Al principio de `Code.gs` hay dos líneas:
 ```javascript
 const GUIDE_URL_ES = 'PASTE_GUIDE_URL_ES_HERE';
 const GUIDE_URL_EN = 'PASTE_GUIDE_URL_EN_HERE';
+const GUIDE_URL_PT = 'PASTE_GUIDE_URL_PT_HERE';
 ```
 
-Reemplazá `PASTE_GUIDE_URL_ES_HERE` por el enlace del PDF en español, y `PASTE_GUIDE_URL_EN_HERE` por el del PDF en inglés. Dejá las comillas.
+Reemplazá `PASTE_GUIDE_URL_ES_HERE` por el enlace del PDF en español, `PASTE_GUIDE_URL_EN_HERE` por el del PDF en inglés, y `PASTE_GUIDE_URL_PT_HERE` por el del PDF en portugués. Dejá las comillas.
 
-`GUIDE_URL_PT` (`PASTE_GUIDE_URL_PT_HERE`) queda para cuando exista un PDF en portugués. Hoy la página en portugués ofrece el PDF en español o en inglés, y el mail sale en portugués con el enlace del idioma que la persona eligió. Cuando tengas ese PDF, subilo igual que los otros y reemplazá ese texto. No hace falta cambiar las columnas de la hoja.
+La página ofrece los tres idiomas del PDF. Si la persona elige portugués, el mail y el botón usan `GUIDE_URL_PT`. El mail sale en portugués cuando la página está en portugués, con el enlace del idioma que eligió. No hace falta cambiar las columnas de la hoja.
 
 Guardá (Ctrl+S o el ícono de disco).
 
-Los mismos dos enlaces tienen que estar en `guides/santa-catarina/script.js`, porque la página de gracias también muestra un botón de descarga por si el mail tarda. Pasale esos enlaces a quien mantiene el sitio, junto con la URL del paso 6.
+Los mismos tres enlaces tienen que estar en `guides/santa-catarina/script.js`, porque la página de gracias también muestra un botón de descarga por si el mail tarda. Pasale esos enlaces a quien mantiene el sitio, junto con la URL del paso 6.
 
 ## 5. Publicá la aplicación web
 
@@ -88,8 +90,9 @@ Mandanos:
 - `LEAD_ENDPOINT`: la URL que termina en `/exec`
 - `GUIDE_URL_ES`: el enlace de Drive del PDF en español
 - `GUIDE_URL_EN`: el enlace de Drive del PDF en inglés
+- `GUIDE_URL_PT`: el enlace de Drive del PDF en portugués
 
-Sin esos tres datos el formulario no puede entregar la guía.
+Sin esos datos el formulario no puede entregar la guía.
 
 ## 7. Probá
 

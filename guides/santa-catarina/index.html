@@ -58,7 +58,7 @@
         pt: {
           title: "Guia de natureza de Santa Catarina 2026",
           description: "Guia grátis em PDF (2026): roteiro de 1 semana por Florianópolis e uma extensão de 2 semanas com baleias e a Serra. Cada dia traz o que fazer, horário, orçamento aproximado em R$ e a dica do Rennie.",
-          image: "https://pabloyluisagarcia.com/guides/santa-catarina/img/cover-en-1200.webp"
+          image: "https://pabloyluisagarcia.com/guides/santa-catarina/img/cover-pt-1200.webp"
         }
       };
       window.__scMeta = meta;
@@ -81,7 +81,7 @@
       if (twImage) twImage.setAttribute("content", meta[lang].image);
       var locale = document.querySelector('meta[property="og:locale"]');
       if (locale) locale.setAttribute("content", lang === "es" ? "es_AR" : lang === "pt" ? "pt_BR" : "en_US");
-      var photo = lang === "es" ? "es" : "en";
+      var photo = lang === "es" || lang === "pt" ? lang : "en";
       var preload = document.createElement("link");
       preload.rel = "preload";
       preload.as = "image";
@@ -89,15 +89,15 @@
       preload.setAttribute("imagesrcset", "img/cover-" + photo + "-640.webp 640w, img/cover-" + photo + "-1200.webp 1200w, img/cover-" + photo + "-1600.webp 1600w");
       preload.setAttribute("imagesizes", "(min-width: 960px) 380px, 72vw");
       document.head.appendChild(preload);
-      window.__scPhoto = function (base, altEn, altEs, sizes, eager, className) {
-        var use = lang === "es" ? "es" : "en";
+      window.__scPhoto = function (base, altEn, altEs, sizes, eager, className, altPt) {
+        var use = lang === "es" || lang === "pt" ? lang : "en";
         function esc(value) {
-          return String(value).replace(/&/g, "&amp;").replace(/"/g, "&quot;");
+          return String(value || "").replace(/&/g, "&amp;").replace(/"/g, "&quot;");
         }
-        var alt = esc(use === "es" ? altEs : altEn);
+        var raw = use === "es" ? altEs : use === "pt" ? (altPt || altEn) : altEn;
         var srcset = "img/" + base + "-" + use + "-640.webp 640w, img/" + base + "-" + use + "-1200.webp 1200w, img/" + base + "-" + use + "-1600.webp 1600w";
         var load = eager ? 'fetchpriority="high"' : 'loading="lazy"';
-        return '<img class="' + esc(className || "") + '" data-photo="' + base + '" data-alt-en="' + esc(altEn) + '" data-alt-es="' + esc(altEs) + '" src="img/' + base + '-' + use + '-1200.webp" srcset="' + srcset + '" sizes="' + esc(sizes) + '" alt="' + alt + '" width="1600" height="2263" decoding="async" ' + load + ">";
+        return '<img class="' + esc(className || "") + '" data-photo="' + base + '" data-alt-en="' + esc(altEn) + '" data-alt-es="' + esc(altEs) + '" data-alt-pt="' + esc(altPt || altEn) + '" src="img/' + base + '-' + use + '-1200.webp" srcset="' + srcset + '" sizes="' + esc(sizes) + '" alt="' + esc(raw) + '" width="1600" height="2263" decoding="async" ' + load + ">";
       };
     })();
   </script>
@@ -155,7 +155,7 @@
             </li>
             <li>
               <span class="lang-en">How to get there, where to stay, Parksnet tickets, a Holafly eSIM, food, a packing list, useful Portuguese and emergency numbers.</span>
-              <span class="lang-es">Cómo llegar, dónde alojarte, entradas de Parksnet, eSIM de Holafly, comida, qué llevar, portugués útil y números de emergencia.</span><span class="lang-pt">Como chegar, onde ficar, ingressos da Parksnet, eSIM da Holafly, comida, o que levar, português útil e telefones de emergência.</span>
+              <span class="lang-es">Cómo llegar, dónde alojarte, entradas de Parksnet, eSIM de Holafly, comida, qué llevar, portugués útil y números de emergencia.</span><span class="lang-pt">Como chegar, onde ficar, ingressos da Parksnet, eSIM da Holafly, comida, o que levar, expressões do manezês e telefones de emergência.</span>
             </li>
           </ul>
           <a class="btn" id="hero-cta" href="#lead">
@@ -179,7 +179,8 @@
                 "Portada de la Guía de naturaleza de Santa Catarina 2026. Rennie, el guía ilustrado, saluda sobre una playa y cerros de mata atlántica.",
                 "(min-width: 960px) 380px, 72vw",
                 true,
-                "book-cover"
+                "book-cover",
+                "Capa do Guia de natureza de Santa Catarina 2026. O Rennie, o guia ilustrado, acena sobre uma praia e morros de mata atlântica."
               ));
             </script>
           </div>
@@ -343,11 +344,11 @@
           <article class="card">
             <h3>
               <span class="lang-en">Useful Portuguese and emergencies</span>
-              <span class="lang-es">Portugués útil y emergencias</span><span class="lang-pt">Português útil e emergências</span>
+              <span class="lang-es">Portugués útil y emergencias</span><span class="lang-pt">Fala, manezinho! e emergências</span>
             </h3>
             <p>
               <span class="lang-en">Short phrases for the table, the bill and the beach. 190 military police, 192 SAMU ambulance, 193 fire brigade and lifeguards, 191 federal highway police, 199 civil defense, 0800 061 8080 Ibama.</span>
-              <span class="lang-es">Frases cortas para la mesa, la cuenta y la playa. 190 policía militar, 192 ambulancia SAMU, 193 bomberos y guardavidas, 191 policía rodoviaria federal, 199 defensa civil, 0800 061 8080 Ibama.</span><span class="lang-pt">Frases curtas para a mesa, a conta e a praia. 190 polícia militar, 192 ambulância SAMU, 193 bombeiros e salva-vidas, 191 polícia rodoviária federal, 199 defesa civil, 0800 061 8080 Ibama.</span>
+              <span class="lang-es">Frases cortas para la mesa, la cuenta y la playa. 190 policía militar, 192 ambulancia SAMU, 193 bomberos y guardavidas, 191 policía rodoviaria federal, 199 defensa civil, 0800 061 8080 Ibama.</span><span class="lang-pt">Expressões do manezês, o sotaque da Ilha: ó-lhó-lhó, dazumbanho, mô quirido. 190 polícia militar, 192 SAMU, 193 bombeiros e guarda-vidas, 191 polícia rodoviária federal, 199 defesa civil, 0800 061 8080 Ibama.</span>
             </p>
           </article>
         </div>
@@ -367,21 +368,22 @@
           </h2>
           <p>
             <span class="lang-en">Page 8 and page 12, in the language of this page. Open a page to read it larger.</span>
-            <span class="lang-es">La página 8 y la página 12, en el idioma de esta página. Abrí una página para leerla más grande.</span><span class="lang-pt">As páginas 8 e 12 da edição em inglês. Abra uma página para ler maior.</span>
+            <span class="lang-es">La página 8 y la página 12, en el idioma de esta página. Abrí una página para leerla más grande.</span><span class="lang-pt">As páginas 8 e 12, no idioma desta página. Abra uma página para ler maior.</span>
           </p>
         </div>
         <div class="sample-grid">
           <figure>
             <script>
               document.write(
-                '<a class="sample-zoom" data-photo-link="map" href="img/map-' + (window.__scLang === "es" ? "es" : "en") + '-1600.webp" target="_blank" rel="noopener">' +
+                '<a class="sample-zoom" data-photo-link="map" href="img/map-' + (window.__scLang === "es" || window.__scLang === "pt" ? window.__scLang : "en") + '-1600.webp" target="_blank" rel="noopener">' +
                 window.__scPhoto(
                   "map",
                   "Sample page 8: a map of Santa Catarina with the 1-week and 2-week routes and drive times from Florianópolis.",
                   "Página de muestra 8: mapa de Santa Catarina con las rutas de 1 y 2 semanas y los tiempos de manejo desde Florianópolis.",
                   "(min-width: 900px) 480px, 92vw",
                   false,
-                  ""
+                  "",
+                  "Página de amostra 8: mapa de Santa Catarina com os roteiros de 1 e 2 semanas e o tempo de carro a partir de Florianópolis."
                 ) +
                 "</a>"
               );
@@ -394,14 +396,15 @@
           <figure>
             <script>
               document.write(
-                '<a class="sample-zoom" data-photo-link="day" href="img/day-' + (window.__scLang === "es" ? "es" : "en") + '-1600.webp" target="_blank" rel="noopener">' +
+                '<a class="sample-zoom" data-photo-link="day" href="img/day-' + (window.__scLang === "es" || window.__scLang === "pt" ? window.__scLang : "en") + '-1600.webp" target="_blank" rel="noopener">' +
                 window.__scPhoto(
                   "day",
                   "Sample page 12: Day 3 at Lagoa da Conceição and the Joaquina dunes, with the schedule, estimated cost and Rennie's tip.",
                   "Página de muestra 12: Día 3 en Lagoa da Conceição y las dunas de Joaquina, con el horario, el costo estimado y el tip de Rennie.",
                   "(min-width: 900px) 480px, 92vw",
                   false,
-                  ""
+                  "",
+                  "Página de amostra 12: Dia 3 na Lagoa da Conceição e nas dunas da Joaquina, com o horário, o custo estimado e a dica do Rennie."
                 ) +
                 "</a>"
               );
@@ -532,10 +535,10 @@
                 <select name="guide_language" id="guide-language" required>
                   <option value="en">English</option>
                   <option value="es">Español</option>
+                  <option value="pt">Português</option>
                 </select>
               </label>
             </div>
-            <p class="fine lang-pt">O guia está disponível em espanhol e inglês.</p>
 
             <div class="checks">
               <label class="check">
@@ -612,7 +615,7 @@
             </summary>
             <p>
               <span class="lang-en">29 illustrated pages and two routes: one week, and two weeks. A route map includes drive times from Florianópolis. Each day has what to do, the best time, an approximate budget in R$ checked in November 2026, and Rennie's tip. Also how to get there, where to stay, Parksnet, Holafly, food, money-saving tips, a packing list, useful Portuguese and emergency numbers.</span>
-              <span class="lang-es">29 páginas ilustradas y dos rutas: una semana, y dos semanas. El mapa de las rutas trae los tiempos de manejo desde Florianópolis. Cada día trae qué hacer, el mejor horario, un presupuesto aproximado en R$ revisado en noviembre de 2026 y el tip de Rennie. También cómo llegar, dónde alojarte, Parksnet, Holafly, comida, tips para ahorrar, qué llevar, portugués útil y emergencias.</span><span class="lang-pt">29 páginas ilustradas e dois roteiros: uma semana e duas semanas. O mapa dos roteiros traz o tempo de carro a partir de Florianópolis. Cada dia traz o que fazer, o melhor horário, um orçamento aproximado em R$ conferido em novembro de 2026 e a dica do Rennie. Também como chegar, onde ficar, Parksnet, Holafly, comida, dicas para economizar, o que levar, português útil e emergências.</span>
+              <span class="lang-es">29 páginas ilustradas y dos rutas: una semana, y dos semanas. El mapa de las rutas trae los tiempos de manejo desde Florianópolis. Cada día trae qué hacer, el mejor horario, un presupuesto aproximado en R$ revisado en noviembre de 2026 y el tip de Rennie. También cómo llegar, dónde alojarte, Parksnet, Holafly, comida, tips para ahorrar, qué llevar, portugués útil y emergencias.</span><span class="lang-pt">29 páginas ilustradas e dois roteiros: uma semana e duas semanas. O mapa dos roteiros traz o tempo de carro a partir de Florianópolis. Cada dia traz o que fazer, o melhor horário, um orçamento aproximado em R$ conferido em novembro de 2026 e a dica do Rennie. Também como chegar, onde ficar, Parksnet, Holafly, comida, dicas para economizar, o que levar, expressões do manezês e emergências.</span>
             </p>
           </details>
           <details>
@@ -641,8 +644,8 @@
               <span class="lang-es">¿En qué idioma llega el PDF?</span><span class="lang-pt">Em que idioma chega o PDF?</span>
             </summary>
             <p>
-              <span class="lang-en">Spanish or English. You choose it on the form. The Spanish edition uses Rioplatense voseo. The guide is not in Portuguese: Portuguese shows up only as useful phrases for the trip.</span>
-              <span class="lang-es">Español o inglés. Lo elegís en el formulario. El español de la guía usa voseo rioplatense. La guía no está en portugués: el portugués aparece solo como frases útiles para el viaje.</span><span class="lang-pt">Em espanhol ou inglês. Você escolhe no formulário. Ainda não há edição em português: o português aparece no guia como frases úteis para a viagem.</span>
+              <span class="lang-en">Spanish, English, or Portuguese. You choose it on the form. The Spanish edition uses Rioplatense voseo. The Portuguese edition swaps the phrase list for Fala, manezinho!, expressions from the island accent.</span>
+              <span class="lang-es">Español, inglés o portugués. Lo elegís en el formulario. El español de la guía usa voseo rioplatense. La edición en portugués cambia las frases útiles por Fala, manezinho!, expresiones del manezês.</span><span class="lang-pt">Espanhol, inglês ou português. Você escolhe no formulário. A edição em português troca a lista de frases por Fala, manezinho!, com expressões do manezês.</span>
             </p>
           </details>
           <details>
@@ -677,7 +680,7 @@
   <script>
     (function () {
       var select = document.getElementById("guide-language");
-      if (select) select.value = window.__scLang === "es" ? "es" : "en";
+      if (select) select.value = window.__scLang === "es" || window.__scLang === "pt" ? window.__scLang : "en";
     })();
   </script>
   <script src="script.js" defer></script>

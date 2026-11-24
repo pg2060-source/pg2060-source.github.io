@@ -1,7 +1,7 @@
 /* Santa Catarina guide funnel.
    LEAD_ENDPOINT is the Apps Script web app URL (ends in /exec).
    GUIDE_URL_ES and GUIDE_URL_EN are the Google Drive share links.
-   GUIDE_URL_PT is ready for a Portuguese PDF. The form does not offer it yet. */
+   GUIDE_URL_PT is the Google Drive share link for the Portuguese PDF. */
 const LEAD_ENDPOINT = "PASTE_APPS_SCRIPT_URL_HERE";
 const GUIDE_URL_ES = "PASTE_GUIDE_URL_ES_HERE";
 const GUIDE_URL_EN = "PASTE_GUIDE_URL_EN_HERE";
@@ -42,11 +42,11 @@ const GUIDE_URL_PT = "PASTE_GUIDE_URL_PT_HERE";
   }
 
   function guideDefault(code) {
-    return code === "es" ? "es" : "en";
+    return code === "es" || code === "pt" ? code : "en";
   }
 
   function photoCode(code) {
-    return code === "es" ? "es" : "en";
+    return code === "es" || code === "pt" ? code : "en";
   }
 
   function currentCopy() {
@@ -125,7 +125,7 @@ const GUIDE_URL_PT = "PASTE_GUIDE_URL_PT_HERE";
       if (!base) return;
       var shown = img.getAttribute("src") || "";
       var next = "img/" + base + "-" + pictures + "-";
-      var alt = img.getAttribute(pictures === "es" ? "data-alt-es" : "data-alt-en") || img.alt;
+      var alt = img.getAttribute(pictures === "es" ? "data-alt-es" : pictures === "pt" ? "data-alt-pt" : "data-alt-en") || img.alt;
       if (shown.indexOf(next) === 0) {
         img.alt = alt;
         return;
