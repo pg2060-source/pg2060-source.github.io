@@ -3,9 +3,9 @@
    GUIDE_URL_ES and GUIDE_URL_EN are the Google Drive share links.
    GUIDE_URL_PT is the Google Drive share link for the Portuguese PDF. */
 const LEAD_ENDPOINT = "PASTE_APPS_SCRIPT_URL_HERE";
-const GUIDE_URL_ES = "PASTE_GUIDE_URL_ES_HERE";
-const GUIDE_URL_EN = "PASTE_GUIDE_URL_EN_HERE";
-const GUIDE_URL_PT = "PASTE_GUIDE_URL_PT_HERE";
+const GUIDE_URL_ES = "https://drive.google.com/file/d/1pMaLtY9xGUU9FSCeMqvcq_aPF08rTYtD/view?usp=sharing";
+const GUIDE_URL_EN = "https://drive.google.com/file/d/1hSOW5je5IiQijxPdsSKecmyOYGj5ljQG/view?usp=sharing";
+const GUIDE_URL_PT = "https://drive.google.com/file/d/1M9OljzWi3CAUWCf4edcrfZ_5qeQ8P2im/view?usp=sharing";
 
 (function () {
   "use strict";
