@@ -2,7 +2,7 @@
    LEAD_ENDPOINT is the Apps Script web app URL (ends in /exec).
    GUIDE_URL_ES and GUIDE_URL_EN are the Google Drive share links.
    GUIDE_URL_PT is the Google Drive share link for the Portuguese PDF. */
-const LEAD_ENDPOINT = "PASTE_APPS_SCRIPT_URL_HERE";
+const LEAD_ENDPOINT = "https://script.google.com/macros/s/AKfycbyasYJWdCZpjOa5GytpBfSisBOKfvbG1-PipfP-cjl0EeGvZXRhX4RlaVASqxTxBRx5/exec";
 const GUIDE_URL_ES = "https://drive.google.com/file/d/1pMaLtY9xGUU9FSCeMqvcq_aPF08rTYtD/view?usp=sharing";
 const GUIDE_URL_EN = "https://drive.google.com/file/d/1hSOW5je5IiQijxPdsSKecmyOYGj5ljQG/view?usp=sharing";
 const GUIDE_URL_PT = "https://drive.google.com/file/d/1M9OljzWi3CAUWCf4edcrfZ_5qeQ8P2im/view?usp=sharing";
