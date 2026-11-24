@@ -282,7 +282,7 @@
       box-shadow: 0 10px 36px rgba(0, 0, 0, 0.18);
     }
 
-    html.guide-card-hidden .guide-card {
+    html.guide-card-hidden .guide-card-hero {
       display: none;
     }
 
@@ -393,6 +393,16 @@
       .guide-card-title {
         font-size: 16px;
       }
+    }
+
+    .guide-card-travel {
+      margin-top: 48px;
+      padding-right: 16px;
+      background: var(--apple-white);
+      border: 1px solid var(--apple-border);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      -webkit-backdrop-filter: none;
+      backdrop-filter: none;
     }
 
     /* ── BUTTONS ── */
@@ -1160,7 +1170,7 @@
     <h1>Pablo &amp; Luisa Garcia</h1>
     <p class="hero-sub">Musicians &bull; Entrepreneurs &bull; Travelers</p>
 
-    <div class="guide-card">
+    <div class="guide-card guide-card-hero">
       <button type="button" class="guide-card-close" aria-label="Close" onclick="dismissGuideCard()">
         <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false">
           <path d="M4 4l8 8M12 4L4 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
@@ -1304,6 +1314,16 @@
         </div>
       </a>
 
+    </div>
+
+    <div class="guide-card guide-card-travel">
+      <img class="guide-card-cover" src="/guides/santa-catarina/img/cover-en-640.webp" srcset="/guides/santa-catarina/img/cover-en-640.webp 640w, /guides/santa-catarina/img/cover-en-1200.webp 1200w, /guides/santa-catarina/img/cover-en-1600.webp 1600w" sizes="(max-width: 640px) 56px, 78px" alt="Cover of the Santa Catarina Nature Travel Guide 2026. Rennie, the illustrated guide, waves above a beach and forested hills." width="1600" height="2263" loading="lazy" decoding="async">
+      <div class="guide-card-copy">
+        <p class="guide-card-eyebrow">FREE PDF GUIDE</p>
+        <p class="guide-card-title">Claim your free Santa Catarina guide</p>
+        <p class="guide-card-line">Two ready-made routes, 100+ local tips, illustrated by Rennie.</p>
+        <a class="btn guide-card-cta" href="/guides/santa-catarina/" onclick="if (typeof gtag === 'function') gtag('event', 'guide_card_click', { placement: 'home_travel' });">Get the guide</a>
+      </div>
     </div>
   </div>
 </div>
