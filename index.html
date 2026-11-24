@@ -1,17 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- TRAVELPAYOUTS -->
-  <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
-  (function () {
-      var script = document.createElement("script");
-      script.async = 1;
-      script.setAttribute("data-cmp-ab","2");
-      script.src = 'https://emrldtp.cc/NTg5Mjc5.js?t=589279';
-      document.head.appendChild(script);
-  })();
-</script>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" as="image" href="images/hero-768.webp" imagesrcset="images/hero-600.webp 600w, images/hero-768.webp 768w, images/hero-800.webp 800w, images/hero-1200.webp 1200w, images/hero-1448.webp 1448w" imagesizes="100vw" fetchpriority="high">
   <script>
     function dismissGuideCard() {
       try { localStorage.setItem("sc_guide_card_dismissed", "1"); } catch (err) {}
@@ -25,7 +17,6 @@
     } catch (err) {}
   </script>
   <title>Pablo y Luisa Garcia</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Musicians, entrepreneurs, and travelers. Original rock music, travel films, Rock Island apparel, and guided tours across South America.">
   <link rel="canonical" href="https://pabloyluisagarcia.com/">
   <meta name="google-site-verification" content="u4ozSlLgr8D6lenQMlKA1H30sajTmDFXxWqvFfYIj3k" />
@@ -45,8 +36,6 @@
   <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
   <meta name="theme-color" content="#4b2cff">
 
-  <link rel="preload" as="image" href="images/hero-1448.webp" imagesrcset="images/hero-800.webp 800w, images/hero-1200.webp 1200w, images/hero-1448.webp 1448w" imagesizes="100vw" fetchpriority="high">
-
   <!-- OPEN GRAPH -->
   <meta property="og:title" content="Pablo & Luisa Garcia">
   <meta property="og:description" content="Musicians • Entrepreneurs • Travelers">
@@ -59,10 +48,6 @@
   <meta name="twitter:title" content="Pablo & Luisa Garcia">
   <meta name="twitter:description" content="Musicians • Entrepreneurs • Travelers">
   <meta name="twitter:image" content="https://pabloyluisagarcia.com/preview.jpg">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -513,12 +498,54 @@
       box-shadow: 0 20px 60px rgba(0,0,0,0.1);
     }
 
-    .channel-card iframe {
+    .channel-card iframe,
+    .channel-card .yt-facade {
       width: 100%;
       height: 220px;
+      border: 0;
       border-radius: 0;
       display: block;
       margin: 0;
+    }
+
+    .channel-card .yt-facade {
+      position: relative;
+      padding: 0;
+      background: #000;
+      cursor: pointer;
+      font: inherit;
+      color: inherit;
+      appearance: none;
+      -webkit-appearance: none;
+      overflow: hidden;
+    }
+
+    .channel-card .yt-facade img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .yt-play {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 68px;
+      height: 48px;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.35));
+    }
+
+    .yt-facade:hover .yt-play,
+    .yt-facade:focus-visible .yt-play {
+      transform: translate(-50%, -50%) scale(1.06);
+    }
+
+    .yt-facade:focus-visible {
+      outline: 2px solid var(--apple-blue);
+      outline-offset: -4px;
     }
 
     .channel-info {
@@ -651,7 +678,8 @@
         gap: 20px;
       }
 
-      .channel-card iframe {
+      .channel-card iframe,
+      .channel-card .yt-facade {
         height: 200px;
       }
 
@@ -1165,7 +1193,7 @@
 
 <!-- HERO -->
 <header>
-  <img class="hero-photo" src="images/hero-1448.webp" srcset="images/hero-800.webp 800w, images/hero-1200.webp 1200w, images/hero-1448.webp 1448w" sizes="100vw" alt="" width="1448" height="1086" fetchpriority="high" decoding="async">
+  <img class="hero-photo" src="images/hero-1448.webp" srcset="images/hero-600.webp 600w, images/hero-768.webp 768w, images/hero-800.webp 800w, images/hero-1200.webp 1200w, images/hero-1448.webp 1448w" sizes="100vw" alt="" width="1448" height="1086" fetchpriority="high">
   <div class="hero-content">
     <h1>Pablo &amp; Luisa Garcia</h1>
     <p class="hero-sub">Musicians &bull; Entrepreneurs &bull; Travelers</p>
@@ -1176,7 +1204,7 @@
           <path d="M4 4l8 8M12 4L4 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
         </svg>
       </button>
-      <img class="guide-card-cover" src="/guides/santa-catarina/img/cover-en-640.webp" srcset="/guides/santa-catarina/img/cover-en-640.webp 640w, /guides/santa-catarina/img/cover-en-1200.webp 1200w, /guides/santa-catarina/img/cover-en-1600.webp 1600w" sizes="(max-width: 640px) 56px, 78px" alt="Cover of the Santa Catarina Nature Travel Guide 2026. Rennie, the illustrated guide, waves above a beach and forested hills." width="1600" height="2263" decoding="async">
+      <img class="guide-card-cover" src="/guides/santa-catarina/img/cover-en-240.webp" srcset="/guides/santa-catarina/img/cover-en-240.webp 240w, /guides/santa-catarina/img/cover-en-640.webp 640w, /guides/santa-catarina/img/cover-en-1200.webp 1200w, /guides/santa-catarina/img/cover-en-1600.webp 1600w" sizes="(max-width: 640px) 56px, 78px" alt="Cover of the Santa Catarina Nature Travel Guide 2026. Rennie, the illustrated guide, waves above a beach and forested hills." width="1600" height="2263" fetchpriority="low" decoding="async">
       <div class="guide-card-copy">
         <p class="guide-card-eyebrow">FREE PDF GUIDE</p>
         <p class="guide-card-title">Claim your free Santa Catarina guide</p>
@@ -1199,7 +1227,10 @@
     <div class="channel-grid">
       <!-- Channel 1 -->
       <div class="channel-card">
-        <iframe src="https://www.youtube.com/embed/eokOdDlruzI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button type="button" class="yt-facade" data-video-id="eokOdDlruzI" data-title="Into Space" aria-label="Play Into Space">
+          <img src="images/yt-into-space.webp" alt="" width="800" height="450" loading="lazy" decoding="async">
+          <span class="yt-play" aria-hidden="true"><svg viewBox="0 0 68 48" width="68" height="48" focusable="false"><path fill="#FF0000" d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z"/><path fill="#fff" d="M45 24 27 14v20z"/></svg></span>
+        </button>
         <div class="channel-info">
           <h3>Rock Island</h3>
           <p>Original music, live sessions, and everything rock.</p>
@@ -1209,7 +1240,10 @@
 
       <!-- Channel 2 -->
       <div class="channel-card">
-        <iframe src="https://www.youtube.com/embed/CSgI5UoQPXI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button type="button" class="yt-facade" data-video-id="CSgI5UoQPXI" data-title="Space Adventure Balneario Camboriú: Tour y Documental de la Carrera Espacial" aria-label="Play Space Adventure Balneario Camboriú: Tour y Documental de la Carrera Espacial">
+          <img src="images/yt-space-adventure.webp" alt="" width="800" height="450" loading="lazy" decoding="async">
+          <span class="yt-play" aria-hidden="true"><svg viewBox="0 0 68 48" width="68" height="48" focusable="false"><path fill="#FF0000" d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z"/><path fill="#fff" d="M45 24 27 14v20z"/></svg></span>
+        </button>
         <div class="channel-info">
           <h3>Turismo por el Mundo</h3>
           <p>Travel stories and destinations from around the globe.</p>
@@ -1296,7 +1330,7 @@
 
       <!-- Rio de Janeiro -->
       <a class="destination-card" onclick="openDest('rio'); return false;" href="#">
-        <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=600&q=80" alt="Rio de Janeiro">
+        <img src="images/rio-1600.webp" srcset="images/rio-640.webp 640w, images/rio-800.webp 800w, images/rio-1200.webp 1200w, images/rio-1600.webp 1600w" sizes="(max-width: 768px) 100vw, 320px" alt="Rio de Janeiro" width="1600" height="1067" loading="lazy" decoding="async">
         <span class="dest-tag">Brazil</span>
         <div class="destination-card-overlay">
           <h3>Rio de Janeiro</h3>
@@ -1317,7 +1351,7 @@
     </div>
 
     <div class="guide-card guide-card-travel">
-      <img class="guide-card-cover" src="/guides/santa-catarina/img/cover-en-640.webp" srcset="/guides/santa-catarina/img/cover-en-640.webp 640w, /guides/santa-catarina/img/cover-en-1200.webp 1200w, /guides/santa-catarina/img/cover-en-1600.webp 1600w" sizes="(max-width: 640px) 56px, 78px" alt="Cover of the Santa Catarina Nature Travel Guide 2026. Rennie, the illustrated guide, waves above a beach and forested hills." width="1600" height="2263" loading="lazy" decoding="async">
+      <img class="guide-card-cover" src="/guides/santa-catarina/img/cover-en-240.webp" srcset="/guides/santa-catarina/img/cover-en-240.webp 240w, /guides/santa-catarina/img/cover-en-640.webp 640w, /guides/santa-catarina/img/cover-en-1200.webp 1200w, /guides/santa-catarina/img/cover-en-1600.webp 1600w" sizes="(max-width: 640px) 56px, 78px" alt="Cover of the Santa Catarina Nature Travel Guide 2026. Rennie, the illustrated guide, waves above a beach and forested hills." width="1600" height="2263" loading="lazy" decoding="async">
       <div class="guide-card-copy">
         <p class="guide-card-eyebrow">FREE PDF GUIDE</p>
         <p class="guide-card-title">Claim your free Santa Catarina guide</p>
@@ -1415,7 +1449,7 @@
 <!-- RIO DE JANEIRO -->
 <div class="dest-panel" id="panel-rio">
   <div class="dest-panel-hero">
-    <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=1200&q=80" alt="Rio de Janeiro">
+    <img src="images/rio-1600.webp" srcset="images/rio-640.webp 640w, images/rio-800.webp 800w, images/rio-1200.webp 1200w, images/rio-1600.webp 1600w" sizes="100vw" alt="Rio de Janeiro" width="1600" height="1067" loading="lazy" decoding="async">
     <button class="dest-panel-back" onclick="closeDest()">← Back</button>
     <div class="dest-panel-hero-overlay">
       <h2>Rio de Janeiro</h2>
@@ -1428,7 +1462,7 @@
     <div class="tours-grid">
 
       <div class="tour-card">
-        <img class="tour-card-img" src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=600&q=80" alt="Rio de Janeiro">
+        <img class="tour-card-img" src="images/rio-1600.webp" srcset="images/rio-640.webp 640w, images/rio-800.webp 800w, images/rio-1200.webp 1200w, images/rio-1600.webp 1600w" sizes="(max-width: 768px) 100vw, 320px" alt="Rio de Janeiro" width="1600" height="1067" loading="lazy" decoding="async">
         <div class="tour-card-body">
           <h3>Best of Rio: Culture, Local Flavors, History &amp; Beaches</h3>
           <p>Experience Rio de Janeiro's highlights in one unforgettable day, featuring iconic beaches, vibrant street art, and visits to the Museu do Amanhã and Centro Cultural Banco do Brasil. Enjoy local flavors while discovering the city's rich culture, history, and stunning waterfront views.</p>
@@ -1582,5 +1616,39 @@
 })();
 </script>
 
+<script>
+(function () {
+  document.addEventListener("click", function (event) {
+    var btn = event.target && event.target.closest ? event.target.closest(".yt-facade") : null;
+    if (!btn) return;
+    var id = btn.getAttribute("data-video-id") || "";
+    if (!/^[A-Za-z0-9_-]{11}$/.test(id)) return;
+    var iframe = document.createElement("iframe");
+    iframe.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1";
+    iframe.title = btn.getAttribute("data-title") || "YouTube video";
+    iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+    iframe.setAttribute("allowfullscreen", "");
+    btn.replaceWith(iframe);
+  });
+})();
+</script>
+<!-- TRAVELPAYOUTS -->
+<script data-cmp-ab="2">
+(function () {
+  function loadTravelpayouts() {
+    var script = document.createElement("script");
+    script.async = true;
+    script.setAttribute("data-cmp-ab", "2");
+    script.src = "https://emrldtp.cc/NTg5Mjc5.js?t=589279";
+    document.head.appendChild(script);
+  }
+  function schedule() {
+    if ("requestIdleCallback" in window) requestIdleCallback(loadTravelpayouts, { timeout: 3000 });
+    else setTimeout(loadTravelpayouts, 1);
+  }
+  if (document.readyState === "complete") schedule();
+  else window.addEventListener("load", schedule);
+})();
+</script>
 </body>
 </html>
