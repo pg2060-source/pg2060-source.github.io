@@ -1,297 +1,685 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Unlock a premium Santa Catarina travel guide with seven ready-to-use itineraries, hidden beaches, maps, and local recommendations."
-    />
-    <title>The Ultimate Santa Catarina Travel Guide</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+  </script>
+  <script src="/analytics.js" defer></script>
+  <title>Santa Catarina Nature Travel Guide 2026</title>
+  <meta name="description" content="Free 2026 PDF guide: a 1-week route around Florianópolis and a 2-week extension with whales and the Serra. Every day includes what to do, timing, an approximate R$ budget and Rennie's tip.">
+  <link rel="canonical" href="https://pabloyluisagarcia.com/guides/santa-catarina/">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Santa Catarina Nature Travel Guide 2026">
+  <meta property="og:description" content="Free 2026 PDF guide: a 1-week route around Florianópolis and a 2-week extension with whales and the Serra. Every day includes what to do, timing, an approximate R$ budget and Rennie's tip.">
+  <meta property="og:url" content="https://pabloyluisagarcia.com/guides/santa-catarina/">
+  <meta property="og:image" content="https://pabloyluisagarcia.com/guides/santa-catarina/img/cover-en-1200.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="1697">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_AR">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Santa Catarina Nature Travel Guide 2026">
+  <meta name="twitter:description" content="Free 2026 PDF guide: a 1-week island route and a 2-week extension with whales and the Serra.">
+  <meta name="twitter:image" content="https://pabloyluisagarcia.com/guides/santa-catarina/img/cover-en-1200.webp">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#161617">
+  <script>
+    (function () {
+      var KEY = "sc-guide-lang";
+      var lang = "en";
+      try {
+        var saved = localStorage.getItem(KEY);
+        if (saved === "es" || saved === "en" || saved === "pt") lang = saved;
+        else {
+          var nav = (navigator.language || "").toLowerCase();
+          if (nav.indexOf("pt") === 0) lang = "pt";
+          else if (nav.indexOf("es") === 0) lang = "es";
+        }
+      } catch (err) {}
+      window.__scLang = lang;
+      var meta = {
+        es: {
+          title: "Guía de naturaleza de Santa Catarina 2026",
+          description: "Guía gratis en PDF (2026): ruta de 1 semana por Florianópolis y vecinos, y extensión de 2 semanas con ballenas y la Serra. Cada día trae qué hacer, horario, presupuesto en R$ y un tip de Rennie.",
+          image: "https://pabloyluisagarcia.com/guides/santa-catarina/img/cover-es-1200.webp"
+        },
+        en: {
+          title: "Santa Catarina Nature Travel Guide 2026",
+          description: "Free 2026 PDF guide: a 1-week route around Florianópolis and a 2-week extension with whales and the Serra. Every day includes what to do, timing, an approximate R$ budget and Rennie's tip.",
+          image: "https://pabloyluisagarcia.com/guides/santa-catarina/img/cover-en-1200.webp"
+        },
+        pt: {
+          title: "Guia de natureza de Santa Catarina 2026",
+          description: "Guia grátis em PDF (2026): roteiro de 1 semana por Florianópolis e uma extensão de 2 semanas com baleias e a Serra. Cada dia traz o que fazer, horário, orçamento aproximado em R$ e a dica do Rennie.",
+          image: "https://pabloyluisagarcia.com/guides/santa-catarina/img/cover-en-1200.webp"
+        }
+      };
+      window.__scMeta = meta;
+      document.documentElement.lang = lang;
+      document.documentElement.setAttribute("data-lang", lang);
+      document.title = meta[lang].title;
+      var description = document.querySelector('meta[name="description"]');
+      if (description) description.setAttribute("content", meta[lang].description);
+      var ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.setAttribute("content", meta[lang].title);
+      var ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.setAttribute("content", meta[lang].description);
+      var ogImage = document.querySelector('meta[property="og:image"]');
+      if (ogImage) ogImage.setAttribute("content", meta[lang].image);
+      var twTitle = document.querySelector('meta[name="twitter:title"]');
+      if (twTitle) twTitle.setAttribute("content", meta[lang].title);
+      var twDesc = document.querySelector('meta[name="twitter:description"]');
+      if (twDesc) twDesc.setAttribute("content", meta[lang].description);
+      var twImage = document.querySelector('meta[name="twitter:image"]');
+      if (twImage) twImage.setAttribute("content", meta[lang].image);
+      var locale = document.querySelector('meta[property="og:locale"]');
+      if (locale) locale.setAttribute("content", lang === "es" ? "es_AR" : lang === "pt" ? "pt_BR" : "en_US");
+      var photo = lang === "es" ? "es" : "en";
+      var preload = document.createElement("link");
+      preload.rel = "preload";
+      preload.as = "image";
+      preload.href = "img/cover-" + photo + "-1200.webp";
+      preload.setAttribute("imagesrcset", "img/cover-" + photo + "-640.webp 640w, img/cover-" + photo + "-1200.webp 1200w, img/cover-" + photo + "-1600.webp 1600w");
+      preload.setAttribute("imagesizes", "(min-width: 960px) 380px, 72vw");
+      document.head.appendChild(preload);
+      window.__scPhoto = function (base, altEn, altEs, sizes, eager, className) {
+        var use = lang === "es" ? "es" : "en";
+        function esc(value) {
+          return String(value).replace(/&/g, "&amp;").replace(/"/g, "&quot;");
+        }
+        var alt = esc(use === "es" ? altEs : altEn);
+        var srcset = "img/" + base + "-" + use + "-640.webp 640w, img/" + base + "-" + use + "-1200.webp 1200w, img/" + base + "-" + use + "-1600.webp 1600w";
+        var load = eager ? 'fetchpriority="high"' : 'loading="lazy"';
+        return '<img class="' + esc(className || "") + '" data-photo="' + base + '" data-alt-en="' + esc(altEn) + '" data-alt-es="' + esc(altEs) + '" src="img/' + base + '-' + use + '-1200.webp" srcset="' + srcset + '" sizes="' + esc(sizes) + '" alt="' + alt + '" width="1600" height="2263" decoding="async" ' + load + ">";
+      };
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">
+    <span class="lang-en">Skip to content</span>
+    <span class="lang-es">Saltar al contenido</span><span class="lang-pt">Pular para o conteúdo</span>
+  </a>
 
-    <header class="site-header" aria-label="Primary">
-      <nav class="nav-shell" aria-label="Main navigation">
-        <a class="brand" href="#hero" aria-label="Santa Catarina Guide home">
-          SC Guide
-        </a>
-        <button
-          class="nav-toggle"
-          type="button"
-          aria-label="Open navigation"
-          aria-expanded="false"
-          aria-controls="nav-menu"
-        >
-          <span></span>
-          <span></span>
-        </button>
-        <div class="nav-menu" id="nav-menu">
-          <a href="#features">Features</a>
-          <a href="#itineraries">Itineraries</a>
-          <a href="#included">Included</a>
-          <a href="#unlock" class="nav-cta">Unlock</a>
-        </div>
-      </nav>
-    </header>
+  <header class="navbar">
+    <a class="nav-brand" href="/">Pablo &amp; Luisa</a>
+    <div class="nav-actions">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-set-lang="es" aria-pressed="false">ES</button>
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-set-lang="pt" aria-pressed="false">PT</button>
+      </div>
+      <a class="nav-cta" href="#lead">
+        <span class="lang-en">Get the guide</span>
+        <span class="lang-es">Quiero la guía</span><span class="lang-pt">Quero o guia</span>
+      </a>
+    </div>
+  </header>
 
-    <main id="main">
-      <section class="hero" id="hero" aria-labelledby="hero-title">
-        <div class="hero-media" aria-hidden="true">
-          <img
-            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=82"
-            alt=""
-            width="1800"
-            height="1200"
-            fetchpriority="high"
-            decoding="async"
-          />
-        </div>
-        <div class="hero-overlay" aria-hidden="true"></div>
-        <div class="hero-content reveal">
-          <p class="eyebrow">Santa Catarina, beautifully planned</p>
-          <h1 id="hero-title">The Ultimate Santa Catarina Travel Guide</h1>
-          <p class="hero-subtitle">
-            Explore Brazil's most beautiful state with 7 ready-to-use
-            itineraries, hidden beaches, interactive maps and local
-            recommendations.
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">
+            <span class="lang-en">Free PDF · 2026</span>
+            <span class="lang-es">PDF gratis · 2026</span><span class="lang-pt">PDF grátis · 2026</span>
           </p>
-          <form class="unlock-form" aria-label="Unlock the free guide">
-            <label>
-              <span>Name</span>
-              <input
-                type="text"
-                name="name"
-                autocomplete="name"
-                placeholder="Your name"
-                required
-              />
-            </label>
-            <label>
-              <span>Email</span>
-              <input
-                type="email"
-                name="email"
-                autocomplete="email"
-                placeholder="you@example.com"
-                required
-              />
-            </label>
-            <button type="submit">Unlock Free Guide</button>
-          </form>
-        </div>
-      </section>
-
-      <section class="section section-light" id="features" aria-labelledby="features-title">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Everything in reach</p>
-          <h2 id="features-title">Plan less. See more.</h2>
-          <p>
-            A polished field guide built for travelers who want clarity,
-            beauty, and the good places without losing a day to research.
+          <h1 id="hero-title">
+            <span class="lang-en">Santa Catarina Nature Travel Guide</span>
+            <span class="lang-es">Guía de naturaleza de Santa Catarina</span><span class="lang-pt">Guia de natureza de Santa Catarina</span>
+          </h1>
+          <p class="lede">
+            <span class="lang-en">Beaches, dunes, canyons and waterfalls in southern Brazil. Two ready-made routes, illustrated and narrated by Rennie, so you recognize each place the moment you arrive.</span>
+            <span class="lang-es">Playas, dunas, cañones y cascadas del sur de Brasil. Dos rutas listas, ilustradas y narradas por Rennie, para que reconozcas cada lugar apenas llegues.</span><span class="lang-pt">Praias, dunas, cânions e cachoeiras do sul do Brasil. Dois roteiros prontos, ilustrados e narrados pelo Rennie, para você reconhecer cada lugar assim que chegar.</span>
+          </p>
+          <ul class="bullets">
+            <li>
+              <span class="lang-en">A 1-week route on Florianópolis island, Balneário Camboriú and Bombinhas. No car required.</span>
+              <span class="lang-es">Ruta de 1 semana por la isla de Florianópolis, Balneário Camboriú y Bombinhas. Sin auto.</span><span class="lang-pt">Roteiro de 1 semana pela ilha de Florianópolis, Balneário Camboriú e Bombinhas. Sem carro.</span>
+            </li>
+            <li>
+              <span class="lang-en">A 2-week extension: the wild south coast, whale season and the Serra Catarinense. Rent a car from day 8.</span>
+              <span class="lang-es">Extensión de 2 semanas: costa sur, temporada de ballenas y la Serra Catarinense. Alquilá auto desde el día 8.</span><span class="lang-pt">Extensão de 2 semanas: litoral sul, temporada de baleias e a Serra Catarinense. Alugue um carro a partir do dia 8.</span>
+            </li>
+            <li>
+              <span class="lang-en">Every day: what to do, the best time to go, an approximate 2026 budget in R$ and Rennie's tip.</span>
+              <span class="lang-es">Cada día: qué hacer, el mejor horario, un presupuesto aproximado 2026 en R$ y el tip de Rennie.</span><span class="lang-pt">Cada dia: o que fazer, o melhor horário, um orçamento aproximado de 2026 em R$ e a dica do Rennie.</span>
+            </li>
+            <li>
+              <span class="lang-en">How to get there, where to stay, Parksnet tickets, a Holafly eSIM, food, a packing list, useful Portuguese and emergency numbers.</span>
+              <span class="lang-es">Cómo llegar, dónde alojarte, entradas de Parksnet, eSIM de Holafly, comida, qué llevar, portugués útil y números de emergencia.</span><span class="lang-pt">Como chegar, onde ficar, ingressos da Parksnet, eSIM da Holafly, comida, o que levar, português útil e telefones de emergência.</span>
+            </li>
+          </ul>
+          <a class="btn" id="hero-cta" href="#lead">
+            <span class="lang-en">Get the free guide</span>
+            <span class="lang-es">Descargá la guía gratis</span><span class="lang-pt">Baixe o guia grátis</span>
+          </a>
+          <p class="fine">
+            <span class="lang-en">29 illustrated pages. We email the PDF. Prices were checked in November 2026.</span>
+            <span class="lang-es">29 páginas ilustradas. Te mandamos el PDF por email. Los precios se revisaron en noviembre de 2026.</span><span class="lang-pt">29 páginas ilustradas. Enviamos o PDF por e-mail. Os preços foram conferidos em novembro de 2026.</span>
           </p>
         </div>
-        <div class="feature-grid">
-          <article class="feature-card reveal">
-            <div class="icon-pill" aria-hidden="true">⌖</div>
-            <h3>Interactive Maps</h3>
-            <p>
-              Beaches, viewpoints, trailheads, restaurants, and day routes
-              organized into calm, glanceable layers.
-            </p>
-          </article>
-          <article class="feature-card reveal">
-            <div class="icon-pill" aria-hidden="true">★</div>
-            <h3>Local Recommendations</h3>
-            <p>
-              Cafes, seafood counters, surf towns, and quiet streets chosen for
-              real-world ease, not generic lists.
-            </p>
-          </article>
-          <article class="feature-card reveal">
-            <div class="icon-pill" aria-hidden="true">◆</div>
-            <h3>Hidden Gems</h3>
-            <p>
-              Lesser-known coves, hilltop lookouts, and small detours that make
-              the state feel personal.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section preview-section" aria-labelledby="preview-title">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Guide preview</p>
-          <h2 id="preview-title">A travel guide that feels considered.</h2>
-        </div>
-        <div class="browser-mockup reveal">
-          <div class="browser-bar" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="book">
+          <div class="book-page">
+            <noscript>
+              <img class="book-cover" src="img/cover-en-640.webp" srcset="img/cover-en-640.webp 640w, img/cover-en-1200.webp 1200w, img/cover-en-1600.webp 1600w" sizes="(min-width: 960px) 380px, 72vw" alt="Cover of the Santa Catarina Nature Travel Guide 2026. Rennie, the illustrated guide, waves above a beach and forested hills." width="1600" height="2263">
+            </noscript>
+            <script>
+              document.write(window.__scPhoto(
+                "cover",
+                "Cover of the Santa Catarina Nature Travel Guide 2026. Rennie, the illustrated guide, waves above a beach and forested hills.",
+                "Portada de la Guía de naturaleza de Santa Catarina 2026. Rennie, el guía ilustrado, saluda sobre una playa y cerros de mata atlántica.",
+                "(min-width: 960px) 380px, 72vw",
+                true,
+                "book-cover"
+              ));
+            </script>
           </div>
-          <div class="browser-content">
-            <img
-              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80"
-              alt="A scenic coastal travel guide preview"
-              loading="lazy"
-              width="1400"
-              height="900"
-            />
-            <div class="guide-panel">
-              <p>Day 03</p>
-              <h3>Florianopolis Island Loop</h3>
-              <span>9 stops · 42 km · swim-friendly</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="inside" aria-labelledby="inside-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">
+            <span class="lang-en">What's inside</span>
+            <span class="lang-es">Qué hay adentro</span><span class="lang-pt">O que tem dentro</span>
+          </p>
+          <h2 id="inside-title">
+            <span class="lang-en">Two routes, one day at a time</span>
+            <span class="lang-es">Dos rutas, un día por vez</span><span class="lang-pt">Dois roteiros, um dia de cada vez</span>
+          </h2>
+          <p>
+            <span class="lang-en">A 29-page PDF. One printed map shows both routes and the drive times from Florianópolis.</span>
+            <span class="lang-es">Un PDF de 29 páginas. Un mapa impreso muestra las dos rutas y los tiempos de manejo desde Florianópolis.</span><span class="lang-pt">Um PDF de 29 páginas. Um mapa impresso mostra os dois roteiros e o tempo de carro a partir de Florianópolis.</span>
+          </p>
+        </div>
+
+        <div class="route-grid">
+          <article class="card">
+            <p class="kicker">
+              <span class="lang-en">1 week · island</span>
+              <span class="lang-es">1 semana · isla</span><span class="lang-pt">1 semana · ilha</span>
+            </p>
+            <h3>
+              <span class="lang-en">Florianópolis, Balneário and Bombinhas</span>
+              <span class="lang-es">Florianópolis, Balneário y Bombinhas</span><span class="lang-pt">Florianópolis, Balneário e Bombinhas</span>
+            </h3>
+            <p>
+              <span class="lang-en">Works without a car: Uber, local buses and boat trips.</span>
+              <span class="lang-es">Funciona sin auto: Uber, colectivos y paseos en barco.</span><span class="lang-pt">Funciona sem carro: Uber, ônibus e passeios de barco.</span>
+            </p>
+            <ol>
+              <li>
+                <span class="lang-en">North beaches: Jurerê and Daniela</span>
+                <span class="lang-es">Playas del norte: Jurerê y Daniela</span><span class="lang-pt">Praias do norte: Jurerê e Daniela</span>
+              </li>
+              <li>
+                <span class="lang-en">Boat to Ilha do Campeche</span>
+                <span class="lang-es">Barco a Ilha do Campeche</span><span class="lang-pt">Barco para a Ilha do Campeche</span>
+              </li>
+              <li>
+                <span class="lang-en">Lagoa and the Joaquina dunes</span>
+                <span class="lang-es">Lagoa y dunas de Joaquina</span><span class="lang-pt">Lagoa e dunas da Joaquina</span>
+              </li>
+              <li>
+                <span class="lang-en">Lagoinha do Leste and oysters in Ribeirão</span>
+                <span class="lang-es">Lagoinha do Leste y ostras en Ribeirão</span><span class="lang-pt">Lagoinha do Leste e ostras em Ribeirão</span>
+              </li>
+              <li>
+                <span class="lang-en">Balneário Camboriú, or Beto Carrero</span>
+                <span class="lang-es">Balneário Camboriú, o Beto Carrero</span><span class="lang-pt">Balneário Camboriú ou Beto Carrero</span>
+              </li>
+              <li>
+                <span class="lang-en">Snorkeling in Bombinhas</span>
+                <span class="lang-es">Snorkel en Bombinhas</span><span class="lang-pt">Snorkel em Bombinhas</span>
+              </li>
+              <li>
+                <span class="lang-en">Free day and farewell</span>
+                <span class="lang-es">Día libre y despedida</span><span class="lang-pt">Dia livre e despedida</span>
+              </li>
+            </ol>
+          </article>
+          <article class="card">
+            <p class="kicker">
+              <span class="lang-en">2 weeks · coast and Serra</span>
+              <span class="lang-es">2 semanas · costa y Serra</span><span class="lang-pt">2 semanas · litoral e Serra</span>
+            </p>
+            <h3>
+              <span class="lang-en">Whales, canyons and the highlands</span>
+              <span class="lang-es">Ballenas, cañones y la sierra</span><span class="lang-pt">Baleias, cânions e a serra</span>
+            </h3>
+            <p>
+              <span class="lang-en">Days 1–7 at a slower pace, then a rental car. There is little public transport in the Serra.</span>
+              <span class="lang-es">Días 1 a 7 más tranquilos, y después un auto alquilado. En la Serra casi no hay transporte público.</span><span class="lang-pt">Dias 1 a 7 num ritmo mais calmo, e depois um carro alugado. Na Serra quase não há transporte público.</span>
+            </p>
+            <ol start="8">
+              <li>Guarda do Embaú</li>
+              <li>
+                <span class="lang-en">Praia do Rosa and the whales</span>
+                <span class="lang-es">Praia do Rosa y las ballenas</span><span class="lang-pt">Praia do Rosa e as baleias</span>
+              </li>
+              <li>
+                <span class="lang-en">Rest day: lagoons and dunes</span>
+                <span class="lang-es">Descanso: lagunas y dunas</span><span class="lang-pt">Descanso: lagoas e dunas</span>
+              </li>
+              <li>
+                <span class="lang-en">Itaimbezinho canyon</span>
+                <span class="lang-es">Cañón Itaimbezinho</span><span class="lang-pt">Cânion Itaimbezinho</span>
+              </li>
+              <li>Serra do Rio do Rastro</li>
+              <li>
+                <span class="lang-en">Urubici: Pedra Furada and Avencal</span>
+                <span class="lang-es">Urubici: Pedra Furada y Avencal</span><span class="lang-pt">Urubici: Pedra Furada e Avencal</span>
+              </li>
+              <li>
+                <span class="lang-en">Back to the coast</span>
+                <span class="lang-es">Regreso a la costa</span><span class="lang-pt">Volta para o litoral</span>
+              </li>
+            </ol>
+          </article>
+        </div>
+
+        <div class="chapter-grid">
+          <article class="card">
+            <h3>
+              <span class="lang-en">Santa Catarina at a glance</span>
+              <span class="lang-es">Santa Catarina de un vistazo</span><span class="lang-pt">Santa Catarina em um relance</span>
+            </h3>
+            <p>
+              <span class="lang-en">Florianópolis, an island with 40+ beaches. Real (R$), UTC−3, 220 V, plugs N/C, 10% service usually on the bill. Month-by-month weather, and when to come for beach, whales or the Serra.</span>
+              <span class="lang-es">Florianópolis, una isla con más de 40 playas. Real (R$), UTC−3, 220 V, enchufes N/C, y un 10% de servicio que suele venir en la cuenta. Clima mes a mes, y cuándo venir por playa, ballenas o Serra.</span><span class="lang-pt">Florianópolis, uma ilha com mais de 40 praias. Real (R$), UTC−3, 220 V, tomadas N/C, e 10% de serviço que em geral já vem na conta. Clima mês a mês, e quando vir para praia, baleias ou Serra.</span>
+            </p>
+          </article>
+          <article class="card">
+            <h3>
+              <span class="lang-en">How to get there and where to stay</span>
+              <span class="lang-es">Cómo llegar y dónde alojarte</span><span class="lang-pt">Como chegar e onde ficar</span>
+            </h3>
+            <p>
+              <span class="lang-en">Florianópolis (FLN) and Navegantes (NVT), buses into the Rita Maria terminal, and the BR-101. Bases for families, Lagoa, the south, Balneário and Bombinhas. A double room runs about R$ 250–500 in the low season and R$ 400–900 from late December through February.</span>
+              <span class="lang-es">Florianópolis (FLN) y Navegantes (NVT), micros a la terminal Rita Maria y la BR-101. Bases para familias, Lagoa, el sur, Balneário y Bombinhas. Una habitación doble sale unos R$ 250–500 en temporada baja y R$ 400–900 de fines de diciembre a febrero.</span><span class="lang-pt">Florianópolis (FLN) e Navegantes (NVT), ônibus na rodoviária Rita Maria e a BR-101. Bases para famílias, Lagoa, o sul, Balneário e Bombinhas. Um quarto duplo fica em torno de R$ 250–500 na baixa temporada e R$ 400–900 do fim de dezembro a fevereiro.</span>
+            </p>
+          </article>
+          <article class="card">
+            <h3>
+              <span class="lang-en">Stay connected</span>
+              <span class="lang-es">Conectado todo el viaje</span><span class="lang-pt">Conectado a viagem toda</span>
+            </h3>
+            <p>
+              <span class="lang-en">A Holafly eSIM you install before the flight, Pix, Uber and 99, offline maps for the Serra, and the Holafly code from the guide. WhatsApp is how boats, inns and restaurants reply.</span>
+              <span class="lang-es">Una eSIM de Holafly que instalás antes del vuelo, Pix, Uber y 99, mapas offline para la Serra, y el código de Holafly que está en la guía. Por WhatsApp contestan barcos, posadas y restaurantes.</span><span class="lang-pt">Um eSIM da Holafly que você instala antes do voo, Pix, Uber e 99, mapas offline para a Serra, e o código da Holafly que está no guia. Barcos, pousadas e restaurantes respondem pelo WhatsApp.</span>
+            </p>
+          </article>
+          <article class="card">
+            <h3>
+              <span class="lang-en">Parks and Parksnet tickets</span>
+              <span class="lang-es">Parques y entradas de Parksnet</span><span class="lang-pt">Parques e ingressos da Parksnet</span>
+            </h3>
+            <p>
+              <span class="lang-en">Official tickets, often cheaper online. In November 2026 the Unipraias cable car was from R$ 40 on Parksnet and R$ 80 at the gate. Also Beto Carrero, the Roda FG wheel, the aquarium, and the natural parks.</span>
+              <span class="lang-es">Entradas oficiales, muchas veces más baratas online. En noviembre de 2026 el teleférico Unipraias salía desde R$ 40 en Parksnet y R$ 80 en boletería. También Beto Carrero, la Roda FG, el acuario y los parques naturales.</span><span class="lang-pt">Ingressos oficiais, muitas vezes mais baratos online. Em novembro de 2026 o teleférico Unipraias saía a partir de R$ 40 na Parksnet e R$ 80 na bilheteria. Também Beto Carrero, a Roda FG, o aquário e os parques naturais.</span>
+            </p>
+          </article>
+          <article class="card">
+            <h3>
+              <span class="lang-en">Food, saving tips and packing</span>
+              <span class="lang-es">Comida, ahorro y qué llevar</span><span class="lang-pt">Comida, economia e o que levar</span>
+            </h3>
+            <p>
+              <span class="lang-en">Shrimp sequência, Ribeirão oysters, tainha, açaí, and trout in the Serra. Nine ways to spend less. A packing list for the beach, the trails and cold highland nights.</span>
+              <span class="lang-es">Sequência de camarão, ostras de Ribeirão, tainha, açaí y trucha en la Serra. Nueve formas de gastar menos. Una lista para la playa, los senderos y las noches frías de la sierra.</span><span class="lang-pt">Sequência de camarão, ostras de Ribeirão, tainha, açaí e truta na Serra. Nove jeitos de gastar menos. Uma lista para a praia, as trilhas e as noites frias da serra.</span>
+            </p>
+          </article>
+          <article class="card">
+            <h3>
+              <span class="lang-en">Useful Portuguese and emergencies</span>
+              <span class="lang-es">Portugués útil y emergencias</span><span class="lang-pt">Português útil e emergências</span>
+            </h3>
+            <p>
+              <span class="lang-en">Short phrases for the table, the bill and the beach. 190 military police, 192 SAMU ambulance, 193 fire brigade and lifeguards, 191 federal highway police, 199 civil defense, 0800 061 8080 Ibama.</span>
+              <span class="lang-es">Frases cortas para la mesa, la cuenta y la playa. 190 policía militar, 192 ambulancia SAMU, 193 bomberos y guardavidas, 191 policía rodoviaria federal, 199 defensa civil, 0800 061 8080 Ibama.</span><span class="lang-pt">Frases curtas para a mesa, a conta e a praia. 190 polícia militar, 192 ambulância SAMU, 193 bombeiros e salva-vidas, 191 polícia rodoviária federal, 199 defesa civil, 0800 061 8080 Ibama.</span>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="samples" aria-labelledby="samples-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">
+            <span class="lang-en">Sample pages</span>
+            <span class="lang-es">Páginas de muestra</span><span class="lang-pt">Páginas de amostra</span>
+          </p>
+          <h2 id="samples-title">
+            <span class="lang-en">The map, and a full day</span>
+            <span class="lang-es">El mapa, y un día completo</span><span class="lang-pt">O mapa e um dia completo</span>
+          </h2>
+          <p>
+            <span class="lang-en">Page 8 and page 12, in the language of this page. Open a page to read it larger.</span>
+            <span class="lang-es">La página 8 y la página 12, en el idioma de esta página. Abrí una página para leerla más grande.</span><span class="lang-pt">As páginas 8 e 12 da edição em inglês. Abra uma página para ler maior.</span>
+          </p>
+        </div>
+        <div class="sample-grid">
+          <figure>
+            <script>
+              document.write(
+                '<a class="sample-zoom" data-photo-link="map" href="img/map-' + (window.__scLang === "es" ? "es" : "en") + '-1600.webp" target="_blank" rel="noopener">' +
+                window.__scPhoto(
+                  "map",
+                  "Sample page 8: a map of Santa Catarina with the 1-week and 2-week routes and drive times from Florianópolis.",
+                  "Página de muestra 8: mapa de Santa Catarina con las rutas de 1 y 2 semanas y los tiempos de manejo desde Florianópolis.",
+                  "(min-width: 900px) 480px, 92vw",
+                  false,
+                  ""
+                ) +
+                "</a>"
+              );
+            </script>
+            <figcaption>
+              <span class="lang-en">Page 8 · Choose your adventure, with drive times from Florianópolis.</span>
+              <span class="lang-es">Página 8 · Elegí tu aventura, con los tiempos de manejo desde Florianópolis.</span><span class="lang-pt">Página 8 · Escolha sua aventura, com o tempo de carro a partir de Florianópolis.</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <script>
+              document.write(
+                '<a class="sample-zoom" data-photo-link="day" href="img/day-' + (window.__scLang === "es" ? "es" : "en") + '-1600.webp" target="_blank" rel="noopener">' +
+                window.__scPhoto(
+                  "day",
+                  "Sample page 12: Day 3 at Lagoa da Conceição and the Joaquina dunes, with the schedule, estimated cost and Rennie's tip.",
+                  "Página de muestra 12: Día 3 en Lagoa da Conceição y las dunas de Joaquina, con el horario, el costo estimado y el tip de Rennie.",
+                  "(min-width: 900px) 480px, 92vw",
+                  false,
+                  ""
+                ) +
+                "</a>"
+              );
+            </script>
+            <figcaption>
+              <span class="lang-en">Page 12 · Day 3: Lagoa da Conceição and the Joaquina dunes.</span>
+              <span class="lang-es">Página 12 · Día 3: Lagoa da Conceição y las dunas de Joaquina.</span><span class="lang-pt">Página 12 · Dia 3: Lagoa da Conceição e as dunas da Joaquina.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">
+            <span class="lang-en">About</span>
+            <span class="lang-es">Nosotros</span><span class="lang-pt">Sobre nós</span>
+          </p>
+          <h2 id="about-title">Pablo &amp; Luisa</h2>
+        </div>
+        <div class="prose">
+          <p>
+            <span class="lang-en">Pablo and Luisa Garcia are musicians, entrepreneurs and travelers. We made this 2026 nature guide to Santa Catarina to share the beaches, dunes, canyons and waterfalls we keep coming back to in southern Brazil.</span>
+            <span class="lang-es">Pablo y Luisa Garcia somos músicos, emprendedores y viajeros. Armamos esta guía de naturaleza de Santa Catarina 2026 para compartir las playas, dunas, cañones y cascadas a las que volvemos en el sur de Brasil.</span><span class="lang-pt">Pablo e Luisa Garcia são músicos, empreendedores e viajantes. Fizemos este guia de natureza de Santa Catarina 2026 para compartilhar as praias, dunas, cânions e cachoeiras para as quais voltamos no sul do Brasil.</span>
+          </p>
+          <p>
+            <span class="lang-en">Prices, hours and rules inside are approximate and were checked in November 2026. Confirm them before you go. The PDF includes affiliate links for Holafly and Parksnet: if you buy through them, we may earn a commission at no extra cost to you.</span>
+            <span class="lang-es">Los precios, horarios y reglas de adentro son aproximados y se revisaron en noviembre de 2026. Confirmalos antes de ir. El PDF tiene links de afiliados de Holafly y Parksnet: si comprás por ellos, podemos recibir una comisión sin costo extra para vos.</span><span class="lang-pt">Os preços, horários e regras do guia são aproximados e foram conferidos em novembro de 2026. Confirme antes de ir. O PDF tem links de afiliados da Holafly e da Parksnet: se você comprar por eles, podemos receber uma comissão sem custo extra para você.</span>
+          </p>
+        </div>
+        <aside class="callout">
+          <p>
+            <span class="lang-en"><strong>Rennie</strong> is the 3D character drawn into real photos of each place. He is the illustrated guide in the PDF, not a guest reviewer.</span>
+            <span class="lang-es"><strong>Rennie</strong> es el personaje en 3D dibujado sobre fotos reales de cada lugar. Es el guía ilustrado del PDF, no un viajero que dejó una reseña.</span><span class="lang-pt"><strong>Rennie</strong> é o personagem em 3D desenhado sobre fotos reais de cada lugar. Ele é o guia ilustrado do PDF, não um viajante que deixou uma avaliação.</span>
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="lead" aria-labelledby="lead-title">
+      <div class="form-card">
+        <form id="lead-form" novalidate>
+          <p class="kicker">
+            <span class="lang-en">Free guide</span>
+            <span class="lang-es">Guía gratis</span><span class="lang-pt">Guia grátis</span>
+          </p>
+          <h2 id="lead-title">
+            <span class="lang-en">Leave your email and we'll send it</span>
+            <span class="lang-es">Dejá tu email y te la enviamos</span><span class="lang-pt">Deixe seu e-mail e a gente envia</span>
+          </h2>
+          <p class="fine">
+            <span class="lang-en">Choose the language of the PDF. The message comes from Pablo y Luisa Garcia.</span>
+            <span class="lang-es">Elegí el idioma del PDF. El mensaje llega de Pablo y Luisa Garcia.</span><span class="lang-pt">Escolha o idioma do PDF. A mensagem chega de Pablo y Luisa Garcia.</span>
+          </p>
+          <div class="hp" aria-hidden="true">
+            <label>Company
+              <input type="text" name="honeypot" tabindex="-1" autocomplete="off" value="">
+            </label>
+          </div>
+
+          <div class="fields">
+            <div class="field-row">
+              <label class="field">
+                <span>
+                  <span class="lang-en">Name</span>
+                  <span class="lang-es">Nombre</span><span class="lang-pt">Nome</span>
+                </span>
+                <input type="text" name="name" autocomplete="name" required maxlength="120" data-ph-en="Your name" data-ph-es="Tu nombre" data-ph-pt="Seu nome" placeholder="Your name">
+              </label>
+              <label class="field">
+                <span>Email</span>
+                <input type="email" name="email" autocomplete="email" inputmode="email" autocapitalize="none" required maxlength="200" data-ph-en="you@email.com" data-ph-es="tu@email.com" data-ph-pt="voce@email.com" placeholder="you@email.com">
+              </label>
             </div>
+
+            <div class="field-row">
+              <label class="field">
+                <span>
+                  <span class="lang-en">Country <span class="opt">(optional)</span></span>
+                  <span class="lang-es">País <span class="opt">(opcional)</span></span><span class="lang-pt">País <span class="opt">(opcional)</span></span>
+                </span>
+                <input type="text" name="country" autocomplete="country-name" maxlength="80" data-ph-en="Where are you from?" data-ph-es="¿De dónde sos?" data-ph-pt="De onde você é?">
+              </label>
+              <label class="field">
+                <span>
+                  <span class="lang-en">Travel month <span class="opt">(optional)</span></span>
+                  <span class="lang-es">Mes de viaje <span class="opt">(opcional)</span></span><span class="lang-pt">Mês da viagem <span class="opt">(opcional)</span></span>
+                </span>
+                <select name="travel_month">
+                  <option value="" data-en="Optional" data-es="Opcional" data-pt="Opcional">Optional</option>
+                  <option value="january" data-en="January" data-es="Enero" data-pt="Janeiro">January</option>
+                  <option value="february" data-en="February" data-es="Febrero" data-pt="Fevereiro">February</option>
+                  <option value="march" data-en="March" data-es="Marzo" data-pt="Março">March</option>
+                  <option value="april" data-en="April" data-es="Abril" data-pt="Abril">April</option>
+                  <option value="may" data-en="May" data-es="Mayo" data-pt="Maio">May</option>
+                  <option value="june" data-en="June" data-es="Junio" data-pt="Junho">June</option>
+                  <option value="july" data-en="July" data-es="Julio" data-pt="Julho">July</option>
+                  <option value="august" data-en="August" data-es="Agosto" data-pt="Agosto">August</option>
+                  <option value="september" data-en="September" data-es="Septiembre" data-pt="Setembro">September</option>
+                  <option value="october" data-en="October" data-es="Octubre" data-pt="Outubro">October</option>
+                  <option value="november" data-en="November" data-es="Noviembre" data-pt="Novembro">November</option>
+                  <option value="december" data-en="December" data-es="Diciembre" data-pt="Dezembro">December</option>
+                  <option value="not_sure" data-en="Not sure" data-es="No sé" data-pt="Não sei">Not sure</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="field-row">
+              <label class="field">
+                <span>
+                  <span class="lang-en">Trip length <span class="opt">(optional)</span></span>
+                  <span class="lang-es">Duración <span class="opt">(opcional)</span></span><span class="lang-pt">Duração <span class="opt">(opcional)</span></span>
+                </span>
+                <select name="trip_length">
+                  <option value="" data-en="Optional" data-es="Opcional" data-pt="Opcional">Optional</option>
+                  <option value="1_week" data-en="1 week" data-es="1 semana" data-pt="1 semana">1 week</option>
+                  <option value="2_weeks" data-en="2 weeks" data-es="2 semanas" data-pt="2 semanas">2 weeks</option>
+                  <option value="not_sure" data-en="Not sure" data-es="No sé" data-pt="Não sei">Not sure</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>
+                  <span class="lang-en">Guide language</span>
+                  <span class="lang-es">Idioma de la guía</span><span class="lang-pt">Idioma do guia</span>
+                </span>
+                <select name="guide_language" id="guide-language" required>
+                  <option value="en">English</option>
+                  <option value="es">Español</option>
+                </select>
+              </label>
+            </div>
+            <p class="fine lang-pt">O guia está disponível em espanhol e inglês.</p>
+
+            <div class="checks">
+              <label class="check">
+                <input type="checkbox" name="consent" value="yes" required>
+                <span>
+                  <span class="lang-en">I agree to receive the guide by email and I've read the <a href="privacidad/">privacy policy</a>.</span>
+                  <span class="lang-es">Acepto recibir la guía por email y leí la <a href="privacidad/">política de privacidad</a>.</span><span class="lang-pt">Aceito receber o guia por e-mail e li a <a href="privacidad/">política de privacidade</a>.</span>
+                </span>
+              </label>
+              <label class="check">
+                <input type="checkbox" name="newsletter" value="yes">
+                <span>
+                  <span class="lang-en">Send me occasional travel news from Pablo &amp; Luisa. Optional.</span>
+                  <span class="lang-es">Quiero novedades de viaje de Pablo y Luisa, de vez en cuando. Opcional.</span><span class="lang-pt">Quero novidades de viagem do Pablo e da Luisa, de vez em quando. Opcional.</span>
+                </span>
+              </label>
+            </div>
+
+            <p class="form-error" id="form-error" role="alert" hidden></p>
+            <button type="submit" class="btn btn-block" id="submit-btn">
+              <span class="lang-en" data-label="idle">Email me the guide</span>
+              <span class="lang-es" data-label="idle">Enviame la guía</span><span class="lang-pt" data-label="idle">Me envie o guia</span>
+              <span class="lang-en" data-label="busy" hidden>Sending…</span>
+              <span class="lang-es" data-label="busy" hidden>Enviando…</span><span class="lang-pt" data-label="busy" hidden>Enviando…</span>
+            </button>
           </div>
-        </div>
-      </section>
+        </form>
 
-      <section class="section section-light" id="itineraries" aria-labelledby="itineraries-title">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Seven days, ready to go</p>
-          <h2 id="itineraries-title">Day-by-day itineraries.</h2>
-        </div>
-        <div class="itinerary-grid">
-          <article class="itinerary-card reveal">
-            <span>Day 1</span>
-            <h3>Florianopolis Arrival</h3>
-            <p>Lagoa da Conceicao, sunset dunes, and an easy first dinner.</p>
-          </article>
-          <article class="itinerary-card reveal">
-            <span>Day 2</span>
-            <h3>East Coast Beaches</h3>
-            <p>Mole, Joaquina, Barra da Lagoa, and quiet surf-town stops.</p>
-          </article>
-          <article class="itinerary-card reveal">
-            <span>Day 3</span>
-            <h3>South Island Drive</h3>
-            <p>Campeche, Armacao, Matadeiro, and dramatic cliff views.</p>
-          </article>
-          <article class="itinerary-card reveal">
-            <span>Day 4</span>
-            <h3>Balneario Camboriu</h3>
-            <p>Skyline views, cable cars, seafood, and an evening promenade.</p>
-          </article>
-          <article class="itinerary-card reveal">
-            <span>Day 5</span>
-            <h3>Bombinhas Coves</h3>
-            <p>Clear water beaches, short hikes, and slow coastal lunches.</p>
-          </article>
-          <article class="itinerary-card reveal">
-            <span>Day 6</span>
-            <h3>Serra Catarinense</h3>
-            <p>Mountain roads, canyons, wineries, and cooler highland air.</p>
-          </article>
-          <article class="itinerary-card reveal">
-            <span>Day 7</span>
-            <h3>Final Swim</h3>
-            <p>A relaxed beach morning with smart airport timing built in.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section map-section" aria-labelledby="map-title">
-        <div class="split-layout">
-          <div class="split-copy reveal">
-            <p class="eyebrow">Map preview</p>
-            <h2 id="map-title">Every stop, placed with intention.</h2>
-            <p>
-              Preview the route logic before you travel, then open the map on
-              the road with beaches, viewpoints, food, hikes, and drive times
-              already grouped by day.
-            </p>
-          </div>
-          <div class="map-preview reveal" role="img" aria-label="Stylized interactive map preview">
-            <img
-              src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1200&q=80"
-              alt=""
-              loading="lazy"
-              width="1200"
-              height="900"
-            />
-            <span class="pin pin-one"></span>
-            <span class="pin pin-two"></span>
-            <span class="pin pin-three"></span>
-            <span class="route-line"></span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-light" id="included" aria-labelledby="included-title">
-        <div class="section-heading reveal">
-          <p class="eyebrow">What's included</p>
-          <h2 id="included-title">All the essentials, refined.</h2>
-        </div>
-        <div class="included-grid">
-          <div class="included-item reveal"><span>☼</span>Beach shortlist</div>
-          <div class="included-item reveal"><span>⌁</span>Drive routes</div>
-          <div class="included-item reveal"><span>⌖</span>Map pins</div>
-          <div class="included-item reveal"><span>◐</span>Best timing</div>
-          <div class="included-item reveal"><span>◇</span>Food picks</div>
-          <div class="included-item reveal"><span>↗</span>Viewpoints</div>
-          <div class="included-item reveal"><span>✓</span>Packing notes</div>
-          <div class="included-item reveal"><span>＋</span>Local tips</div>
-        </div>
-      </section>
-
-      <section class="section testimonials" aria-labelledby="testimonials-title">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Traveler notes</p>
-          <h2 id="testimonials-title">Quietly indispensable.</h2>
-        </div>
-        <div class="testimonial-grid">
-          <figure class="testimonial-card reveal">
-            <blockquote>
-              "The itinerary felt personal, polished, and realistic. We stopped
-              guessing and started enjoying the coastline."
-            </blockquote>
-            <figcaption>Marina L. · Sao Paulo</figcaption>
-          </figure>
-          <figure class="testimonial-card reveal">
-            <blockquote>
-              "It gave us the beautiful places, but also the tiny timing details
-              that made each day feel easy."
-            </blockquote>
-            <figcaption>Daniel R. · Austin</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="final-cta" id="unlock" aria-labelledby="unlock-title">
-        <div class="final-cta-inner reveal">
-          <img
-            src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=80"
-            alt=""
-            loading="lazy"
-            width="1600"
-            height="1067"
-          />
-          <p class="eyebrow">Free instant access</p>
-          <h2 id="unlock-title">Unlock the guide before your trip does.</h2>
+        <div class="thanks" id="thanks" hidden role="status">
+          <h2>
+            <span class="lang-en">Check your email</span>
+            <span class="lang-es">Revisá tu email</span><span class="lang-pt">Confira seu e-mail</span>
+          </h2>
           <p>
-            Get the complete Santa Catarina starter guide, including seven
-            polished itineraries and map-ready recommendations.
+            <span class="lang-en">We sent the guide to <strong class="thanks-email"></strong>. If it doesn't arrive in a few minutes, check spam or download it here.</span>
+            <span class="lang-es">Te mandamos la guía a <strong class="thanks-email"></strong>. Si no aparece en unos minutos, mirá el spam o descargala desde acá.</span><span class="lang-pt">Enviamos o guia para <strong class="thanks-email"></strong>. Se não chegar em alguns minutos, olhe o spam ou baixe por aqui.</span>
           </p>
-          <a class="button-link" href="#hero">Unlock Free Guide</a>
+          <a class="btn" id="thanks-download" href="PASTE_GUIDE_URL_EN_HERE" target="_blank" rel="noopener">
+            <span class="lang-en">Download the guide</span>
+            <span class="lang-es">Descargá la guía</span><span class="lang-pt">Baixar o guia</span>
+          </a>
         </div>
-      </section>
-    </main>
+      </div>
+      <p class="privacy-note">
+        <span class="lang-en">We use your name and email to send the guide you asked for. Travel news is a separate, optional tick. <a href="privacidad/">Privacy policy</a>.</span>
+        <span class="lang-es">Usamos tu nombre y tu email para enviarte la guía que pediste. Las novedades son un casillero aparte, y opcional. <a href="privacidad/">Política de privacidad</a>.</span><span class="lang-pt">Usamos seu nome e seu e-mail para enviar o guia que você pediu. As novidades são um campo separado, e opcional. <a href="privacidad/">Política de privacidade</a>.</span>
+      </p>
+    </section>
 
-    <footer class="site-footer">
-      <p>&copy; 2026 Santa Catarina Guide. Crafted for better travel days.</p>
-      <a href="#hero">Back to top</a>
-    </footer>
+    <section class="section section-muted" id="faq" aria-labelledby="faq-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">FAQ</p>
+          <h2 id="faq-title">
+            <span class="lang-en">Before you ask</span>
+            <span class="lang-es">Antes de pedirla</span><span class="lang-pt">Antes de pedir</span>
+          </h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>
+              <span class="lang-en">Is the guide free?</span>
+              <span class="lang-es">¿La guía es gratis?</span><span class="lang-pt">O guia é de graça?</span>
+            </summary>
+            <p>
+              <span class="lang-en">Yes. Leave your name and email and we send the PDF at no cost.</span>
+              <span class="lang-es">Sí. Dejás tu nombre y tu email, y te enviamos el PDF sin costo.</span><span class="lang-pt">Sim. Você deixa seu nome e seu e-mail, e enviamos o PDF sem custo.</span>
+            </p>
+          </details>
+          <details>
+            <summary>
+              <span class="lang-en">What is actually inside?</span>
+              <span class="lang-es">¿Qué hay adentro, de verdad?</span><span class="lang-pt">O que tem dentro, de verdade?</span>
+            </summary>
+            <p>
+              <span class="lang-en">29 illustrated pages and two routes: one week, and two weeks. A route map includes drive times from Florianópolis. Each day has what to do, the best time, an approximate budget in R$ checked in November 2026, and Rennie's tip. Also how to get there, where to stay, Parksnet, Holafly, food, money-saving tips, a packing list, useful Portuguese and emergency numbers.</span>
+              <span class="lang-es">29 páginas ilustradas y dos rutas: una semana, y dos semanas. El mapa de las rutas trae los tiempos de manejo desde Florianópolis. Cada día trae qué hacer, el mejor horario, un presupuesto aproximado en R$ revisado en noviembre de 2026 y el tip de Rennie. También cómo llegar, dónde alojarte, Parksnet, Holafly, comida, tips para ahorrar, qué llevar, portugués útil y emergencias.</span><span class="lang-pt">29 páginas ilustradas e dois roteiros: uma semana e duas semanas. O mapa dos roteiros traz o tempo de carro a partir de Florianópolis. Cada dia traz o que fazer, o melhor horário, um orçamento aproximado em R$ conferido em novembro de 2026 e a dica do Rennie. Também como chegar, onde ficar, Parksnet, Holafly, comida, dicas para economizar, o que levar, português útil e emergências.</span>
+            </p>
+          </details>
+          <details>
+            <summary>
+              <span class="lang-en">Do I need a car?</span>
+              <span class="lang-es">¿Necesito auto?</span><span class="lang-pt">Preciso de carro?</span>
+            </summary>
+            <p>
+              <span class="lang-en">The island week works without one: Uber, buses and tours. For the two-week extension, rent a car from day 8. The Serra is a road trip.</span>
+              <span class="lang-es">La semana en la isla se hace sin auto: Uber, colectivos y paseos. Para la extensión de dos semanas, alquilá auto desde el día 8. La Serra es para hacer en ruta.</span><span class="lang-pt">A semana na ilha dá para fazer sem carro: Uber, ônibus e passeios. Para a extensão de duas semanas, alugue um carro a partir do dia 8. A Serra é para ir de carro.</span>
+            </p>
+          </details>
+          <details>
+            <summary>
+              <span class="lang-en">When should I go?</span>
+              <span class="lang-es">¿Cuándo conviene ir?</span><span class="lang-pt">Quando vale a pena ir?</span>
+            </summary>
+            <p>
+              <span class="lang-en">April–May and October–November are the shoulder season we like most: mild days, quieter trails and better prices. December–March is beach weather and peak season. Southern right whales are near the coast from July to November, with the peak in August and September. In the Serra, winter nights often drop below freezing, and some years it snows.</span>
+              <span class="lang-es">Abril–mayo y octubre–noviembre son la media estación que más recomendamos: días templados, senderos más tranquilos y mejores precios. Diciembre–marzo es playa y temporada alta. Las ballenas francas se acercan a la costa de julio a noviembre, con el pico en agosto y septiembre. En la Serra, en invierno, las noches suelen bajar de 0 °C y algunos años nieva.</span><span class="lang-pt">Abril–maio e outubro–novembro são a meia-temporada que mais recomendamos: dias amenos, trilhas mais tranquilas e preços melhores. Dezembro–março é praia e alta temporada. As baleias-francas chegam perto da costa de julho a novembro, com o pico em agosto e setembro. Na Serra, no inverno, as noites costumam ficar abaixo de 0 °C e, em alguns anos, neva.</span>
+            </p>
+          </details>
+          <details>
+            <summary>
+              <span class="lang-en">Which language does the PDF use?</span>
+              <span class="lang-es">¿En qué idioma llega el PDF?</span><span class="lang-pt">Em que idioma chega o PDF?</span>
+            </summary>
+            <p>
+              <span class="lang-en">Spanish or English. You choose it on the form. The Spanish edition uses Rioplatense voseo. The guide is not in Portuguese: Portuguese shows up only as useful phrases for the trip.</span>
+              <span class="lang-es">Español o inglés. Lo elegís en el formulario. El español de la guía usa voseo rioplatense. La guía no está en portugués: el portugués aparece solo como frases útiles para el viaje.</span><span class="lang-pt">Em espanhol ou inglês. Você escolhe no formulário. Ainda não há edição em português: o português aparece no guia como frases úteis para a viagem.</span>
+            </p>
+          </details>
+          <details>
+            <summary>
+              <span class="lang-en">How do I delete my data or unsubscribe?</span>
+              <span class="lang-es">¿Cómo borro mis datos o me doy de baja?</span><span class="lang-pt">Como apago meus dados ou cancelo?</span>
+            </summary>
+            <p>
+              <span class="lang-en">Reply to the guide email and ask us to unsubscribe you or delete your data. The details are in the <a href="privacidad/">privacy policy</a>.</span>
+              <span class="lang-es">Respondé al email de la guía y pedí la baja o que borremos tus datos. Los detalles están en la <a href="privacidad/">política de privacidad</a>.</span><span class="lang-pt">Responda ao e-mail do guia e peça para sair da lista ou para apagarmos seus dados. Os detalhes estão na <a href="privacidad/">política de privacidade</a>.</span>
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <script src="script.js" defer></script>
-  </body>
+  <footer class="site-footer">
+    <p>&copy; 2026 Pablo y Luisa Garcia</p>
+    <nav aria-label="Footer">
+      <a href="/">
+        <span class="lang-en">Back to the main site</span>
+        <span class="lang-es">Volver al sitio</span><span class="lang-pt">Voltar ao site</span>
+      </a>
+      <a href="privacidad/">
+        <span class="lang-en">Privacy</span>
+        <span class="lang-es">Privacidad</span><span class="lang-pt">Privacidade</span>
+      </a>
+    </nav>
+  </footer>
+
+  <script>
+    (function () {
+      var select = document.getElementById("guide-language");
+      if (select) select.value = window.__scLang === "es" ? "es" : "en";
+    })();
+  </script>
+  <script src="script.js" defer></script>
+</body>
 </html>
-
